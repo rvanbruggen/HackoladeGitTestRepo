@@ -1380,6 +1380,14 @@
                             "lineageSourceContainerTechName": ""
                         }
                     ]
+                },
+                {
+                    "name": "Addedproperty",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "ca64ff16-5bf8-47b4-8a2f-1cb487c71ecc",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -2199,11 +2207,11 @@
                         "y": 1325
                     },
                     {
-                        "x": 1568.5,
+                        "x": 1568,
                         "y": 1325
                     },
                     {
-                        "x": 1568.5,
+                        "x": 1568,
                         "y": 1350
                     }
                 ],
@@ -2247,16 +2255,16 @@
                         "y": 1965.2651515151506
                     },
                     {
-                        "x": 1763.7001262626263,
+                        "x": 1763.2001262626263,
                         "y": 1965.2651515151506
                     },
                     {
-                        "x": 1763.7001262626263,
-                        "y": 1815
+                        "x": 1763.2001262626263,
+                        "y": 1825.5
                     },
                     {
-                        "x": 1737,
-                        "y": 1815
+                        "x": 1736,
+                        "y": 1825.5
                     }
                 ],
                 "sides": [
@@ -2350,7 +2358,8 @@
         "ba02a227-a36b-4968-92bf-513783f7b005": "_id",
         "d83e6265-4ff9-413e-9690-ec74ca9cb9e8": "name",
         "a8a259ee-37ba-4621-a386-aaa405e6d0cc": "movie_id",
-        "c420d888-64a6-4deb-ada3-8872ba2666b8": "fk animals.movie_id to movies._id"
+        "c420d888-64a6-4deb-ada3-8872ba2666b8": "fk animals.movie_id to movies._id",
+        "ca64ff16-5bf8-47b4-8a2f-1cb487c71ecc": "Addedproperty"
     },
     "definitions": {
         "type": "definitions",
@@ -2383,7 +2392,7 @@
     "creationTS": "2023-06-28T08:13:23.337Z",
     "GUID": "75ca2a38-3d6e-4aa9-96e6-2654f9455e08",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-28T08:16:40.206Z",
+    "lastModifTS": "2023-06-28T08:18:25.600Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2392,6 +2401,7 @@
     "applicationInformation": {
         "version": "6.10.9"
     },
+    "hackoladeMeta": {},
     "settings": {
         "centralPane": {
             "dbLevel": {
@@ -2409,7 +2419,7 @@
                         "x": 1400,
                         "y": 1350,
                         "width": 337,
-                        "height": 930,
+                        "height": 951,
                         "color": {}
                     },
                     {
