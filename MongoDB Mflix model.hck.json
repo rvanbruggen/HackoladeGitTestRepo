@@ -1887,6 +1887,14 @@
                             "lineageSourceContainerTechName": ""
                         }
                     ]
+                },
+                {
+                    "name": "added property in 2nd branch",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "91dba613-20ce-442e-9e68-2857932e515a",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -2350,7 +2358,8 @@
         "ba02a227-a36b-4968-92bf-513783f7b005": "_id",
         "d83e6265-4ff9-413e-9690-ec74ca9cb9e8": "name",
         "a8a259ee-37ba-4621-a386-aaa405e6d0cc": "movie_id",
-        "c420d888-64a6-4deb-ada3-8872ba2666b8": "fk animals.movie_id to movies._id"
+        "c420d888-64a6-4deb-ada3-8872ba2666b8": "fk animals.movie_id to movies._id",
+        "91dba613-20ce-442e-9e68-2857932e515a": "added property in 2nd branch"
     },
     "definitions": {
         "type": "definitions",
@@ -2383,7 +2392,7 @@
     "creationTS": "2023-06-28T08:13:23.337Z",
     "GUID": "75ca2a38-3d6e-4aa9-96e6-2654f9455e08",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-28T08:16:40.206Z",
+    "lastModifTS": "2023-06-28T08:24:14.832Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2392,6 +2401,7 @@
     "applicationInformation": {
         "version": "6.10.9"
     },
+    "hackoladeMeta": {},
     "settings": {
         "centralPane": {
             "dbLevel": {
@@ -2424,8 +2434,8 @@
                         "GUID": "3cf1f421-9fac-426a-b6a1-66ca7d18cc09",
                         "x": 1050,
                         "y": 1050,
-                        "width": 284,
-                        "height": 264,
+                        "width": 368,
+                        "height": 285,
                         "color": {}
                     },
                     {
