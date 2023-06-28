@@ -732,22 +732,7 @@
                     "isActivated": true,
                     "type": "multiple",
                     "primaryKey": false,
-                    "multipleTypes": [
-                        {
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "type": "numeric",
-                            "GUID": "9e15f248-85eb-4c48-ae6e-a9d0d234922d",
-                            "primaryKey": false
-                        },
-                        {
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "type": "string",
-                            "GUID": "d9d3c7e8-5f6e-4bd8-b934-6005da7e4f23",
-                            "primaryKey": false
-                        }
-                    ],
+                    "multipleTypes": [],
                     "GUID": "f0e12bb3-333d-4fc5-a5ff-02b6b4351ea9",
                     "required": true,
                     "sample": 2005,
@@ -1388,6 +1373,22 @@
                     "type": "string",
                     "GUID": "c229f248-bd3f-45f6-a704-3b31a343cf3b",
                     "error": {}
+                },
+                {
+                    "name": "Addedproperty",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "ca64ff16-5bf8-47b4-8a2f-1cb487c71ecc",
+                    "error": {}
+                },
+                {
+                    "name": "Added2ndProperty",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "c0c4b310-665b-431b-ab39-cd4538980632",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -1730,22 +1731,7 @@
                                     "isActivated": true,
                                     "type": "multiple",
                                     "primaryKey": false,
-                                    "multipleTypes": [
-                                        {
-                                            "hackoladeMeta": {},
-                                            "isActivated": true,
-                                            "type": "string",
-                                            "GUID": "c592d49e-5b90-4f2c-99fc-f25569649d6a",
-                                            "primaryKey": false
-                                        },
-                                        {
-                                            "hackoladeMeta": {},
-                                            "isActivated": true,
-                                            "type": "null",
-                                            "GUID": "0edc05f2-8b56-4377-a75d-67dacbba2e3e",
-                                            "primaryKey": false
-                                        }
-                                    ],
+                                    "multipleTypes": [],
                                     "GUID": "0a336cfd-1c37-4237-b1b2-089ded498b8a",
                                     "required": false,
                                     "sample": null,
@@ -2160,6 +2146,12 @@
                 "d8ed3ac1-8569-4589-99bc-fcaf9e0fd33a",
                 "3cf1f421-9fac-426a-b6a1-66ca7d18cc09",
                 "8fc33cdb-ba60-4a7e-8e55-302579efb296",
+                "de2adac2-02df-4db3-a380-45a7d6ece79b",
+                "d888d8b3-b2c2-44e9-b3e3-a864d047ac62",
+                "376a517f-4172-4fde-8449-2566e7221bfc",
+                "d8ed3ac1-8569-4589-99bc-fcaf9e0fd33a",
+                "3cf1f421-9fac-426a-b6a1-66ca7d18cc09",
+                "8fc33cdb-ba60-4a7e-8e55-302579efb296",
                 "de2adac2-02df-4db3-a380-45a7d6ece79b"
             ],
             "backgroundColor": {
@@ -2207,28 +2199,24 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1979,
-                        "y": 1419
+                        "x": 1872.5,
+                        "y": 1350
                     },
                     {
-                        "x": 2004,
-                        "y": 1419
-                    },
-                    {
-                        "x": 2004,
+                        "x": 1872.5,
                         "y": 1325
                     },
                     {
-                        "x": 1528.3333333333333,
+                        "x": 1568,
                         "y": 1325
                     },
                     {
-                        "x": 1528.3333333333333,
+                        "x": 1568,
                         "y": 1350
                     }
                 ],
                 "sides": [
-                    "right",
+                    "top",
                     "top"
                 ]
             }
@@ -2263,25 +2251,25 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1875.9002525252529,
-                        "y": 1921.7651515151506
+                        "x": 1790.4002525252529,
+                        "y": 1965.2651515151506
                     },
                     {
-                        "x": 1875.9002525252529,
-                        "y": 1325
+                        "x": 1763.2001262626263,
+                        "y": 1965.2651515151506
                     },
                     {
-                        "x": 1656.6666666666667,
-                        "y": 1325
+                        "x": 1763.2001262626263,
+                        "y": 1834.5
                     },
                     {
-                        "x": 1656.6666666666667,
-                        "y": 1350
+                        "x": 1736,
+                        "y": 1834.5
                     }
                 ],
                 "sides": [
-                    "top",
-                    "top"
+                    "left",
+                    "right"
                 ]
             }
         }
@@ -2372,7 +2360,9 @@
         "a8a259ee-37ba-4621-a386-aaa405e6d0cc": "movie_id",
         "c420d888-64a6-4deb-ada3-8872ba2666b8": "fk animals.movie_id to movies._id",
         "91dba613-20ce-442e-9e68-2857932e515a": "added property in 2nd branch",
-        "c229f248-bd3f-45f6-a704-3b31a343cf3b": "Potentially conflicting property"
+        "c229f248-bd3f-45f6-a704-3b31a343cf3b": "Potentially conflicting property",
+        "ca64ff16-5bf8-47b4-8a2f-1cb487c71ecc": "Addedproperty",
+        "c0c4b310-665b-431b-ab39-cd4538980632": "Added2ndProperty"
     },
     "definitions": {
         "type": "definitions",
@@ -2405,7 +2395,7 @@
     "creationTS": "2023-06-28T08:13:23.337Z",
     "GUID": "75ca2a38-3d6e-4aa9-96e6-2654f9455e08",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-28T08:25:34.512Z",
+    "lastModifTS": "2023-06-28T08:32:52.468Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2468,12 +2458,6 @@
                         "color": {}
                     }
                 ],
-                "erdDefinitions": {
-                    "erd": [],
-                    "rootPath": [],
-                    "entities": [],
-                    "decorativeSymbols": []
-                },
                 "buckets": [
                     {
                         "x": 1010,
@@ -2481,28 +2465,14 @@
                         "GUID": "573a80be-1ae5-4738-b5dc-917433bb1706"
                     }
                 ],
-                "collapsedNodes": [],
-                "activeRelationship": "",
-                "activeRelationshipFields": {
-                    "childField": [],
-                    "parentField": []
-                },
-                "selectedCollections": [],
-                "displayColorPicker": false,
+                "diagramViews": [],
+                "decorativeSymbols": [],
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
                     "forceLayout": true,
                     "defaultLinkLength": 300
-                },
-                "diagramViews": [],
-                "decorativeSymbols": [],
-                "nestedCollectionsLayout": "horizontal",
-                "options": [],
-                "relationshipUpdateDisabled": false,
-                "displayOptions": {
-                    "dndHandles": false
                 }
             },
             "collectionLevel": {},
