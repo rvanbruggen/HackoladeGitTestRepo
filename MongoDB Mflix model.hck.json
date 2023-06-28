@@ -1388,6 +1388,14 @@
                     "type": "string",
                     "GUID": "ca64ff16-5bf8-47b4-8a2f-1cb487c71ecc",
                     "error": {}
+                },
+                {
+                    "name": "Added2ndProperty",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "c0c4b310-665b-431b-ab39-cd4538980632",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -2260,11 +2268,11 @@
                     },
                     {
                         "x": 1763.2001262626263,
-                        "y": 1825.5
+                        "y": 1834.5
                     },
                     {
                         "x": 1736,
-                        "y": 1825.5
+                        "y": 1834.5
                     }
                 ],
                 "sides": [
@@ -2359,7 +2367,8 @@
         "d83e6265-4ff9-413e-9690-ec74ca9cb9e8": "name",
         "a8a259ee-37ba-4621-a386-aaa405e6d0cc": "movie_id",
         "c420d888-64a6-4deb-ada3-8872ba2666b8": "fk animals.movie_id to movies._id",
-        "ca64ff16-5bf8-47b4-8a2f-1cb487c71ecc": "Addedproperty"
+        "ca64ff16-5bf8-47b4-8a2f-1cb487c71ecc": "Addedproperty",
+        "c0c4b310-665b-431b-ab39-cd4538980632": "Added2ndProperty"
     },
     "definitions": {
         "type": "definitions",
@@ -2392,7 +2401,7 @@
     "creationTS": "2023-06-28T08:13:23.337Z",
     "GUID": "75ca2a38-3d6e-4aa9-96e6-2654f9455e08",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-28T08:18:25.600Z",
+    "lastModifTS": "2023-06-28T08:19:10.836Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2419,7 +2428,7 @@
                         "x": 1400,
                         "y": 1350,
                         "width": 337,
-                        "height": 951,
+                        "height": 969,
                         "color": {}
                     },
                     {
