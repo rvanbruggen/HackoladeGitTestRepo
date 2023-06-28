@@ -1380,6 +1380,14 @@
                             "lineageSourceContainerTechName": ""
                         }
                     ]
+                },
+                {
+                    "name": "Potentially conflicting property",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "c229f248-bd3f-45f6-a704-3b31a343cf3b",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -2199,24 +2207,28 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1872.5,
-                        "y": 1350
+                        "x": 1979,
+                        "y": 1419
                     },
                     {
-                        "x": 1872.5,
+                        "x": 2004,
+                        "y": 1419
+                    },
+                    {
+                        "x": 2004,
                         "y": 1325
                     },
                     {
-                        "x": 1568.5,
+                        "x": 1528.3333333333333,
                         "y": 1325
                     },
                     {
-                        "x": 1568.5,
+                        "x": 1528.3333333333333,
                         "y": 1350
                     }
                 ],
                 "sides": [
-                    "top",
+                    "right",
                     "top"
                 ]
             }
@@ -2251,25 +2263,25 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1790.4002525252529,
-                        "y": 1965.2651515151506
+                        "x": 1875.9002525252529,
+                        "y": 1921.7651515151506
                     },
                     {
-                        "x": 1763.7001262626263,
-                        "y": 1965.2651515151506
+                        "x": 1875.9002525252529,
+                        "y": 1325
                     },
                     {
-                        "x": 1763.7001262626263,
-                        "y": 1815
+                        "x": 1656.6666666666667,
+                        "y": 1325
                     },
                     {
-                        "x": 1737,
-                        "y": 1815
+                        "x": 1656.6666666666667,
+                        "y": 1350
                     }
                 ],
                 "sides": [
-                    "left",
-                    "right"
+                    "top",
+                    "top"
                 ]
             }
         }
@@ -2359,7 +2371,8 @@
         "d83e6265-4ff9-413e-9690-ec74ca9cb9e8": "name",
         "a8a259ee-37ba-4621-a386-aaa405e6d0cc": "movie_id",
         "c420d888-64a6-4deb-ada3-8872ba2666b8": "fk animals.movie_id to movies._id",
-        "91dba613-20ce-442e-9e68-2857932e515a": "added property in 2nd branch"
+        "91dba613-20ce-442e-9e68-2857932e515a": "added property in 2nd branch",
+        "c229f248-bd3f-45f6-a704-3b31a343cf3b": "Potentially conflicting property"
     },
     "definitions": {
         "type": "definitions",
@@ -2392,7 +2405,7 @@
     "creationTS": "2023-06-28T08:13:23.337Z",
     "GUID": "75ca2a38-3d6e-4aa9-96e6-2654f9455e08",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-28T08:24:14.832Z",
+    "lastModifTS": "2023-06-28T08:25:34.512Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2418,8 +2431,8 @@
                         "GUID": "376a517f-4172-4fde-8449-2566e7221bfc",
                         "x": 1400,
                         "y": 1350,
-                        "width": 337,
-                        "height": 930,
+                        "width": 385,
+                        "height": 951,
                         "color": {}
                     },
                     {
