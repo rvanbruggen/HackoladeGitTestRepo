@@ -1381,11 +1381,19 @@
                     ]
                 },
                 {
+<<<<<<< HEAD
                     "name": "clone1property",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "string",
                     "GUID": "aaaa42b6-3b07-486e-be7d-ea811b669790",
+=======
+                    "name": "Clone2prop",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "91423a32-434f-4c2d-a233-4c2068a93870",
+>>>>>>> origin/main
                     "error": {}
                 }
             ],
@@ -2244,7 +2252,11 @@
         "132ec5b4-b4a9-4a43-be82-3f249421597a": "password",
         "e079b2fe-769b-4712-b3db-dc1c4ac42d4f": "users",
         "b994bffc-b86b-49b1-a854-865c9f675a28": "fk movies._id to comments.movie_id",
+<<<<<<< HEAD
         "aaaa42b6-3b07-486e-be7d-ea811b669790": "clone1property"
+=======
+        "91423a32-434f-4c2d-a233-4c2068a93870": "Clone2prop"
+>>>>>>> origin/main
     },
     "definitions": {
         "type": "definitions",
@@ -2277,7 +2289,11 @@
     "creationTS": "2023-06-29T15:59:58.985Z",
     "GUID": "bee539ad-20da-4b8b-b761-afc9e6ea91e4",
     "isLineageEnabled": true,
+<<<<<<< HEAD
     "lastModifTS": "2023-06-29T16:02:50.881Z",
+=======
+    "lastModifTS": "2023-06-29T16:01:51.940Z",
+>>>>>>> origin/main
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
