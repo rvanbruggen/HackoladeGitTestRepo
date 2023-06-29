@@ -196,7 +196,8 @@
                     "GUID": "4ed9288d-c5d7-4ed0-9fff-9210985828cc",
                     "required": true,
                     "childRelationships": [
-                        "c78b2618-2794-420f-bcb2-b91f72118d16"
+                        "c78b2618-2794-420f-bcb2-b91f72118d16",
+                        "e559121c-2cf2-46bb-a5c3-247f5a7afc79"
                     ],
                     "error": {},
                     "sources": [
@@ -2090,6 +2091,62 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             }
+        },
+        {
+            "collectionName": "animals",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "fdecb64b-f095-4831-a6c6-28294ca4c54f",
+                    "error": {}
+                },
+                {
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "24874dc6-091e-40ab-a87a-d6255141b7bd",
+                    "error": {}
+                },
+                {
+                    "name": "movie_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "error": {},
+                    "GUID": "13da1665-05e8-43da-952c-3a0b054dda1a",
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "81ab2682-1d94-4a0a-8cb8-e692510d8edd",
+                    "foreignField": [
+                        "81ab2682-1d94-4a0a-8cb8-e692510d8edd",
+                        "4ed9288d-c5d7-4ed0-9fff-9210985828cc"
+                    ],
+                    "parentRelationship": "e559121c-2cf2-46bb-a5c3-247f5a7afc79"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "284ad71d-155b-4a50-87a5-78678f861d1a"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "fec9d5df-c9b1-4356-a006-7582499205fc",
+            "bucketId": "34ff9472-8440-481a-9c33-ee47afc36aca"
         }
     ],
     "buckets": [
@@ -2101,7 +2158,8 @@
                 "81ab2682-1d94-4a0a-8cb8-e692510d8edd",
                 "8d617834-ed4a-4ba3-91f0-9165854e99d8",
                 "b5af909a-3695-4eea-845b-7632c8581d11",
-                "e7c96cf7-df5b-4ae0-a4ba-af6d607e105b"
+                "e7c96cf7-df5b-4ae0-a4ba-af6d607e105b",
+                "fec9d5df-c9b1-4356-a006-7582499205fc"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -2148,19 +2206,71 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1766,
-                        "y": 1419
+                        "x": 1872.5,
+                        "y": 1350
                     },
                     {
-                        "x": 1741,
-                        "y": 1419
+                        "x": 1872.5,
+                        "y": 1325
                     },
                     {
-                        "x": 1741,
+                        "x": 1568.5,
+                        "y": 1325
+                    },
+                    {
+                        "x": 1568.5,
+                        "y": 1350
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "top"
+                ]
+            }
+        },
+        {
+            "name": "fk animals.movie_id to movies._id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "81ab2682-1d94-4a0a-8cb8-e692510d8edd",
+                    "4ed9288d-c5d7-4ed0-9fff-9210985828cc"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "fec9d5df-c9b1-4356-a006-7582499205fc",
+                    "13da1665-05e8-43da-952c-3a0b054dda1a"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "81ab2682-1d94-4a0a-8cb8-e692510d8edd",
+            "childCollection": "fec9d5df-c9b1-4356-a006-7582499205fc",
+            "GUID": "e559121c-2cf2-46bb-a5c3-247f5a7afc79",
+            "hackoladeStyles": {
+                "GUID": "7a76475a-f610-40bd-a5da-2f3fe651ed28",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1854.2602892102336,
+                        "y": 1874.868186874305
+                    },
+                    {
+                        "x": 1795.6301446051168,
+                        "y": 1874.868186874305
+                    },
+                    {
+                        "x": 1795.6301446051168,
                         "y": 1815
                     },
                     {
-                        "x": 1716,
+                        "x": 1737,
                         "y": 1815
                     }
                 ],
@@ -2250,7 +2360,12 @@
         "6fbbebd8-86d2-4772-bc86-bda226625fe5": "email",
         "e7c174b5-8c65-4e6e-aa66-8074bbb2fe59": "password",
         "e7c96cf7-df5b-4ae0-a4ba-af6d607e105b": "users",
-        "c78b2618-2794-420f-bcb2-b91f72118d16": "fk movies._id to comments.movie_id"
+        "c78b2618-2794-420f-bcb2-b91f72118d16": "fk movies._id to comments.movie_id",
+        "fec9d5df-c9b1-4356-a006-7582499205fc": "animals",
+        "fdecb64b-f095-4831-a6c6-28294ca4c54f": "_id",
+        "24874dc6-091e-40ab-a87a-d6255141b7bd": "name",
+        "13da1665-05e8-43da-952c-3a0b054dda1a": "movie_id",
+        "e559121c-2cf2-46bb-a5c3-247f5a7afc79": "fk animals.movie_id to movies._id"
     },
     "definitions": {
         "type": "definitions",
@@ -2283,7 +2398,7 @@
     "creationTS": "2023-06-29T13:45:10.319Z",
     "GUID": "9ae711ee-d052-46a4-a455-847e17ba5193",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-29T13:45:45.535Z",
+    "lastModifTS": "2023-06-29T13:47:43.844Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2308,7 +2423,7 @@
                         "GUID": "81ab2682-1d94-4a0a-8cb8-e692510d8edd",
                         "x": 1400,
                         "y": 1350,
-                        "width": 316,
+                        "width": 337,
                         "height": 930,
                         "color": {}
                     },
@@ -2334,6 +2449,14 @@
                         "y": 1150,
                         "width": 210,
                         "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "fec9d5df-c9b1-4356-a006-7582499205fc",
+                        "x": 1854.2602892102336,
+                        "y": 1831.368186874305,
+                        "width": 171,
+                        "height": 87,
                         "color": {}
                     }
                 ],
