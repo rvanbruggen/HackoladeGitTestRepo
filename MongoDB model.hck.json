@@ -1379,6 +1379,14 @@
                             "lineageSourceContainerTechName": ""
                         }
                     ]
+                },
+                {
+                    "name": "Clone2prop",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "91423a32-434f-4c2d-a233-4c2068a93870",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -2133,25 +2141,25 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1766,
-                        "y": 1419
+                        "x": 1872.5,
+                        "y": 1350
                     },
                     {
-                        "x": 1741,
-                        "y": 1419
+                        "x": 1872.5,
+                        "y": 1325
                     },
                     {
-                        "x": 1741,
-                        "y": 1815
+                        "x": 1568,
+                        "y": 1325
                     },
                     {
-                        "x": 1716,
-                        "y": 1815
+                        "x": 1568,
+                        "y": 1350
                     }
                 ],
                 "sides": [
-                    "left",
-                    "right"
+                    "top",
+                    "top"
                 ]
             }
         }
@@ -2235,7 +2243,8 @@
         "1b0e6e3c-ee59-466d-b6ae-b8660506508b": "email",
         "132ec5b4-b4a9-4a43-be82-3f249421597a": "password",
         "e079b2fe-769b-4712-b3db-dc1c4ac42d4f": "users",
-        "b994bffc-b86b-49b1-a854-865c9f675a28": "fk movies._id to comments.movie_id"
+        "b994bffc-b86b-49b1-a854-865c9f675a28": "fk movies._id to comments.movie_id",
+        "91423a32-434f-4c2d-a233-4c2068a93870": "Clone2prop"
     },
     "definitions": {
         "type": "definitions",
@@ -2268,7 +2277,7 @@
     "creationTS": "2023-06-29T15:59:58.985Z",
     "GUID": "bee539ad-20da-4b8b-b761-afc9e6ea91e4",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-29T16:00:39.250Z",
+    "lastModifTS": "2023-06-29T16:01:51.940Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2277,6 +2286,7 @@
     "applicationInformation": {
         "version": "6.10.9"
     },
+    "hackoladeMeta": {},
     "settings": {
         "centralPane": {
             "dbLevel": {
@@ -2293,8 +2303,8 @@
                         "GUID": "caeda6d9-4717-45e3-a960-55e8f65c5bf5",
                         "x": 1400,
                         "y": 1350,
-                        "width": 316,
-                        "height": 930,
+                        "width": 337,
+                        "height": 951,
                         "color": {}
                     },
                     {
