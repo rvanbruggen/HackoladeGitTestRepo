@@ -13,6 +13,7 @@
                     "properties": [],
                     "color": "#555555",
                     "GUID": "aa8696c8-8142-448f-b894-01f318cfcf85",
+                    "description": "testing this from clone1",
                     "error": {}
                 }
             ],
@@ -77,7 +78,7 @@
     "creationTS": "2023-06-29T16:20:59.178Z",
     "GUID": "94c90da4-4b35-44ea-bbfd-b36eacea9d38",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-29T16:21:18.211Z",
+    "lastModifTS": "2023-06-29T16:25:59.724Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -107,8 +108,8 @@
                 },
                 "buckets": [
                     {
-                        "x": 1103,
-                        "y": 1059,
+                        "x": 1162,
+                        "y": 1128,
                         "GUID": "4ede3f4d-fade-4396-bd85-a6d2b8c3d13d"
                     }
                 ],
