@@ -33,6 +33,7 @@
             "name": "New Group",
             "type": "bucket",
             "collectionIds": [
+                "e0a41b6d-7eb4-41e6-ad67-3b524d882c1a",
                 "e0a41b6d-7eb4-41e6-ad67-3b524d882c1a"
             ],
             "backgroundColor": {
@@ -78,7 +79,7 @@
     "creationTS": "2023-06-29T16:20:59.178Z",
     "GUID": "94c90da4-4b35-44ea-bbfd-b36eacea9d38",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-29T16:35:55.703Z",
+    "lastModifTS": "2023-06-29T16:34:20.802Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -96,8 +97,8 @@
                 "erd": [
                     {
                         "GUID": "e0a41b6d-7eb4-41e6-ad67-3b524d882c1a",
-                        "x": 1647,
-                        "y": 1420,
+                        "x": 1196,
+                        "y": 1263,
                         "width": 209,
                         "height": 51,
                         "color": {}
@@ -111,8 +112,8 @@
                 },
                 "buckets": [
                     {
-                        "x": 1607,
-                        "y": 1380,
+                        "x": 1156,
+                        "y": 1223,
                         "GUID": "4ede3f4d-fade-4396-bd85-a6d2b8c3d13d"
                     }
                 ],
