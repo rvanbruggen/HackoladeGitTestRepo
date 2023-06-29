@@ -197,7 +197,11 @@
                     "required": true,
                     "childRelationships": [
                         "c78b2618-2794-420f-bcb2-b91f72118d16",
+<<<<<<< HEAD
+                        "3ac5d76b-c801-4e32-907f-25517107f078"
+=======
                         "e559121c-2cf2-46bb-a5c3-247f5a7afc79"
+>>>>>>> origin/main
                     ],
                     "error": {},
                     "sources": [
@@ -2093,7 +2097,11 @@
             }
         },
         {
+<<<<<<< HEAD
+            "collectionName": "cars",
+=======
             "collectionName": "animals",
+>>>>>>> origin/main
             "type": "object",
             "properties": [
                 {
@@ -2101,6 +2109,25 @@
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "objectId",
+<<<<<<< HEAD
+                    "GUID": "10496a8e-79bc-4622-a9cf-a4e0095bf278",
+                    "error": {}
+                },
+                {
+                    "name": "make",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "28902b10-e94c-4efa-b0f6-780ab01b463b",
+                    "error": {}
+                },
+                {
+                    "name": "model",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "b31997d9-d883-4820-921d-d011d2530aec",
+=======
                     "GUID": "fdecb64b-f095-4831-a6c6-28294ca4c54f",
                     "error": {}
                 },
@@ -2110,6 +2137,7 @@
                     "isActivated": true,
                     "type": "string",
                     "GUID": "24874dc6-091e-40ab-a87a-d6255141b7bd",
+>>>>>>> origin/main
                     "error": {}
                 },
                 {
@@ -2118,20 +2146,32 @@
                     "isActivated": true,
                     "type": "objectId",
                     "error": {},
+<<<<<<< HEAD
+                    "GUID": "849a0c08-1609-4737-93de-ccec04da9ea2",
+=======
                     "GUID": "13da1665-05e8-43da-952c-3a0b054dda1a",
+>>>>>>> origin/main
                     "relationshipType": "Foreign Key",
                     "foreignCollection": "81ab2682-1d94-4a0a-8cb8-e692510d8edd",
                     "foreignField": [
                         "81ab2682-1d94-4a0a-8cb8-e692510d8edd",
                         "4ed9288d-c5d7-4ed0-9fff-9210985828cc"
                     ],
+<<<<<<< HEAD
+                    "parentRelationship": "3ac5d76b-c801-4e32-907f-25517107f078"
+=======
                     "parentRelationship": "e559121c-2cf2-46bb-a5c3-247f5a7afc79"
+>>>>>>> origin/main
                 }
             ],
             "definitions": {
                 "type": "definitions",
                 "properties": [],
+<<<<<<< HEAD
+                "GUID": "34ce7226-a137-4f14-acc5-a4e4d892b1c9"
+=======
                 "GUID": "284ad71d-155b-4a50-87a5-78678f861d1a"
+>>>>>>> origin/main
             },
             "isActivated": true,
             "additionalProperties": false,
@@ -2145,7 +2185,11 @@
                 "unique": true,
                 "collation": "null"
             },
+<<<<<<< HEAD
+            "GUID": "b8833aeb-9025-4278-be46-d18d30681ad7",
+=======
             "GUID": "fec9d5df-c9b1-4356-a006-7582499205fc",
+>>>>>>> origin/main
             "bucketId": "34ff9472-8440-481a-9c33-ee47afc36aca"
         }
     ],
@@ -2159,7 +2203,11 @@
                 "8d617834-ed4a-4ba3-91f0-9165854e99d8",
                 "b5af909a-3695-4eea-845b-7632c8581d11",
                 "e7c96cf7-df5b-4ae0-a4ba-af6d607e105b",
+<<<<<<< HEAD
+                "b8833aeb-9025-4278-be46-d18d30681ad7"
+=======
                 "fec9d5df-c9b1-4356-a006-7582499205fc"
+>>>>>>> origin/main
             ],
             "backgroundColor": {
                 "r": 216,
@@ -2206,6 +2254,21 @@
                 "dataType": "",
                 "shape": [
                     {
+<<<<<<< HEAD
+                        "x": 1870.864849833148,
+                        "y": 1350
+                    },
+                    {
+                        "x": 1870.864849833148,
+                        "y": 1325
+                    },
+                    {
+                        "x": 1566.864849833148,
+                        "y": 1325
+                    },
+                    {
+                        "x": 1566.864849833148,
+=======
                         "x": 1872.5,
                         "y": 1350
                     },
@@ -2219,6 +2282,7 @@
                     },
                     {
                         "x": 1568.5,
+>>>>>>> origin/main
                         "y": 1350
                     }
                 ],
@@ -2229,7 +2293,11 @@
             }
         },
         {
+<<<<<<< HEAD
+            "name": "fk cars.movie_id to movies._id",
+=======
             "name": "fk animals.movie_id to movies._id",
+>>>>>>> origin/main
             "relationshipType": "Foreign Key",
             "parentField": [
                 [
@@ -2240,24 +2308,52 @@
             "parentCardinality": "1",
             "childField": [
                 [
+<<<<<<< HEAD
+                    "b8833aeb-9025-4278-be46-d18d30681ad7",
+                    "849a0c08-1609-4737-93de-ccec04da9ea2"
+=======
                     "fec9d5df-c9b1-4356-a006-7582499205fc",
                     "13da1665-05e8-43da-952c-3a0b054dda1a"
+>>>>>>> origin/main
                 ]
             ],
             "isActivated": true,
             "childCardinality": "0..n",
             "parentCollection": "81ab2682-1d94-4a0a-8cb8-e692510d8edd",
+<<<<<<< HEAD
+            "childCollection": "b8833aeb-9025-4278-be46-d18d30681ad7",
+            "GUID": "3ac5d76b-c801-4e32-907f-25517107f078",
+            "hackoladeStyles": {
+                "GUID": "bb7c49b9-7282-4cff-bb10-44c40b714d68",
+                "autoPositioning": true,
+=======
             "childCollection": "fec9d5df-c9b1-4356-a006-7582499205fc",
             "GUID": "e559121c-2cf2-46bb-a5c3-247f5a7afc79",
             "hackoladeStyles": {
                 "GUID": "7a76475a-f610-40bd-a5da-2f3fe651ed28",
                 "autoPositioning": false,
+>>>>>>> origin/main
                 "type": "Orthogonal",
                 "thickness": 2,
                 "color": "#79c4ff",
                 "dataType": "",
                 "shape": [
                     {
+<<<<<<< HEAD
+                        "x": 1831.368186874305,
+                        "y": 1798.8403781979978
+                    },
+                    {
+                        "x": 1783.3665183537264,
+                        "y": 1798.8403781979978
+                    },
+                    {
+                        "x": 1783.3665183537264,
+                        "y": 1815
+                    },
+                    {
+                        "x": 1735.364849833148,
+=======
                         "x": 1854.2602892102336,
                         "y": 1874.868186874305
                     },
@@ -2271,6 +2367,7 @@
                     },
                     {
                         "x": 1737,
+>>>>>>> origin/main
                         "y": 1815
                     }
                 ],
@@ -2361,11 +2458,20 @@
         "e7c174b5-8c65-4e6e-aa66-8074bbb2fe59": "password",
         "e7c96cf7-df5b-4ae0-a4ba-af6d607e105b": "users",
         "c78b2618-2794-420f-bcb2-b91f72118d16": "fk movies._id to comments.movie_id",
+<<<<<<< HEAD
+        "b8833aeb-9025-4278-be46-d18d30681ad7": "cars",
+        "10496a8e-79bc-4622-a9cf-a4e0095bf278": "_id",
+        "28902b10-e94c-4efa-b0f6-780ab01b463b": "make",
+        "b31997d9-d883-4820-921d-d011d2530aec": "model",
+        "849a0c08-1609-4737-93de-ccec04da9ea2": "movie_id",
+        "3ac5d76b-c801-4e32-907f-25517107f078": "fk cars.movie_id to movies._id"
+=======
         "fec9d5df-c9b1-4356-a006-7582499205fc": "animals",
         "fdecb64b-f095-4831-a6c6-28294ca4c54f": "_id",
         "24874dc6-091e-40ab-a87a-d6255141b7bd": "name",
         "13da1665-05e8-43da-952c-3a0b054dda1a": "movie_id",
         "e559121c-2cf2-46bb-a5c3-247f5a7afc79": "fk animals.movie_id to movies._id"
+>>>>>>> origin/main
     },
     "definitions": {
         "type": "definitions",
@@ -2398,7 +2504,11 @@
     "creationTS": "2023-06-29T13:45:10.319Z",
     "GUID": "9ae711ee-d052-46a4-a455-847e17ba5193",
     "isLineageEnabled": true,
+<<<<<<< HEAD
+    "lastModifTS": "2023-06-29T13:49:21.603Z",
+=======
     "lastModifTS": "2023-06-29T13:47:43.844Z",
+>>>>>>> origin/main
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2407,13 +2517,14 @@
     "applicationInformation": {
         "version": "6.10.9"
     },
+    "hackoladeMeta": {},
     "settings": {
         "centralPane": {
             "dbLevel": {
                 "erd": [
                     {
                         "GUID": "053a1cf4-1323-419e-b06f-6db8155075ca",
-                        "x": 1766,
+                        "x": 1764.364849833148,
                         "y": 1350,
                         "width": 213,
                         "height": 138,
@@ -2421,7 +2532,7 @@
                     },
                     {
                         "GUID": "81ab2682-1d94-4a0a-8cb8-e692510d8edd",
-                        "x": 1400,
+                        "x": 1398.364849833148,
                         "y": 1350,
                         "width": 337,
                         "height": 930,
@@ -2429,7 +2540,7 @@
                     },
                     {
                         "GUID": "8d617834-ed4a-4ba3-91f0-9165854e99d8",
-                        "x": 1150,
+                        "x": 1148.364849833148,
                         "y": 1400,
                         "width": 196,
                         "height": 84,
@@ -2437,7 +2548,7 @@
                     },
                     {
                         "GUID": "b5af909a-3695-4eea-845b-7632c8581d11",
-                        "x": 1050,
+                        "x": 1048.364849833148,
                         "y": 1050,
                         "width": 284,
                         "height": 264,
@@ -2445,18 +2556,26 @@
                     },
                     {
                         "GUID": "e7c96cf7-df5b-4ae0-a4ba-af6d607e105b",
-                        "x": 1550,
+                        "x": 1548.364849833148,
                         "y": 1150,
                         "width": 210,
                         "height": 102,
                         "color": {}
                     },
                     {
+<<<<<<< HEAD
+                        "GUID": "b8833aeb-9025-4278-be46-d18d30681ad7",
+                        "x": 1831.368186874305,
+                        "y": 1746.3403781979978,
+                        "width": 171,
+                        "height": 105,
+=======
                         "GUID": "fec9d5df-c9b1-4356-a006-7582499205fc",
                         "x": 1854.2602892102336,
                         "y": 1831.368186874305,
                         "width": 171,
                         "height": 87,
+>>>>>>> origin/main
                         "color": {}
                     }
                 ],
@@ -2468,7 +2587,7 @@
                 },
                 "buckets": [
                     {
-                        "x": 1010,
+                        "x": 1008.3648498331479,
                         "y": 1010,
                         "GUID": "34ff9472-8440-481a-9c33-ee47afc36aca"
                     }
