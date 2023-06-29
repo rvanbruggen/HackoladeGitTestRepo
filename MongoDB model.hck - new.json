@@ -1,0 +1,2370 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "collectionName": "comments",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "b578c2e4-2627-4e58-9b30-927f1c062d5a",
+                    "required": true,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "8d18c0d0-b0ef-4752-a129-2183edf3852a",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "_id",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "comments",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "name",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "aca315a3-9f09-491c-9522-7eb827c8f130",
+                    "required": true,
+                    "sample": "Megan Turner",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "943f0d48-a896-49d1-84fb-a92818788a5c",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "name",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "comments",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "email",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "bfdf5fa9-5835-434b-aac1-2bb119d98f29",
+                    "required": true,
+                    "sample": "megan_turner@fakegmail.com",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "47024226-4e1a-43e7-b1cd-9faf511f26cc",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "email",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "comments",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "movie_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": false,
+                    "GUID": "ec514470-a482-4fa9-a99b-3b6f4e315e6c",
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "15cfb661-a41e-4c66-ac61-d79d37cc2598",
+                    "foreignField": [
+                        "15cfb661-a41e-4c66-ac61-d79d37cc2598",
+                        "22ce1c1d-cb7a-41fa-8d5a-818f4970ce48"
+                    ],
+                    "parentRelationship": "5f1e3124-c3ab-4880-b691-7512cc2f1e7f",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "68d266e2-f6c6-47d5-a2d3-a88d937d4a18",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "movie_id",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "comments",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "text",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "467f39d6-18d7-4041-acc2-8374cf617690",
+                    "required": true,
+                    "sample": "Impedit dolorem inventore illo voluptatem suscipit. At nisi iure impedit totam aliquid culpa natus. Fugiat repudiandae et deserunt ipsam.",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "9e04b56a-1d3d-4cc1-a895-ae7e04d769c0",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "text",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "comments",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "date",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "b9e048c9-15b8-4982-afba-3a13dec0bb2b",
+                    "required": true,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "613e9237-1a4e-4f7d-95e1-6a17baadf697",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "date",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "comments",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "3f34144c-5201-45c3-b808-dcd69269e795",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "b578c2e4-2627-4e58-9b30-927f1c062d5a",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "cdb5e061-aec5-4847-89a4-a0a77b866d1d"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "6ae75769-cb6c-4791-aaa6-b5efc3a865ce",
+            "bucketId": "88dd8dfa-8631-40db-b305-a1a783298d0b",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "movies",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "22ce1c1d-cb7a-41fa-8d5a-818f4970ce48",
+                    "required": true,
+                    "childRelationships": [
+                        "5f1e3124-c3ab-4880-b691-7512cc2f1e7f"
+                    ],
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "f74d3c3e-1bf3-4ad5-ae2a-06460f82fee2",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "_id",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "plot",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "6d31abed-9fb5-4a23-881f-9a4178b9b370",
+                    "required": false,
+                    "sample": "After twenty-two years of psychiatric care, Norman Bates attempts to return to a life of solitude... but the specters of his crimes -- and his mother -- continue to haunt him.",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "a6e2f26a-036c-4478-8b33-f3445d9ff50a",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "plot",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "genres",
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "59cb3929-e543-4121-9283-7319cd3796af",
+                            "arrayItem": true,
+                            "sample": "Short",
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "d43c3702-d522-4347-ba28-1208f566571d",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "genres.[0]",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "GUID": "f4fd0747-962d-4c72-bd29-7fb4f91041f1",
+                    "required": false,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "4b3f6c29-12f3-4f1f-b7cf-ff5b25a42b34",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "genres",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "runtime",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "a20b7d53-1fb3-41fd-9aa8-92ebd9cc757c",
+                    "required": false,
+                    "mode": "integer32",
+                    "sample": 1140,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "cf180d75-8e72-4b88-bf61-7076242fc60f",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "runtime",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "cast",
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "182de89b-1466-4978-af38-63d6074a2c41",
+                            "arrayItem": true,
+                            "sample": "Frank Powell",
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "4e63faa3-5ba0-4f36-b976-78e4428b153b",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "cast.[0]",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "GUID": "00a373e0-1a99-43f9-8613-30c151dc76eb",
+                    "required": false,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "0bc97989-3b1a-4792-8b4e-e7172fc2ad41",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "cast",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "num_mflix_comments",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "5c6a7323-8725-4c15-8779-bbb94341ddb0",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 153,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "617b76a1-0045-4370-8934-6d3cc07ab84d",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "num_mflix_comments",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "poster",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "9cfbd3bc-5d17-4cd7-8470-16ba6f19d1ce",
+                    "required": false,
+                    "sample": "https://m.media-amazon.com/images/M/MV5BZDNhMThiN2QtZWVlOS00NzQ3LWE2Y2ItYjMxYjBmY2ExNDNlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_SX677_AL_.jpg",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "8fe82e19-815b-4105-b2e7-8c7db9e29fcc",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "poster",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "title",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "2ec2dd54-684d-4536-943d-905d9c5296d5",
+                    "required": true,
+                    "sample": "Psycho II",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "61b750c0-0b2d-498b-b2ad-527257c70622",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "title",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "fullplot",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "597553e4-fe4b-4e8f-89d9-608f29c464bd",
+                    "required": false,
+                    "sample": "Now declared legally sane, Norman Bates is released from a mental institution after spending 22 years in confinement over the protests of Marion Crane's sister Lila Loomis, who insists that he's still a killer and that the court's indifference to his victims by releasing him is a gross miscarriage of justice. Norman returns to his motel and the old Victorian mansion where his troubles started, and history predictably begins to repeat itself.",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "ccf7e1eb-8c23-4f6c-a784-45d34ca594d8",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "fullplot",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "languages",
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "e2cb2c99-7002-4ffa-b217-cbca011e59c7",
+                            "arrayItem": true,
+                            "sample": "English",
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "c8a04fbf-a935-4b06-9a4d-6050c42d9b4a",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "languages.[0]",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "GUID": "8baab3ce-c5c8-4a40-abc9-a597d6efc4b8",
+                    "required": false,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "67441296-79ed-41ac-b381-b22d8b62f2d4",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "languages",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "released",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "4893b734-6fcf-47a3-a099-092911fbecd1",
+                    "required": false,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "ce659781-fc04-447c-a114-3fb0ab5ed663",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "released",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "directors",
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "d35264ca-f4da-4037-aa8c-a4f3fc3d5f73",
+                            "arrayItem": true,
+                            "sample": "D.W. Griffith",
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "42665194-0dbe-4bef-b3da-1bc9ee134912",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "directors.[0]",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "GUID": "8c775d9b-7add-49c0-b222-a8f64b35a09a",
+                    "required": false,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "3a89787b-adfb-4eb0-a579-9266b93d143d",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "directors",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "writers",
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "2e7fed83-2a9f-427f-b116-082340556b81",
+                            "arrayItem": true,
+                            "sample": "Thomas H. Ince (story)",
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "a86fba5b-b450-499c-82c4-42bd4534c692",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "writers.[0]",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "GUID": "65ba20a6-f04b-443a-8211-c9a6e3e5c974",
+                    "required": false,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "8e8290d0-23ab-4d22-a4f3-a96243611025",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "writers",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "awards",
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "wins",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "GUID": "d9080240-d75f-4ad6-b100-9d8d7895ee31",
+                            "required": true,
+                            "mode": "integer32",
+                            "sample": 114,
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "b8edfceb-b4e3-4929-af9d-09a3a875df64",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "awards.wins",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "code": "",
+                            "name": "nominations",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "GUID": "95fc5359-c715-4865-926a-bfcabd77f2a3",
+                            "required": true,
+                            "mode": "integer32",
+                            "sample": 100,
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "5ac445a2-3248-4835-8e38-6baf6702b440",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "awards.nominations",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "code": "",
+                            "name": "text",
+                            "isActivated": true,
+                            "type": "string",
+                            "primaryKey": false,
+                            "GUID": "eb86b744-7512-4cdb-8da9-14d658e18501",
+                            "required": true,
+                            "sample": "2 nominations.",
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "1a9d750d-4dc6-4493-bf78-16186194c0f9",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "awards.text",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "primaryKey": false,
+                    "GUID": "d9fe1f89-2a3c-456c-a036-009817ffcd49",
+                    "required": true,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "ce1d933f-58d6-4e50-8fe0-4ae3a7c63b98",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "awards",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "lastupdated",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "71c5fd1a-2404-4980-adae-133bbf9081a8",
+                    "required": true,
+                    "sample": "ISODate(\"2015-09-05 00:48:04.103000000\")",
+                    "error": {
+                        "sample": true
+                    },
+                    "sources": [
+                        {
+                            "GUID": "643b0132-8741-4b8b-af7e-4433f699bc10",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "lastupdated",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "year",
+                    "isActivated": true,
+                    "type": "multiple",
+                    "primaryKey": false,
+                    "multipleTypes": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "GUID": "f0740a5f-aebf-44fa-9ecc-bdcab69879ca",
+                            "primaryKey": false
+                        },
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "3c87fe75-64e4-4268-86b7-60b28c61e657",
+                            "primaryKey": false
+                        }
+                    ],
+                    "GUID": "46ea735b-84fc-4114-bca5-57b3f2022481",
+                    "required": true,
+                    "sample": 1987,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "afd82320-bdf3-490a-b641-3e890f473075",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "year",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "imdb",
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "rating",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "GUID": "839661d2-c9f6-4a6a-80df-b7f319bc9435",
+                            "required": true,
+                            "mode": "double",
+                            "sample": 6.6,
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "fc8d7668-6dc8-4dc9-8638-5edd3a6e79a0",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "imdb.rating",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "code": "",
+                            "name": "votes",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "GUID": "3770802f-2d96-46d9-b48a-1e9868862673",
+                            "required": true,
+                            "mode": "integer32",
+                            "sample": 1513145,
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "f13c7f95-baa1-44a2-9c41-e96494a3f1cb",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "imdb.votes",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "code": "",
+                            "name": "id",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "GUID": "58eef843-af09-401b-b258-0cdaba584984",
+                            "required": true,
+                            "mode": "integer32",
+                            "sample": 218043,
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "2c7a7a34-7f79-4191-aaf2-b79b28c071aa",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "imdb.id",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "primaryKey": false,
+                    "GUID": "9330f65c-d3c3-4794-978f-d45771fd5b2b",
+                    "required": true,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "5f215efb-832d-4b5f-b659-9ab94b68d874",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "imdb",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "countries",
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "e950af2b-56c7-40f4-bdea-75ac5a7bfaad",
+                            "arrayItem": true,
+                            "sample": "USA",
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "5dc91446-e83c-4868-967f-4e4294554433",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "countries.[0]",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "GUID": "a357d0bf-e3b1-4cf3-b8e0-a4dd024fcf77",
+                    "required": true,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "4feb3b04-f89b-4f96-a43a-8490d9598d40",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "countries",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "type",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "588ac909-3437-461e-a127-2aa0ddd20d0b",
+                    "required": true,
+                    "sample": "movie",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "baf6b8d8-249d-4657-8035-bbb5eed500cd",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "type",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "tomatoes",
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "viewer",
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "name": "rating",
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "GUID": "5df4396d-d746-4498-ba29-224c81deaf8d",
+                                    "required": false,
+                                    "mode": "double",
+                                    "sample": 3.6,
+                                    "error": {},
+                                    "sources": [
+                                        {
+                                            "GUID": "803ef814-3e3f-4218-99ea-c9206b7c5310",
+                                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                            "lineageSourceAttrBusName": "tomatoes.viewer.rating",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "movies",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "sample_mflix",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "",
+                                    "name": "numReviews",
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "GUID": "6b4f5276-f2bf-47aa-86d9-8a3eabe8991d",
+                                    "required": true,
+                                    "mode": "integer32",
+                                    "sample": 33671923,
+                                    "error": {},
+                                    "sources": [
+                                        {
+                                            "GUID": "3d60319d-c4ba-40f4-b572-62984ce5b332",
+                                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                            "lineageSourceAttrBusName": "tomatoes.viewer.numReviews",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "movies",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "sample_mflix",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "",
+                                    "name": "meter",
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "GUID": "070f5c73-5ff3-4d95-82ec-baf41bb807fd",
+                                    "required": false,
+                                    "mode": "integer32",
+                                    "sample": 100,
+                                    "error": {},
+                                    "sources": [
+                                        {
+                                            "GUID": "f727969f-b8cc-49f5-a5d4-02b3cc70edc3",
+                                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                            "lineageSourceAttrBusName": "tomatoes.viewer.meter",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "movies",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "sample_mflix",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ]
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "primaryKey": false,
+                            "GUID": "9d6c6b55-b842-41cf-bc43-582558d60fa4",
+                            "required": true,
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "44d3f1eb-a3cc-4099-8f36-085b0908ae48",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "tomatoes.viewer",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "code": "",
+                            "name": "lastUpdated",
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "GUID": "7190148b-33e2-4c45-bed0-aaf31c379e8f",
+                            "required": true,
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "34f14489-5de0-4228-9128-46810473a8f3",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "tomatoes.lastUpdated",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "code": "",
+                            "name": "boxOffice",
+                            "isActivated": true,
+                            "type": "string",
+                            "primaryKey": false,
+                            "GUID": "29020653-43dc-4422-af45-e684db21c69a",
+                            "required": false,
+                            "sample": "$3.1M",
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "79f2bbcf-2028-40cf-8f67-48d02de89169",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "tomatoes.boxOffice",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "code": "",
+                            "name": "consensus",
+                            "isActivated": true,
+                            "type": "string",
+                            "primaryKey": false,
+                            "GUID": "710bf729-7ef2-4e0e-9bd7-48849a5d72c9",
+                            "required": false,
+                            "sample": "All style and very little substance, Flashdance boasts eye-catching dance sequences -- and benefits from an appealing performance from Jennifer Beals -- but its narrative is flat-footed.",
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "fb9f6864-e738-4303-ba83-010471c1fcb6",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "tomatoes.consensus",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "code": "",
+                            "name": "critic",
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "name": "meter",
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "GUID": "a6d60e76-c490-41b4-93ae-b8c0c44f52d6",
+                                    "required": false,
+                                    "mode": "integer32",
+                                    "sample": 100,
+                                    "error": {},
+                                    "sources": [
+                                        {
+                                            "GUID": "5007f857-3e04-42e6-9f9b-7d9ce0203ad4",
+                                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                            "lineageSourceAttrBusName": "tomatoes.critic.meter",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "movies",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "sample_mflix",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "",
+                                    "name": "numReviews",
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "GUID": "8e9d8653-df4e-4048-b8b4-1431d9e4f1ba",
+                                    "required": false,
+                                    "mode": "integer32",
+                                    "sample": 253,
+                                    "error": {},
+                                    "sources": [
+                                        {
+                                            "GUID": "df01488f-c699-441d-ae17-3eb4001cb6c0",
+                                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                            "lineageSourceAttrBusName": "tomatoes.critic.numReviews",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "movies",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "sample_mflix",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "",
+                                    "name": "rating",
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "GUID": "349f77e7-ed6d-4140-9e22-e9394bcfe57d",
+                                    "required": false,
+                                    "mode": "double",
+                                    "sample": 8.8,
+                                    "error": {},
+                                    "sources": [
+                                        {
+                                            "GUID": "9aba05ae-1e27-4cf4-bb22-adf2613e0c56",
+                                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                            "lineageSourceAttrBusName": "tomatoes.critic.rating",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "movies",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "sample_mflix",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ]
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "primaryKey": false,
+                            "GUID": "c2ffa7d8-ea2d-4f31-ae27-6f403f2e723a",
+                            "required": false,
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "ceeee33f-c509-4a84-a275-a2132df5ecf2",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "tomatoes.critic",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "code": "",
+                            "name": "dvd",
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "GUID": "a4ee4091-6e2f-451e-acec-a58034bad30b",
+                            "required": false,
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "c259808a-6d44-40fa-9fb1-27921edeb6c8",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "tomatoes.dvd",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "code": "",
+                            "name": "fresh",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "GUID": "5007ca8f-d36f-4231-a4c4-1767ba362666",
+                            "required": false,
+                            "mode": "integer32",
+                            "sample": 216,
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "af3ab667-1845-4410-89f7-d21b3338cc52",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "tomatoes.fresh",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "code": "",
+                            "name": "production",
+                            "isActivated": true,
+                            "type": "string",
+                            "primaryKey": false,
+                            "GUID": "ba78408c-efb3-43e6-a22c-7fd8f009e2ac",
+                            "required": false,
+                            "sample": "MCA Universal Home Video",
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "bb3de01b-8b7b-420c-afe9-578e94c30098",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "tomatoes.production",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "code": "",
+                            "name": "rotten",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "GUID": "cdf60303-2ae9-40ca-994c-a89f986c2511",
+                            "required": false,
+                            "mode": "integer32",
+                            "sample": 144,
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "a0c123dd-575d-4c13-8cfd-2d170757c6c9",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "tomatoes.rotten",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "code": "",
+                            "name": "website",
+                            "isActivated": true,
+                            "type": "string",
+                            "primaryKey": false,
+                            "GUID": "cdc2be52-b8f1-4468-b188-9edc9cf4e9d1",
+                            "required": false,
+                            "sample": "http://www.severin-films.com/2011/03/15/bmx-bandits/",
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "e59f6a14-e7a0-487a-b340-1b934830083e",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "tomatoes.website",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "movies",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "primaryKey": false,
+                    "GUID": "de6c30d1-94c8-4c04-90fb-2f68db400b20",
+                    "required": false,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "a6207bd7-ee2f-4038-93da-c0e5bc95ac75",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "tomatoes",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "metacritic",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "ae3434ce-3bd2-4ce1-95c6-e910083913dc",
+                    "required": false,
+                    "mode": "integer32",
+                    "sample": 100,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "0c563687-50df-413a-b4a8-c46dccc5d59f",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "metacritic",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "rated",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "94634174-e1f6-4d0a-8840-f8b04d9d1df2",
+                    "required": false,
+                    "sample": "R",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "99911d2e-29a8-4020-a3da-13ac49903682",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "rated",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "movies",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "efd68a9b-6b8b-4dd2-a7d8-39b1771f41ec",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "22ce1c1d-cb7a-41fa-8d5a-818f4970ce48",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "a7adfc3e-ebc9-4590-9f78-25f1e801fc05"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "00a373e0-1a99-43f9-8613-30c151dc76eb",
+                            "type": "text"
+                        },
+                        {
+                            "keyId": "597553e4-fe4b-4e8f-89d9-608f29c464bd",
+                            "type": "text"
+                        },
+                        {
+                            "keyId": "f4fd0747-962d-4c72-bd29-7fb4f91041f1",
+                            "type": "text"
+                        },
+                        {
+                            "keyId": "2ec2dd54-684d-4536-943d-905d9c5296d5",
+                            "type": "text"
+                        }
+                    ],
+                    "name": "cast_text_fullplot_text_genres_text_title_text",
+                    "weights": "{\n    \"cast\": 1,\n    \"fullplot\": 1,\n    \"genres\": 1,\n    \"title\": 1\n}",
+                    "default_language": "english",
+                    "language_override": "language",
+                    "textIndexVersion": 3,
+                    "GUID": "52edca49-6b23-4626-a3bb-79e469f96c5b"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "15cfb661-a41e-4c66-ac61-d79d37cc2598",
+            "bucketId": "88dd8dfa-8631-40db-b305-a1a783298d0b",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "sessions",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "b115097b-5444-4f6a-87d1-c2615ca89233",
+                    "required": true,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "4c940fca-dffc-47e7-9087-78a0168d2704",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "_id",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "sessions",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "user_id",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "5e208e90-c2a1-4737-9ef8-170d9737e1f6",
+                    "required": true,
+                    "sample": "t3qulfeem@kwiv5.6ur",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "6e9c2859-2fdc-404d-9b0e-8d89f8de928d",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "user_id",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "sessions",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "jwt",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "145c662f-bd39-4a8f-b8be-7225a2aa3886",
+                    "required": true,
+                    "sample": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1MTk5MDkzMjEsIm5iZiI6MTUxOTkwOTMyMSwianRpIjoiNmJlZDAwMWYtNTFiYi00NzVhLTgxZDAtMDcwNGE5Mjk0MWZlIiwiZXhwIjoxNTE5OTEwMjIxLCJpZGVudGl0eSI6eyJlbWFpbCI6InQzcXVsZmVlbUBrd2l2NS42dXIiLCJuYW1lIjoiM2lveHJtZnF4IiwicGFzc3dvcmQiOm51bGx9LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJ1c2VyIjp7ImVtYWlsIjoidDNxdWxmZWVtQGt3aXY1LjZ1ciIsIm5hbWUiOiIzaW94cm1mcXgiLCJwYXNzd29yZCI6bnVsbH19fQ.ejtr_NyZyBronWMKuE0RFTjWej--T0zGrdc_iymGtVs",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "42a12d6e-053a-4e81-b96c-30ea095f9fe8",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "jwt",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "sessions",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "cc839ccc-b68b-4782-a8da-edebe3c54352",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "b115097b-5444-4f6a-87d1-c2615ca89233",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "6c8205c4-f470-46cc-9b08-e98e98f780a7"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "5e208e90-c2a1-4737-9ef8-170d9737e1f6",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "user_id_1",
+                    "unique": true,
+                    "GUID": "1074e453-5eaf-4439-8d2b-253529f693c0"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "42a83d4e-4f94-4a45-a866-9ebf338bda44",
+            "bucketId": "88dd8dfa-8631-40db-b305-a1a783298d0b",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "theaters",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "039b25ac-5360-47ff-9abc-f2c59695623e",
+                    "required": true,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "722efdde-7a90-43c1-b9bb-e9cd9d761489",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "_id",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "theaters",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "theaterId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "f3d6b91d-c2ff-4021-b4c7-d044c4baced1",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 8920,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "fd44d06b-f68d-4ae2-9d48-2e4323eae3cd",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "theaterId",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "theaters",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "location",
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "address",
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "name": "street1",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "GUID": "e9096348-7551-4506-bd59-184faf250d66",
+                                    "required": true,
+                                    "sample": "194 Promenade Blvd",
+                                    "error": {},
+                                    "sources": [
+                                        {
+                                            "GUID": "7e5337d4-5577-4203-b62f-019f28268742",
+                                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                            "lineageSourceAttrBusName": "location.address.street1",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "theaters",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "sample_mflix",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "",
+                                    "name": "city",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "GUID": "0c6f52be-1a21-4490-bab9-8b930584558c",
+                                    "required": true,
+                                    "sample": "Flowood",
+                                    "error": {},
+                                    "sources": [
+                                        {
+                                            "GUID": "8246c563-a72a-4db4-9da4-0ed078da4133",
+                                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                            "lineageSourceAttrBusName": "location.address.city",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "theaters",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "sample_mflix",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "",
+                                    "name": "state",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "GUID": "8e731967-1035-4142-951d-6b6f1ab0ef7f",
+                                    "required": true,
+                                    "sample": "MS",
+                                    "error": {},
+                                    "sources": [
+                                        {
+                                            "GUID": "2f12ebd5-196f-45ae-8f29-3bfff80d9128",
+                                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                            "lineageSourceAttrBusName": "location.address.state",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "theaters",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "sample_mflix",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "",
+                                    "name": "zipcode",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "GUID": "bb38111b-10e0-4bd9-9dc0-28e08c5702bb",
+                                    "required": true,
+                                    "sample": "39232",
+                                    "error": {},
+                                    "sources": [
+                                        {
+                                            "GUID": "0c142624-5883-4b10-b746-727825b6f391",
+                                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                            "lineageSourceAttrBusName": "location.address.zipcode",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "theaters",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "sample_mflix",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "",
+                                    "name": "street2",
+                                    "isActivated": true,
+                                    "type": "multiple",
+                                    "primaryKey": false,
+                                    "multipleTypes": [
+                                        {
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "string",
+                                            "GUID": "78bb05f4-6b76-4048-a2a3-c896acc9bd1f",
+                                            "primaryKey": false
+                                        },
+                                        {
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "null",
+                                            "GUID": "507c0ae2-6fb3-4e49-b62e-7ffe980b99a4",
+                                            "primaryKey": false
+                                        }
+                                    ],
+                                    "GUID": "297272ad-bad6-4d6f-80ca-da86464717b8",
+                                    "required": false,
+                                    "sample": null,
+                                    "error": {},
+                                    "sources": [
+                                        {
+                                            "GUID": "ca352ac7-9035-4d4f-bc9d-c171339daa42",
+                                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                            "lineageSourceAttrBusName": "location.address.street2",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "theaters",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "sample_mflix",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ]
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "primaryKey": false,
+                            "GUID": "5027a675-9ae0-4dab-8913-ca5c94dcb3cf",
+                            "required": true,
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "26464eb6-f63c-424f-a583-9bc1d1b3c4a2",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "location.address",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "theaters",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "code": "",
+                            "name": "geo",
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "name": "type",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "GUID": "17e985be-f71f-44c1-943f-3e4c0cb5201d",
+                                    "required": true,
+                                    "sample": "Point",
+                                    "error": {},
+                                    "sources": [
+                                        {
+                                            "GUID": "4ed64576-83e6-489e-a372-01cc273eea6f",
+                                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                            "lineageSourceAttrBusName": "location.geo.type",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "theaters",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "sample_mflix",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "",
+                                    "name": "coordinates",
+                                    "isActivated": true,
+                                    "type": "array",
+                                    "properties": [
+                                        {
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "numeric",
+                                            "GUID": "91c83798-038b-4762-9bb0-456c0f84d9c4",
+                                            "arrayItem": true,
+                                            "mode": "double",
+                                            "sample": -121.65946,
+                                            "error": {},
+                                            "sources": [
+                                                {
+                                                    "GUID": "3f378dda-10e9-48e7-8479-0c848ddbd096",
+                                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                                    "lineageSourceAttrBusName": "location.geo.coordinates.[0]",
+                                                    "lineageSourceAttrTechName": "",
+                                                    "lineageSrcEntityBusName": "theaters",
+                                                    "lineageSrcEntityTechName": "",
+                                                    "lineageSourceContainerBusName": "sample_mflix",
+                                                    "lineageSourceContainerTechName": ""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "additionalItems": true,
+                                    "primaryKey": false,
+                                    "GUID": "f02c4f6e-ad1b-4fe1-ba3d-13a289f7dc6c",
+                                    "required": true,
+                                    "error": {},
+                                    "sources": [
+                                        {
+                                            "GUID": "483e3e58-3285-4d44-a7e9-ee2ae35184f1",
+                                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                            "lineageSourceAttrBusName": "location.geo.coordinates",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "theaters",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "sample_mflix",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ]
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "primaryKey": false,
+                            "GUID": "a7120af3-e35f-4178-8a0a-4c8d8c972bea",
+                            "required": true,
+                            "error": {},
+                            "sources": [
+                                {
+                                    "GUID": "837dc50b-1167-48e3-8a01-a4e94a4b0b41",
+                                    "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                                    "lineageSourceAttrBusName": "location.geo",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "theaters",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "sample_mflix",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "primaryKey": false,
+                    "GUID": "b34b4ffd-a849-4e7e-96fb-293dfac96a22",
+                    "required": true,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "9f3952f2-54cf-42d6-bfd3-c33d4f836e0d",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "location",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "theaters",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "43174637-0bc8-43aa-8137-dd72f71700a4",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "039b25ac-5360-47ff-9abc-f2c59695623e",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "1fa2efb1-b9f5-4188-91b8-1238dcd9184a"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "a7120af3-e35f-4178-8a0a-4c8d8c972bea",
+                            "type": "2DSphere"
+                        }
+                    ],
+                    "name": "geo index",
+                    "2dsphereIndexVersion": 3,
+                    "GUID": "52e4f722-a0a5-47df-8594-ab32779d966b"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "702e4115-124d-481b-8146-3262a53a7c99",
+            "bucketId": "88dd8dfa-8631-40db-b305-a1a783298d0b",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "users",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "1d476fdb-9a1f-4ba4-a2f7-c7de80ab33a6",
+                    "required": true,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "03b0cc68-7f23-4141-a0a2-1b371dc235f7",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "_id",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "users",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "name",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "b913ec66-a521-40a5-ab52-910e512ea9de",
+                    "required": true,
+                    "sample": "Yolanda Owen",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "af82fed1-1959-44ec-8047-450c21bb3a69",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "name",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "users",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "email",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "09ebb608-41f7-488c-bb7e-0f1332e8b6c4",
+                    "required": true,
+                    "sample": "yolanda_owen@fakegmail.com",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "5cbb3957-e500-4907-963e-796a2d7b982d",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "email",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "users",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "password",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "8dd857d3-d423-4a69-8d1b-1bb59f73df60",
+                    "required": true,
+                    "sample": "$2b$12$lmpyYO8lCI.Y/J5AZF6/4u8XyEnCoZXsZzf7l9f7ECNbktqH2KZO.",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "bc219f35-ed36-4cc5-bd28-aefee64c1b72",
+                            "lineageSourceGUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+                            "lineageSourceAttrBusName": "password",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "users",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "e41483ed-8aaf-45b5-b9fc-19bdc02869cd",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "1d476fdb-9a1f-4ba4-a2f7-c7de80ab33a6",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "e81ee7a3-00eb-40d9-89a9-b678a07980a1"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "09ebb608-41f7-488c-bb7e-0f1332e8b6c4",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "email_1",
+                    "unique": true,
+                    "GUID": "bb6b4403-d3fb-43c7-9f24-f636ba2a0b37"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "e891ff62-b7ba-4b1a-8717-d4a4ef6083ff",
+            "bucketId": "88dd8dfa-8631-40db-b305-a1a783298d0b",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "name": "sample_mflix",
+            "type": "bucket",
+            "collectionIds": [
+                "6ae75769-cb6c-4791-aaa6-b5efc3a865ce",
+                "15cfb661-a41e-4c66-ac61-d79d37cc2598",
+                "42a83d4e-4f94-4a45-a866-9ebf338bda44",
+                "702e4115-124d-481b-8146-3262a53a7c99",
+                "e891ff62-b7ba-4b1a-8717-d4a4ef6083ff"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "88dd8dfa-8631-40db-b305-a1a783298d0b",
+            "hackoladeMeta": {},
+            "code": ""
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk movies._id to comments.movie_id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "15cfb661-a41e-4c66-ac61-d79d37cc2598",
+                    "22ce1c1d-cb7a-41fa-8d5a-818f4970ce48"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "6ae75769-cb6c-4791-aaa6-b5efc3a865ce",
+                    "ec514470-a482-4fa9-a99b-3b6f4e315e6c"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "GUID": "5f1e3124-c3ab-4880-b691-7512cc2f1e7f",
+            "parentCollection": "15cfb661-a41e-4c66-ac61-d79d37cc2598",
+            "childCollection": "6ae75769-cb6c-4791-aaa6-b5efc3a865ce",
+            "hackoladeStyles": {
+                "GUID": "6836de52-4952-485f-9136-34ae2b18d49a",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1766,
+                        "y": 1419
+                    },
+                    {
+                        "x": 1741,
+                        "y": 1419
+                    },
+                    {
+                        "x": 1741,
+                        "y": 1815
+                    },
+                    {
+                        "x": 1716,
+                        "y": 1815
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "88dd8dfa-8631-40db-b305-a1a783298d0b": "sample_mflix",
+        "60ad0997-0b29-4b93-af2b-2b49a078ef98": "RE'd from instance",
+        "b578c2e4-2627-4e58-9b30-927f1c062d5a": "_id",
+        "aca315a3-9f09-491c-9522-7eb827c8f130": "name",
+        "bfdf5fa9-5835-434b-aac1-2bb119d98f29": "email",
+        "ec514470-a482-4fa9-a99b-3b6f4e315e6c": "movie_id",
+        "467f39d6-18d7-4041-acc2-8374cf617690": "text",
+        "b9e048c9-15b8-4982-afba-3a13dec0bb2b": "date",
+        "6ae75769-cb6c-4791-aaa6-b5efc3a865ce": "comments",
+        "22ce1c1d-cb7a-41fa-8d5a-818f4970ce48": "_id",
+        "6d31abed-9fb5-4a23-881f-9a4178b9b370": "plot",
+        "f4fd0747-962d-4c72-bd29-7fb4f91041f1": "genres",
+        "a20b7d53-1fb3-41fd-9aa8-92ebd9cc757c": "runtime",
+        "00a373e0-1a99-43f9-8613-30c151dc76eb": "cast",
+        "5c6a7323-8725-4c15-8779-bbb94341ddb0": "num_mflix_comments",
+        "9cfbd3bc-5d17-4cd7-8470-16ba6f19d1ce": "poster",
+        "2ec2dd54-684d-4536-943d-905d9c5296d5": "title",
+        "597553e4-fe4b-4e8f-89d9-608f29c464bd": "fullplot",
+        "8baab3ce-c5c8-4a40-abc9-a597d6efc4b8": "languages",
+        "4893b734-6fcf-47a3-a099-092911fbecd1": "released",
+        "8c775d9b-7add-49c0-b222-a8f64b35a09a": "directors",
+        "65ba20a6-f04b-443a-8211-c9a6e3e5c974": "writers",
+        "d9fe1f89-2a3c-456c-a036-009817ffcd49": "awards",
+        "d9080240-d75f-4ad6-b100-9d8d7895ee31": "wins",
+        "95fc5359-c715-4865-926a-bfcabd77f2a3": "nominations",
+        "eb86b744-7512-4cdb-8da9-14d658e18501": "text",
+        "71c5fd1a-2404-4980-adae-133bbf9081a8": "lastupdated",
+        "46ea735b-84fc-4114-bca5-57b3f2022481": "year",
+        "9330f65c-d3c3-4794-978f-d45771fd5b2b": "imdb",
+        "839661d2-c9f6-4a6a-80df-b7f319bc9435": "rating",
+        "3770802f-2d96-46d9-b48a-1e9868862673": "votes",
+        "58eef843-af09-401b-b258-0cdaba584984": "id",
+        "a357d0bf-e3b1-4cf3-b8e0-a4dd024fcf77": "countries",
+        "588ac909-3437-461e-a127-2aa0ddd20d0b": "type",
+        "de6c30d1-94c8-4c04-90fb-2f68db400b20": "tomatoes",
+        "9d6c6b55-b842-41cf-bc43-582558d60fa4": "viewer",
+        "5df4396d-d746-4498-ba29-224c81deaf8d": "rating",
+        "6b4f5276-f2bf-47aa-86d9-8a3eabe8991d": "numReviews",
+        "070f5c73-5ff3-4d95-82ec-baf41bb807fd": "meter",
+        "7190148b-33e2-4c45-bed0-aaf31c379e8f": "lastUpdated",
+        "29020653-43dc-4422-af45-e684db21c69a": "boxOffice",
+        "710bf729-7ef2-4e0e-9bd7-48849a5d72c9": "consensus",
+        "c2ffa7d8-ea2d-4f31-ae27-6f403f2e723a": "critic",
+        "a6d60e76-c490-41b4-93ae-b8c0c44f52d6": "meter",
+        "8e9d8653-df4e-4048-b8b4-1431d9e4f1ba": "numReviews",
+        "349f77e7-ed6d-4140-9e22-e9394bcfe57d": "rating",
+        "a4ee4091-6e2f-451e-acec-a58034bad30b": "dvd",
+        "5007ca8f-d36f-4231-a4c4-1767ba362666": "fresh",
+        "ba78408c-efb3-43e6-a22c-7fd8f009e2ac": "production",
+        "cdf60303-2ae9-40ca-994c-a89f986c2511": "rotten",
+        "cdc2be52-b8f1-4468-b188-9edc9cf4e9d1": "website",
+        "ae3434ce-3bd2-4ce1-95c6-e910083913dc": "metacritic",
+        "94634174-e1f6-4d0a-8840-f8b04d9d1df2": "rated",
+        "15cfb661-a41e-4c66-ac61-d79d37cc2598": "movies",
+        "b115097b-5444-4f6a-87d1-c2615ca89233": "_id",
+        "5e208e90-c2a1-4737-9ef8-170d9737e1f6": "user_id",
+        "145c662f-bd39-4a8f-b8be-7225a2aa3886": "jwt",
+        "42a83d4e-4f94-4a45-a866-9ebf338bda44": "sessions",
+        "039b25ac-5360-47ff-9abc-f2c59695623e": "_id",
+        "f3d6b91d-c2ff-4021-b4c7-d044c4baced1": "theaterId",
+        "b34b4ffd-a849-4e7e-96fb-293dfac96a22": "location",
+        "5027a675-9ae0-4dab-8913-ca5c94dcb3cf": "address",
+        "e9096348-7551-4506-bd59-184faf250d66": "street1",
+        "0c6f52be-1a21-4490-bab9-8b930584558c": "city",
+        "8e731967-1035-4142-951d-6b6f1ab0ef7f": "state",
+        "bb38111b-10e0-4bd9-9dc0-28e08c5702bb": "zipcode",
+        "297272ad-bad6-4d6f-80ca-da86464717b8": "street2",
+        "a7120af3-e35f-4178-8a0a-4c8d8c972bea": "geo",
+        "17e985be-f71f-44c1-943f-3e4c0cb5201d": "type",
+        "f02c4f6e-ad1b-4fe1-ba3d-13a289f7dc6c": "coordinates",
+        "702e4115-124d-481b-8146-3262a53a7c99": "theaters",
+        "1d476fdb-9a1f-4ba4-a2f7-c7de80ab33a6": "_id",
+        "b913ec66-a521-40a5-ab52-910e512ea9de": "name",
+        "09ebb608-41f7-488c-bb7e-0f1332e8b6c4": "email",
+        "8dd857d3-d423-4a69-8d1b-1bb59f73df60": "password",
+        "e891ff62-b7ba-4b1a-8717-d4a4ef6083ff": "users",
+        "5f1e3124-c3ab-4880-b691-7512cc2f1e7f": "fk movies._id to comments.movie_id"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "6fc6e6ae-eaae-4091-a88e-2075f51de310"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "15f6ea62-ed19-43ac-80f0-efca55438bba"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "41771a20-a403-4793-af81-63e5b6bab635"
+    },
+    "sources": [
+        {
+            "GUID": "60ad0997-0b29-4b93-af2b-2b49a078ef98",
+            "sourceName": "RE'd from instance",
+            "lineageTimestamp": "2023-06-29 13:57:19 CEST",
+            "lineageSourceFormat": "Instance",
+            "lineageSourceConnectionName": "Atlas"
+        }
+    ],
+    "decorativeSymbols": [],
+    "dbVersion": "v6.0",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2023-06-29T11:56:25.504Z",
+    "GUID": "f84f6fa0-7c91-4d56-bed7-87a7205e3364",
+    "isLineageEnabled": true,
+    "lastModifTS": "2023-06-29T11:57:25.519Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.10.9"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "6ae75769-cb6c-4791-aaa6-b5efc3a865ce",
+                        "x": 1766,
+                        "y": 1350,
+                        "width": 213,
+                        "height": 138,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "15cfb661-a41e-4c66-ac61-d79d37cc2598",
+                        "x": 1400,
+                        "y": 1350,
+                        "width": 316,
+                        "height": 930,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "42a83d4e-4f94-4a45-a866-9ebf338bda44",
+                        "x": 1150,
+                        "y": 1400,
+                        "width": 196,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "702e4115-124d-481b-8146-3262a53a7c99",
+                        "x": 1050,
+                        "y": 1050,
+                        "width": 284,
+                        "height": 264,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "e891ff62-b7ba-4b1a-8717-d4a4ef6083ff",
+                        "x": 1550,
+                        "y": 1150,
+                        "width": 210,
+                        "height": 102,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1000,
+                        "y": 1000,
+                        "GUID": "88dd8dfa-8631-40db-b305-a1a783298d0b"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false,
+                "displayOptions": {
+                    "dndHandles": false
+                }
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
