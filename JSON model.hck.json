@@ -13,7 +13,7 @@
                     "properties": [],
                     "color": "#555555",
                     "GUID": "aa8696c8-8142-448f-b894-01f318cfcf85",
-                    "description": "testing this from clone1",
+                    "description": "another change to the desc in clone2",
                     "error": {}
                 }
             ],
@@ -33,6 +33,7 @@
             "name": "New Group",
             "type": "bucket",
             "collectionIds": [
+                "e0a41b6d-7eb4-41e6-ad67-3b524d882c1a",
                 "e0a41b6d-7eb4-41e6-ad67-3b524d882c1a"
             ],
             "backgroundColor": {
@@ -72,13 +73,13 @@
     },
     "sources": [],
     "decorativeSymbols": [],
-    "dbVendor": "JSON",
     "dbVersion": "2019-09",
+    "dbVendor": "JSON",
     "appTarget": "JSON",
     "creationTS": "2023-06-29T16:20:59.178Z",
     "GUID": "94c90da4-4b35-44ea-bbfd-b36eacea9d38",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-29T16:25:59.724Z",
+    "lastModifTS": "2023-06-29T16:31:14.526Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -86,6 +87,9 @@
     },
     "applicationInformation": {
         "version": "6.10.9"
+    },
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
     },
     "settings": {
         "centralPane": {
@@ -100,12 +104,6 @@
                         "color": {}
                     }
                 ],
-                "erdDefinitions": {
-                    "erd": [],
-                    "rootPath": [],
-                    "entities": [],
-                    "decorativeSymbols": []
-                },
                 "buckets": [
                     {
                         "x": 1162,
@@ -113,26 +111,15 @@
                         "GUID": "4ede3f4d-fade-4396-bd85-a6d2b8c3d13d"
                     }
                 ],
-                "collapsedNodes": [],
-                "activeRelationship": "",
-                "activeRelationshipFields": {
-                    "childField": [],
-                    "parentField": []
-                },
-                "selectedCollections": [],
-                "displayColorPicker": false,
+                "diagramViews": [],
+                "decorativeSymbols": [],
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
                     "forceLayout": true,
                     "defaultLinkLength": 300
-                },
-                "diagramViews": [],
-                "decorativeSymbols": [],
-                "nestedCollectionsLayout": "horizontal",
-                "options": [],
-                "relationshipUpdateDisabled": false
+                }
             },
             "collectionLevel": {},
             "changed": false
@@ -141,8 +128,5 @@
             "collapsedNodes": [],
             "shouldDistributeCollections": false
         }
-    },
-    "hackoladeMeta": {
-        "customPropertiesUpdated": true
     }
 }
