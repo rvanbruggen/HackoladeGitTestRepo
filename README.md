@@ -15,7 +15,19 @@ We will add an *animals* entity to the data model, including a foreign key relat
 ## 4. In Clone2 - we add a new "Cars" feature
 We will add an *cars* entity to the data model, including a foreign key relationship to the *movies* entity. We save that file in Clone2, in a separate "feature branch" - `feature-cars`. We push that branch to the remote.
 
-## 5. In Clone1 - we Submit the "Animals" feature for review.
+## 5. In Clone1 - we submit the "Animals" feature for review.
+
+## 6. In Clone2 - we submit the "Cars" feature for review
+
+## 7. We will merge the "feature-animals" branch into "main" of Clone1
+
+## 8. We will merge the "feature-cars" branch into "main" of Clone2
+
+## 9. We will resolve the conflicts
+
+## 10. We will delete the feature branches
+
+
 
 ##
 
