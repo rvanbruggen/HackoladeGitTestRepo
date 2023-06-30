@@ -1,0 +1,191 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "collectionName": "address",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "street",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "color": "#555555",
+                    "GUID": "40dce34c-229c-4059-9f7d-d58d129ceff7",
+                    "error": {}
+                },
+                {
+                    "name": "houseNumber",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "properties": [],
+                    "color": "#555555",
+                    "error": {},
+                    "GUID": "7cd13d0a-b688-4067-ae94-01f033a9d834"
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "color": "#555555",
+                    "GUID": "56d8e7dd-a793-4820-b48c-9eaa3df6b75a",
+                    "name": "zipcode",
+                    "error": {}
+                },
+                {
+                    "name": "city",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "color": "#555555",
+                    "GUID": "91671f58-da5b-40ea-8674-94fb2e0be6b1",
+                    "error": {}
+                },
+                {
+                    "name": "country",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "color": "#555555",
+                    "GUID": "aa89326e-1b8f-4f7c-8615-27d702c7d6b3",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "7e6cb382-d258-4d49-9971-32ffd70bf35e"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "65c62859-3bc0-4fca-b24f-fd0c083f0ed8",
+            "bucketId": "a1040ed1-4918-4a16-88d7-29cdcee8d6b1"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "New Group",
+            "type": "bucket",
+            "collectionIds": [
+                "65c62859-3bc0-4fca-b24f-fd0c083f0ed8"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "a1040ed1-4918-4a16-88d7-29cdcee8d6b1"
+        }
+    ],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "a1040ed1-4918-4a16-88d7-29cdcee8d6b1": "New Group",
+        "65c62859-3bc0-4fca-b24f-fd0c083f0ed8": "address",
+        "40dce34c-229c-4059-9f7d-d58d129ceff7": "street",
+        "7cd13d0a-b688-4067-ae94-01f033a9d834": "houseNumber",
+        "56d8e7dd-a793-4820-b48c-9eaa3df6b75a": "zipcode",
+        "91671f58-da5b-40ea-8674-94fb2e0be6b1": "city",
+        "aa89326e-1b8f-4f7c-8615-27d702c7d6b3": "country"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "7b628042-772b-4111-86d3-f5ba035fcd4e"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "1ae6d2ad-70ee-4c93-9e0d-49415f3f5825"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "d5d6d82f-c87f-4901-aa7a-eaed320bd597"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "JSON",
+    "dbVersion": "2020-12",
+    "appTarget": "JSON",
+    "creationTS": "2023-06-30T14:41:11.425Z",
+    "GUID": "06ea39d1-9b04-4867-9ef3-081c3fc93c6d",
+    "isLineageEnabled": true,
+    "lastModifTS": "2023-06-30T14:42:15.576Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.10.9"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "65c62859-3bc0-4fca-b24f-fd0c083f0ed8",
+                        "x": 1233,
+                        "y": 1412,
+                        "width": 210,
+                        "height": 123,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1213,
+                        "y": 1331,
+                        "GUID": "a1040ed1-4918-4a16-88d7-29cdcee8d6b1"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    },
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    }
+}
