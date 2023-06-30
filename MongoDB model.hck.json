@@ -1361,6 +1361,15 @@
                             "lineageSourceContainerTechName": ""
                         }
                     ]
+                },
+                {
+                    "name": "score",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "GUID": "6f949ece-59ad-45b5-ac01-5595209a2481",
+                    "description": "Adding description",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -2118,6 +2127,11 @@
                 "a35d5094-8005-4a28-935f-4ee78b6ae94d",
                 "a455c990-2575-4220-a37f-5ad5c3795c2e",
                 "3081d79f-c255-491b-a1f6-c825396a66a0",
+                "ce8ca37c-bccc-4214-943c-a60a59619ce2",
+                "875f5980-ed59-42c6-97ab-761eff365341",
+                "4a000f26-358e-4d30-947d-9b9ee836f1dd",
+                "4f0a25e9-c609-4896-b02a-bf95c1640bf3",
+                "a35d5094-8005-4a28-935f-4ee78b6ae94d",
                 "93461706-c4de-4691-be51-ca71e13598a6"
             ],
             "backgroundColor": {
@@ -2173,11 +2187,11 @@
                         "y": 1325
                     },
                     {
-                        "x": 1562,
+                        "x": 1561.5,
                         "y": 1325
                     },
                     {
-                        "x": 1562,
+                        "x": 1561.5,
                         "y": 1350
                     }
                 ],
@@ -2273,7 +2287,8 @@
         "07a3df09-f360-42f8-a565-0412d84128ec": "_id",
         "a769f9ae-abe0-4f89-93fa-acdbf4cf9218": "make",
         "18b65ead-05ab-4169-a4b1-afbd339c016b": "model",
-        "4fddf810-85d9-4ba4-a151-d55ffced5a80": "movie_id"
+        "4fddf810-85d9-4ba4-a151-d55ffced5a80": "movie_id",
+        "6f949ece-59ad-45b5-ac01-5595209a2481": "score"
     },
     "definitions": {
         "type": "definitions",
@@ -2314,7 +2329,7 @@
     "creationTS": "2023-06-30T10:22:58.867Z",
     "GUID": "a627368b-f60d-4294-b5c5-3ca73b653cc4",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-30T13:52:02.782Z",
+    "lastModifTS": "2023-06-30T14:02:59.238Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2377,12 +2392,6 @@
                         "color": {}
                     }
                 ],
-                "erdDefinitions": {
-                    "erd": [],
-                    "rootPath": [],
-                    "entities": [],
-                    "decorativeSymbols": []
-                },
                 "buckets": [
                     {
                         "x": 1010,
@@ -2390,26 +2399,15 @@
                         "GUID": "0d789463-a545-4f14-af39-3d59d0138693"
                     }
                 ],
-                "collapsedNodes": [],
-                "activeRelationship": "",
-                "activeRelationshipFields": {
-                    "childField": [],
-                    "parentField": []
-                },
-                "selectedCollections": [],
-                "displayColorPicker": false,
+                "diagramViews": [],
+                "decorativeSymbols": [],
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
                     "forceLayout": true,
                     "defaultLinkLength": 300
-                },
-                "diagramViews": [],
-                "decorativeSymbols": [],
-                "nestedCollectionsLayout": "horizontal",
-                "options": [],
-                "relationshipUpdateDisabled": false
+                }
             },
             "collectionLevel": {},
             "changed": false
