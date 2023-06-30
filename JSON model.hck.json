@@ -154,6 +154,28 @@
                     "color": "#555555",
                     "GUID": "09044a71-7f6a-4db4-bbc1-fa72735a919e",
                     "error": {}
+                },
+                {
+                    "name": "category",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "properties": [],
+                            "color": "#555555",
+                            "error": {},
+                            "GUID": "44730c29-054d-420a-9a6d-38a804851f3e",
+                            "arrayItem": true
+                        }
+                    ],
+                    "additionalItems": true,
+                    "color": "#555555",
+                    "error": {},
+                    "GUID": "dc0459b4-7a94-4f64-afd5-dcd20cae8cbc"
                 }
             ],
             "definitions": {
@@ -203,7 +225,8 @@
         "b2f81e1b-b304-4a32-8711-7c68982d040c": "id",
         "ef827613-7195-430d-9080-79adfdd1d0ce": "product",
         "e7820fd4-f323-4c89-a1ba-a66fd83ab981": "id",
-        "09044a71-7f6a-4db4-bbc1-fa72735a919e": "name"
+        "09044a71-7f6a-4db4-bbc1-fa72735a919e": "name",
+        "dc0459b4-7a94-4f64-afd5-dcd20cae8cbc": "category"
     },
     "definitions": {
         "type": "definitions",
@@ -228,7 +251,7 @@
     "creationTS": "2023-06-30T14:41:11.425Z",
     "GUID": "06ea39d1-9b04-4867-9ef3-081c3fc93c6d",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-30T15:00:57.561Z",
+    "lastModifTS": "2023-06-30T15:04:43.345Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -246,8 +269,8 @@
                 "erd": [
                     {
                         "GUID": "65c62859-3bc0-4fca-b24f-fd0c083f0ed8",
-                        "x": 1200,
-                        "y": 1200,
+                        "x": 1053,
+                        "y": 1182,
                         "width": 189,
                         "height": 155,
                         "color": {}
@@ -264,8 +287,8 @@
                         "GUID": "ef827613-7195-430d-9080-79adfdd1d0ce",
                         "x": 1300,
                         "y": 1050,
-                        "width": 167,
-                        "height": 65,
+                        "width": 178,
+                        "height": 105,
                         "color": {}
                     }
                 ],
@@ -277,8 +300,8 @@
                 },
                 "buckets": [
                     {
-                        "x": 1000,
-                        "y": 1000,
+                        "x": 1010,
+                        "y": 1010,
                         "GUID": "a1040ed1-4918-4a16-88d7-29cdcee8d6b1"
                     }
                 ],
