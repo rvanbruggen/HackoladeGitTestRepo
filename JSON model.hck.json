@@ -85,6 +85,51 @@
             "additionalProperties": false,
             "GUID": "65c62859-3bc0-4fca-b24f-fd0c083f0ed8",
             "bucketId": "a1040ed1-4918-4a16-88d7-29cdcee8d6b1"
+        },
+        {
+            "collectionName": "person",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "properties": [],
+                    "color": "#555555",
+                    "GUID": "5d453d3f-091f-463f-ae09-9cf7d7093f91",
+                    "error": {}
+                },
+                {
+                    "name": "FirstName",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "color": "#555555",
+                    "GUID": "b7fc6a57-3c67-44cb-87e6-9fe94d8f3ce9",
+                    "error": {}
+                },
+                {
+                    "name": "LastName",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "color": "#555555",
+                    "GUID": "c40df57b-e843-4407-9871-a38fa9172b10",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "2aed9741-0517-43cf-8bfc-a734f2522170"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "cf4cf7a2-4713-4e8f-bb7b-7d3924325a32",
+            "bucketId": "a1040ed1-4918-4a16-88d7-29cdcee8d6b1"
         }
     ],
     "buckets": [
@@ -92,7 +137,8 @@
             "name": "New Group",
             "type": "bucket",
             "collectionIds": [
-                "65c62859-3bc0-4fca-b24f-fd0c083f0ed8"
+                "65c62859-3bc0-4fca-b24f-fd0c083f0ed8",
+                "cf4cf7a2-4713-4e8f-bb7b-7d3924325a32"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -117,8 +163,15 @@
         "56d8e7dd-a793-4820-b48c-9eaa3df6b75a": "zipcode",
         "91671f58-da5b-40ea-8674-94fb2e0be6b1": "city",
         "aa89326e-1b8f-4f7c-8615-27d702c7d6b3": "country",
+<<<<<<< HEAD
+        "cf4cf7a2-4713-4e8f-bb7b-7d3924325a32": "person",
+        "b7fc6a57-3c67-44cb-87e6-9fe94d8f3ce9": "FirstName",
+        "c40df57b-e843-4407-9871-a38fa9172b10": "LastName",
+        "5d453d3f-091f-463f-ae09-9cf7d7093f91": "id"
+=======
         "329ca3ef-7072-470c-8d36-c6148bd380db": "continent",
         "b2f81e1b-b304-4a32-8711-7c68982d040c": "id"
+>>>>>>> origin/main
     },
     "definitions": {
         "type": "definitions",
@@ -143,7 +196,11 @@
     "creationTS": "2023-06-30T14:41:11.425Z",
     "GUID": "06ea39d1-9b04-4867-9ef3-081c3fc93c6d",
     "isLineageEnabled": true,
+<<<<<<< HEAD
+    "lastModifTS": "2023-06-30T14:48:08.947Z",
+=======
     "lastModifTS": "2023-06-30T14:46:37.184Z",
+>>>>>>> origin/main
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -165,6 +222,14 @@
                         "y": 1412,
                         "width": 210,
                         "height": 159,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "cf4cf7a2-4713-4e8f-bb7b-7d3924325a32",
+                        "x": 1424,
+                        "y": 1563,
+                        "width": 187,
+                        "height": 87,
                         "color": {}
                     }
                 ],
