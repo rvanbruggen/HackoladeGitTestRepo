@@ -2078,6 +2078,14 @@
                         "9515ac1c-0105-464f-bc1a-5dd4b8b627d6"
                     ],
                     "parentRelationship": "6ed2be09-98ac-4ba9-b065-3cf1b96c1494"
+                },
+                {
+                    "name": "nickname",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "71851268-773c-4dfe-9e9e-71b248b9d1ab",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -2210,28 +2218,32 @@
             "GUID": "6ed2be09-98ac-4ba9-b065-3cf1b96c1494",
             "hackoladeStyles": {
                 "GUID": "92b2fdc1-4fc2-4458-88fe-26da7a7f8de7",
-                "autoPositioning": false,
+                "autoPositioning": true,
                 "type": "Orthogonal",
                 "thickness": 2,
                 "color": "#79c4ff",
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1843.686712485683,
+                        "x": 1846.186712485683,
                         "y": 1988.5051546391762
                     },
                     {
-                        "x": 1843.686712485683,
-                        "y": 1691.9026345933564
+                        "x": 1846.186712485683,
+                        "y": 1325
                     },
                     {
-                        "x": 1724,
-                        "y": 1691.9026345933564
+                        "x": 1508,
+                        "y": 1325
+                    },
+                    {
+                        "x": 1508,
+                        "y": 1350
                     }
                 ],
                 "sides": [
                     "top",
-                    "right"
+                    "top"
                 ]
             }
         }
@@ -2321,7 +2333,8 @@
         "27555c08-2eda-444a-a77e-5a8791cd261f": "_id",
         "f79a26a8-1ba8-47c2-8e2d-8c9e3386235f": "name",
         "b8e6040f-dc52-410f-9397-b01eec4b53ba": "movie_id",
-        "6ed2be09-98ac-4ba9-b065-3cf1b96c1494": "fk animals.movie_id to movies._id"
+        "6ed2be09-98ac-4ba9-b065-3cf1b96c1494": "fk animals.movie_id to movies._id",
+        "71851268-773c-4dfe-9e9e-71b248b9d1ab": "nickname"
     },
     "definitions": {
         "type": "definitions",
@@ -2362,7 +2375,7 @@
     "creationTS": "2023-06-30T10:22:58.867Z",
     "GUID": "a627368b-f60d-4294-b5c5-3ca73b653cc4",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-30T11:55:24.300Z",
+    "lastModifTS": "2023-06-30T12:45:58.881Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2420,8 +2433,8 @@
                         "GUID": "ac220ca0-c111-41a4-ba12-b604ee0625de",
                         "x": 1758.186712485683,
                         "y": 1988.5051546391762,
-                        "width": 171,
-                        "height": 87,
+                        "width": 176,
+                        "height": 105,
                         "color": {}
                     }
                 ],
