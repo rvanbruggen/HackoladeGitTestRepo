@@ -54,6 +54,26 @@
                     "color": "#555555",
                     "GUID": "aa89326e-1b8f-4f7c-8615-27d702c7d6b3",
                     "error": {}
+                },
+                {
+                    "name": "continent",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "color": "#555555",
+                    "GUID": "329ca3ef-7072-470c-8d36-c6148bd380db",
+                    "error": {}
+                },
+                {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "properties": [],
+                    "color": "#555555",
+                    "error": {},
+                    "GUID": "b2f81e1b-b304-4a32-8711-7c68982d040c"
                 }
             ],
             "definitions": {
@@ -118,6 +138,7 @@
             "type": "bucket",
             "collectionIds": [
                 "65c62859-3bc0-4fca-b24f-fd0c083f0ed8",
+                "65c62859-3bc0-4fca-b24f-fd0c083f0ed8",
                 "cf4cf7a2-4713-4e8f-bb7b-7d3924325a32"
             ],
             "backgroundColor": {
@@ -146,7 +167,9 @@
         "cf4cf7a2-4713-4e8f-bb7b-7d3924325a32": "person",
         "b7fc6a57-3c67-44cb-87e6-9fe94d8f3ce9": "FirstName",
         "c40df57b-e843-4407-9871-a38fa9172b10": "LastName",
-        "5d453d3f-091f-463f-ae09-9cf7d7093f91": "id"
+        "5d453d3f-091f-463f-ae09-9cf7d7093f91": "id",
+        "329ca3ef-7072-470c-8d36-c6148bd380db": "continent",
+        "b2f81e1b-b304-4a32-8711-7c68982d040c": "id"
     },
     "definitions": {
         "type": "definitions",
@@ -165,13 +188,13 @@
     },
     "sources": [],
     "decorativeSymbols": [],
-    "dbVendor": "JSON",
     "dbVersion": "2020-12",
+    "dbVendor": "JSON",
     "appTarget": "JSON",
     "creationTS": "2023-06-30T14:41:11.425Z",
     "GUID": "06ea39d1-9b04-4867-9ef3-081c3fc93c6d",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-30T14:48:08.947Z",
+    "lastModifTS": "2023-06-30T14:50:11.300Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -204,12 +227,6 @@
                         "color": {}
                     }
                 ],
-                "erdDefinitions": {
-                    "erd": [],
-                    "rootPath": [],
-                    "entities": [],
-                    "decorativeSymbols": []
-                },
                 "buckets": [
                     {
                         "x": 1193,
@@ -217,26 +234,15 @@
                         "GUID": "a1040ed1-4918-4a16-88d7-29cdcee8d6b1"
                     }
                 ],
-                "collapsedNodes": [],
-                "activeRelationship": "",
-                "activeRelationshipFields": {
-                    "childField": [],
-                    "parentField": []
-                },
-                "selectedCollections": [],
-                "displayColorPicker": false,
+                "diagramViews": [],
+                "decorativeSymbols": [],
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
                     "forceLayout": true,
                     "defaultLinkLength": 300
-                },
-                "diagramViews": [],
-                "decorativeSymbols": [],
-                "nestedCollectionsLayout": "horizontal",
-                "options": [],
-                "relationshipUpdateDisabled": false
+                }
             },
             "collectionLevel": {},
             "changed": false
