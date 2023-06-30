@@ -728,22 +728,7 @@
                     "isActivated": true,
                     "type": "multiple",
                     "primaryKey": false,
-                    "multipleTypes": [
-                        {
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "type": "numeric",
-                            "GUID": "0cdcf33d-8839-43b6-947e-27d2e1b9d19f",
-                            "primaryKey": false
-                        },
-                        {
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "type": "string",
-                            "GUID": "f9bc8324-bc35-4677-a655-b34f338c188e",
-                            "primaryKey": false
-                        }
-                    ],
+                    "multipleTypes": [],
                     "GUID": "48eafca5-661f-4fe7-a992-cb16fb8e46ed",
                     "required": true,
                     "sample": 2010,
@@ -797,22 +782,7 @@
                             "isActivated": true,
                             "type": "multiple",
                             "primaryKey": false,
-                            "multipleTypes": [
-                                {
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "type": "numeric",
-                                    "GUID": "74dd35b4-9292-46ae-9fe1-50ffd92b9e00",
-                                    "primaryKey": false
-                                },
-                                {
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "type": "string",
-                                    "GUID": "32927918-2635-40bc-8b47-79a6a2c73d1d",
-                                    "primaryKey": false
-                                }
-                            ],
+                            "multipleTypes": [],
                             "GUID": "87cbe790-7c2c-4b29-9b9f-8190990c15a5",
                             "required": true,
                             "sample": 1191784,
@@ -1399,6 +1369,14 @@
                     "type": "numeric",
                     "error": {},
                     "GUID": "1502ff4d-70f5-434c-9d29-76dc61af1385"
+                },
+                {
+                    "name": "score1",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "error": {},
+                    "GUID": "6e0c10e3-604e-4128-a815-bcbcb574b0af"
                 }
             ],
             "definitions": {
@@ -1741,22 +1719,7 @@
                                     "isActivated": true,
                                     "type": "multiple",
                                     "primaryKey": false,
-                                    "multipleTypes": [
-                                        {
-                                            "hackoladeMeta": {},
-                                            "isActivated": true,
-                                            "type": "string",
-                                            "GUID": "928f0a9a-39c2-4654-8dc3-2a1b8235a1c6",
-                                            "primaryKey": false
-                                        },
-                                        {
-                                            "hackoladeMeta": {},
-                                            "isActivated": true,
-                                            "type": "null",
-                                            "GUID": "59dab3ee-6e42-4c6b-a76e-a25f4bafceb9",
-                                            "primaryKey": false
-                                        }
-                                    ],
+                                    "multipleTypes": [],
                                     "GUID": "64735053-efdf-42bd-8a57-50c0a2d6a656",
                                     "required": false,
                                     "sample": "Ste 101",
@@ -2218,6 +2181,13 @@
                 "4f0a25e9-c609-4896-b02a-bf95c1640bf3",
                 "a35d5094-8005-4a28-935f-4ee78b6ae94d",
                 "a455c990-2575-4220-a37f-5ad5c3795c2e",
+                "3081d79f-c255-491b-a1f6-c825396a66a0",
+                "ce8ca37c-bccc-4214-943c-a60a59619ce2",
+                "875f5980-ed59-42c6-97ab-761eff365341",
+                "4a000f26-358e-4d30-947d-9b9ee836f1dd",
+                "4f0a25e9-c609-4896-b02a-bf95c1640bf3",
+                "a35d5094-8005-4a28-935f-4ee78b6ae94d",
+                "a455c990-2575-4220-a37f-5ad5c3795c2e",
                 "3081d79f-c255-491b-a1f6-c825396a66a0"
             ],
             "backgroundColor": {
@@ -2375,7 +2345,8 @@
         "fd808b7d-941b-4730-914d-88333e2210d1": "id",
         "b68b27e4-213a-4221-810c-23b17e418607": "name",
         "3081d79f-c255-491b-a1f6-c825396a66a0": "Testcollection2",
-        "1502ff4d-70f5-434c-9d29-76dc61af1385": "Score2"
+        "1502ff4d-70f5-434c-9d29-76dc61af1385": "Score2",
+        "6e0c10e3-604e-4128-a815-bcbcb574b0af": "score1"
     },
     "definitions": {
         "type": "definitions",
@@ -2416,7 +2387,7 @@
     "creationTS": "2023-06-30T10:22:58.867Z",
     "GUID": "a627368b-f60d-4294-b5c5-3ca73b653cc4",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-30T10:41:35.426Z",
+    "lastModifTS": "2023-06-30T10:46:46.889Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2487,12 +2458,6 @@
                         "color": {}
                     }
                 ],
-                "erdDefinitions": {
-                    "erd": [],
-                    "rootPath": [],
-                    "entities": [],
-                    "decorativeSymbols": []
-                },
                 "buckets": [
                     {
                         "x": 1010,
@@ -2500,28 +2465,14 @@
                         "GUID": "0d789463-a545-4f14-af39-3d59d0138693"
                     }
                 ],
-                "collapsedNodes": [],
-                "activeRelationship": "",
-                "activeRelationshipFields": {
-                    "childField": [],
-                    "parentField": []
-                },
-                "selectedCollections": [],
-                "displayColorPicker": false,
+                "diagramViews": [],
+                "decorativeSymbols": [],
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
                     "forceLayout": true,
                     "defaultLinkLength": 300
-                },
-                "diagramViews": [],
-                "decorativeSymbols": [],
-                "nestedCollectionsLayout": "horizontal",
-                "options": [],
-                "relationshipUpdateDisabled": false,
-                "displayOptions": {
-                    "dndHandles": false
                 }
             },
             "collectionLevel": {},
