@@ -14,10 +14,12 @@ See [this page](https://docs.github.com/en/repositories/creating-and-managing-re
 ## 2. Add a new Hackolade model to one of the clones of the repo
 We are going to reverse engineer a MongoDB model file and store that in Clone1, the first clone of the repo. We do this in the `main` branch of the repo. When we then switch to the second clone, we will pull the latest changes and receive the new data model as part of the `main` branch as well.
 
-
-
-
 # Part 2: Small, non-conflicting change to the data model
+We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync with the Github remote.
+Then, in Clone 1, we will add a new property `Score1` (Numeric) to the `Movies` collection. We will commit that change, but not push it yet.
+Switching to Clone 2, we will add a new property `Score2` (Numeric) to the `Movies` collection. We will commit that change, and immediately push it. Therefore, the later change will have been synced to the remote, and the earlier change to the datamodel is still committed to Clone1 - but not yet synced to the remote.
+We Switch to Clone 1, and push our commit to the remote. 
+
 
 # Part 3: Small, conflicting change to the data model
 
