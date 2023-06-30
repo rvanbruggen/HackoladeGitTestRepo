@@ -2042,6 +2042,47 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             }
+        },
+        {
+            "collectionName": "Testcollection1",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "id1",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "5c58cf9d-2851-40ee-99a5-e06c2b52fbe0",
+                    "error": {}
+                },
+                {
+                    "name": "name1",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "bbee0b9d-966d-486b-a53a-81a75c4048e9",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "493cf212-9053-44c9-8a4d-b929dc7b0992"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "6fbc0709-a89d-458b-b6aa-66610c8e374a",
+            "bucketId": "cc2368d9-1b5d-488b-95f5-b76f3ca936e1"
         }
     ],
     "buckets": [
@@ -2078,7 +2119,8 @@
                 "76e111d1-4994-4d51-8581-1f11b18bfc26",
                 "c8841102-4380-436d-b3dc-2d0367a9d3e9",
                 "7b1b02fa-bc99-49f8-91db-594b9dcc2785",
-                "0e2a1115-4b65-40a6-868e-e3d8c77f17c0"
+                "0e2a1115-4b65-40a6-868e-e3d8c77f17c0",
+                "6fbc0709-a89d-458b-b6aa-66610c8e374a"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -2230,7 +2272,10 @@
         "6dfc898a-2687-4194-bf78-5ac66dd14e2c": "fk movies._id to comments.movie_id",
         "e9051edd-97c6-485c-b737-e15cf9497e41": "Score1",
         "168e86f5-7eea-4090-ad86-a037f1646693": "Score2",
-        "de103823-4261-4216-bc01-208828114e82": "Score2"
+        "de103823-4261-4216-bc01-208828114e82": "Score2",
+        "6fbc0709-a89d-458b-b6aa-66610c8e374a": "Testcollection1",
+        "5c58cf9d-2851-40ee-99a5-e06c2b52fbe0": "id1",
+        "bbee0b9d-966d-486b-a53a-81a75c4048e9": "name1"
     },
     "definitions": {
         "type": "definitions",
@@ -2263,7 +2308,7 @@
     "creationTS": "2023-06-30T06:47:37.852Z",
     "GUID": "3d8eb62b-d3f3-4883-ba7f-9646f38ea9d9",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-30T07:33:37.366Z",
+    "lastModifTS": "2023-06-30T07:42:15.418Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2315,6 +2360,14 @@
                         "y": 1150,
                         "width": 210,
                         "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "6fbc0709-a89d-458b-b6aa-66610c8e374a",
+                        "x": 1068.2832138653694,
+                        "y": 1969.2449604988135,
+                        "width": 206,
+                        "height": 69,
                         "color": {}
                     }
                 ],
