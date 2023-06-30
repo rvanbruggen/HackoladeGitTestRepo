@@ -1367,8 +1367,9 @@
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "numeric",
-                    "error": {},
-                    "GUID": "5aa39069-38c0-4c51-abb2-c98312e12165"
+                    "GUID": "5aa39069-38c0-4c51-abb2-c98312e12165",
+                    "description": "This description is just to say what the score is. It's nothing special. Just a score.",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -2260,7 +2261,7 @@
     "creationTS": "2023-06-30T10:22:58.867Z",
     "GUID": "a627368b-f60d-4294-b5c5-3ca73b653cc4",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-30T11:52:55.611Z",
+    "lastModifTS": "2023-06-30T11:56:49.834Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
