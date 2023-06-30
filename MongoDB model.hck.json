@@ -2190,12 +2190,11 @@
                         "y": 1325
                     },
                     {
-<<<<<<< HEAD
-                        "x": 1616,
+                        "x": 1562,
                         "y": 1325
                     },
                     {
-                        "x": 1616,
+                        "x": 1562,
                         "y": 1350
                     }
                 ],
@@ -2235,32 +2234,25 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1846.186712485683,
-                        "y": 1988.5051546391762
+                        "x": 1264.656357388318,
+                        "y": 2063.769186712486
                     },
                     {
-                        "x": 1846.186712485683,
-                        "y": 1325
+                        "x": 1332.3281786941589,
+                        "y": 2063.769186712486
                     },
                     {
-                        "x": 1508,
-                        "y": 1325
+                        "x": 1332.3281786941589,
+                        "y": 1825.5
                     },
                     {
-                        "x": 1508,
-=======
-                        "x": 1561.5,
-                        "y": 1325
-                    },
-                    {
-                        "x": 1561.5,
->>>>>>> origin/main
-                        "y": 1350
+                        "x": 1400,
+                        "y": 1825.5
                     }
                 ],
                 "sides": [
-                    "top",
-                    "top"
+                    "right",
+                    "left"
                 ]
             }
         }
@@ -2346,16 +2338,12 @@
         "a35d5094-8005-4a28-935f-4ee78b6ae94d": "users",
         "3caaa85f-01a6-4f3c-aa3b-f7ec9063a125": "fk movies._id to comments.movie_id",
         "4c1f18aa-e24a-4273-8fc4-48196f6b26b7": "Copied from model",
-<<<<<<< HEAD
         "ac220ca0-c111-41a4-ba12-b604ee0625de": "animals",
         "27555c08-2eda-444a-a77e-5a8791cd261f": "_id",
         "f79a26a8-1ba8-47c2-8e2d-8c9e3386235f": "name",
         "b8e6040f-dc52-410f-9397-b01eec4b53ba": "movie_id",
         "6ed2be09-98ac-4ba9-b065-3cf1b96c1494": "fk animals.movie_id to movies._id",
         "71851268-773c-4dfe-9e9e-71b248b9d1ab": "nickname"
-=======
-        "5aa39069-38c0-4c51-abb2-c98312e12165": "score"
->>>>>>> origin/main
     },
     "definitions": {
         "type": "definitions",
@@ -2396,11 +2384,7 @@
     "creationTS": "2023-06-30T10:22:58.867Z",
     "GUID": "a627368b-f60d-4294-b5c5-3ca73b653cc4",
     "isLineageEnabled": true,
-<<<<<<< HEAD
-    "lastModifTS": "2023-06-30T12:45:58.881Z",
-=======
-    "lastModifTS": "2023-06-30T11:56:49.834Z",
->>>>>>> origin/main
+    "lastModifTS": "2023-06-30T12:54:36.964Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2456,8 +2440,8 @@
                     },
                     {
                         "GUID": "ac220ca0-c111-41a4-ba12-b604ee0625de",
-                        "x": 1758.186712485683,
-                        "y": 1988.5051546391762,
+                        "x": 1088.656357388318,
+                        "y": 2011.2691867124859,
                         "width": 176,
                         "height": 105,
                         "color": {}
