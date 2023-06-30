@@ -59,6 +59,8 @@ We will add an *cars* entity to the data model, including a foreign key relation
 
 
 
+# Temporary notes:
+
 Branching scenarios:
 * people collaborating in the same branch
     No different from working in main - main is "just a branch"
