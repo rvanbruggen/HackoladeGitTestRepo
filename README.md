@@ -19,6 +19,7 @@ We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync w
 Then, in Clone 1, we will add a new property `Score1` (Numeric) to the `Movies` collection. We will commit that change, but not push it yet.
 Switching to Clone 2, we will add a new property `Score2` (Numeric) to the `Movies` collection. We will commit that change, and immediately push it. Therefore, the later change will have been synced to the remote, and the earlier change to the datamodel is still committed to Clone1 - but not yet synced to the remote.
 We Switch to Clone 1, and push our commit to the remote. 
+We will then find that we cannot immediately push: we have to pull first, to get the latest version of the model from the remote. After doing so, we can push the `Score2` change, and it will show us a conflict resolution screen. We can then solve the conflict (which in this case, does not require a change necessarily - but there are of course scenarios where only one of the `Score` attributes would be allowed to survive). Once we resolve the conflict and push it into the remote, we will find that the model now has two additional `Score` attributes, 1 and 2.
 
 
 # Part 3: Small, conflicting change to the data model
