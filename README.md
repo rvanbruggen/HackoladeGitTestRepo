@@ -14,7 +14,10 @@ See [this page](https://docs.github.com/en/repositories/creating-and-managing-re
 ## 2. Add a new Hackolade model to one of the clones of the repo
 We are going to reverse engineer a MongoDB model file and store that in Clone1, the first clone of the repo. We do this in the `main` branch of the repo. When we then switch to the second clone, we will pull the latest changes and receive the new data model as part of the `main` branch as well.
 
-# Part 2: Scenario 1 - Small, non-conflicting change to the data model
+In a normal situation, different users will be working on different clones of the repo, and as they do, they can just commit their changes and it will not result in any conflict. If, however, users start to work on their local clones at the same time, and make changes to these clones at the same time, then the chance of conflicts between these changes arises. Hackolade has taken great care to structure the file format of the data model in such a way that many of these simultaneous edits can be automatically resolved. We will therefore demonstrate both the case where a parallel edit to a data model gets automatically, and manually resolved.
+
+# Part 2: Scenario 1 - Small, conflicting change to the data model with manual resolution
+
 We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync with the Github remote.
 Then, in Clone 1, we will add a new property `Score1` (Numeric) to the `Movies` collection. We will commit that change, but not push it yet.
 Switching to Clone 2, we will add a new property `Score2` (Numeric) to the `Movies` collection. We will commit that change, and immediately push it. Therefore, the later change will have been synced to the remote, and the earlier change to the datamodel is still committed to Clone1 - but not yet synced to the remote.
@@ -24,7 +27,15 @@ We will then find that we cannot immediately push: we have to pull first, to get
 Note that in this case, we chose to keep both Score1 and Score2 attributes in the data model. This would of course not always be true. In the conflict resolution screen, we can choose to keep only one of the `Score` attributes and allow only that one  to survive.
 
 
-# Part 3: Scenario 2 - Small, conflicting change to the data model
+# Part 3: Scenario 2 - Small, conflicting change to the data model that is auto-resolved
+We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync with the Github remote. Then we proceed as follows:
+* in Clone1, we add a `Testcollection1` with 2 attributes: `id1` (oId) and `name1` (str). We commit and push that change. We also add a `Testcollection2` with 2 attributes: `id2` (oId) and `name2` (str). We commit and push that change to the remote.
+* in Clone2, we pull from the remote and ensure that we have the same data model in there.
+* in the ERD of Clone2, we move the `Testcollection2` entity to the right, and keep the `Testcollection1` entity to the left of the diagram. We commit this change, but don't push it to the remote yet.
+* in the ERD of Clone1, we move the `Testcollection1` entity and the `Testcollection2` entity to the right of the diagram. We commit this change, and push it to the remote.
+* in Clone 2, we have to pull first, and then try to push our earlier change to the remote. A conflict will occur, but it will be automatically resolved. We have to commit the automatically resolved change with a commit message.
+* when we review the change, 
+
 
 # Part 4: Scenario 3 - Large, (feature) branch based change to the data model using pull request
 ## 1. In Clone1 - we add a new "Animals" feature
