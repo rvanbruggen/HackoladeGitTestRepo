@@ -1,8 +1,8 @@
 # HackoladeGitTestRepo
 A small repo that would allow for quick demonstration of Hackolade GIT integration and collaboration. We will explore different scenarios:
-* *Scenario1:* the scenario where we make a small change to a data model, that does not create a conflict, and automatically gets merged
-* *Scenario2:* the scenario where we make a small change to a data model, but that change DOES create a conflict that needs to be resolved
-* *Scenario3:* the scenario where we make large changes to a data model, in separate (feature) branches, and we merge these changes back together using pull requests
+* *Scenario 1:* the scenario where we make a small change to a data model, that does not create a conflict, and automatically gets merged
+* *Scenario 2:* the scenario where we make a small change to a data model, but that change DOES create a conflict that needs to be resolved
+* *Scenario 3:* the scenario where we make large changes to a data model, in separate (feature) branches, and we merge these changes back together using pull requests
 
 To do so, we have to follow a process that will consist of a few parts.
 
