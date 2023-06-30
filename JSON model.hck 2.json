@@ -40,7 +40,7 @@
             "bucketId": "8223d692-fb73-40c2-aa84-b67c5e778ebe"
         },
         {
-            "collectionName": "New Document(1)",
+            "collectionName": "Another New Document",
             "type": "object",
             "properties": [
                 {
@@ -88,7 +88,8 @@
             "isActivated": true,
             "additionalProperties": false,
             "GUID": "0c1a6657-f83a-450e-b554-9cdf5739f9e2",
-            "bucketId": "8223d692-fb73-40c2-aa84-b67c5e778ebe"
+            "bucketId": "8223d692-fb73-40c2-aa84-b67c5e778ebe",
+            "hackoladeMeta": {}
         }
     ],
     "buckets": [
@@ -119,7 +120,7 @@
         "05171188-c391-4591-8916-cc618b36a768": "New Document",
         "90b0ee5e-9e1b-4c1a-9f45-168b05fb5557": "test",
         "4d78f3ac-6d39-4c84-b961-fe31c408a1de": "test2",
-        "0c1a6657-f83a-450e-b554-9cdf5739f9e2": "New Document(1)",
+        "0c1a6657-f83a-450e-b554-9cdf5739f9e2": "Another New Document",
         "642638ff-5fe6-4eb9-bdd7-ea87156d31a1": "test",
         "fe40c3bc-7225-4884-89ca-e6cd5136f384": "test2",
         "06a2ae6f-9128-4cbf-8ea9-e39b8441b909": "test3"
@@ -147,7 +148,7 @@
     "creationTS": "2023-06-30T15:27:16.060Z",
     "GUID": "934cc5e4-505a-4b16-ba57-375a0353de99",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-30T15:32:41.474Z",
+    "lastModifTS": "2023-06-30T15:35:24.487Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -175,7 +176,7 @@
                         "GUID": "0c1a6657-f83a-450e-b554-9cdf5739f9e2",
                         "x": 1299,
                         "y": 1540,
-                        "width": 223,
+                        "width": 258,
                         "height": 87,
                         "color": {}
                     }
