@@ -71,6 +71,16 @@
             "type": "object",
             "properties": [
                 {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "properties": [],
+                    "color": "#555555",
+                    "GUID": "5d453d3f-091f-463f-ae09-9cf7d7093f91",
+                    "error": {}
+                },
+                {
                     "name": "FirstName",
                     "hackoladeMeta": {},
                     "isActivated": true,
@@ -135,7 +145,8 @@
         "aa89326e-1b8f-4f7c-8615-27d702c7d6b3": "country",
         "cf4cf7a2-4713-4e8f-bb7b-7d3924325a32": "person",
         "b7fc6a57-3c67-44cb-87e6-9fe94d8f3ce9": "FirstName",
-        "c40df57b-e843-4407-9871-a38fa9172b10": "LastName"
+        "c40df57b-e843-4407-9871-a38fa9172b10": "LastName",
+        "5d453d3f-091f-463f-ae09-9cf7d7093f91": "id"
     },
     "definitions": {
         "type": "definitions",
@@ -160,7 +171,7 @@
     "creationTS": "2023-06-30T14:41:11.425Z",
     "GUID": "06ea39d1-9b04-4867-9ef3-081c3fc93c6d",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-30T14:43:56.450Z",
+    "lastModifTS": "2023-06-30T14:48:08.947Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -188,8 +199,8 @@
                         "GUID": "cf4cf7a2-4713-4e8f-bb7b-7d3924325a32",
                         "x": 1424,
                         "y": 1563,
-                        "width": 176,
-                        "height": 69,
+                        "width": 187,
+                        "height": 87,
                         "color": {}
                     }
                 ],
