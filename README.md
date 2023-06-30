@@ -35,7 +35,6 @@ Then, we proceed as follows:
 
 Note that in this case, we chose to keep both Score1 and Score2 attributes in the data model. This would of course not always be true. In the conflict resolution screen, we can choose to keep only one of the `Score` attributes and allow only that one  to survive.
 
-
 # Part 4: Scenario 3 - Large, (feature) branch based change to the data model using pull request
 ## 1. In Clone1 - we add a new "Animals" feature
 We will add an *animals* entity to the data model, including a foreign key relationship to the *movies* entity. We save that file in Clone1, in a separate "feature branch" - `feature-animals`. We push that branch to the remote.
