@@ -163,15 +163,8 @@
         "56d8e7dd-a793-4820-b48c-9eaa3df6b75a": "zipcode",
         "91671f58-da5b-40ea-8674-94fb2e0be6b1": "city",
         "aa89326e-1b8f-4f7c-8615-27d702c7d6b3": "country",
-<<<<<<< HEAD
-        "cf4cf7a2-4713-4e8f-bb7b-7d3924325a32": "person",
-        "b7fc6a57-3c67-44cb-87e6-9fe94d8f3ce9": "FirstName",
-        "c40df57b-e843-4407-9871-a38fa9172b10": "LastName",
-        "5d453d3f-091f-463f-ae09-9cf7d7093f91": "id"
-=======
         "329ca3ef-7072-470c-8d36-c6148bd380db": "continent",
         "b2f81e1b-b304-4a32-8711-7c68982d040c": "id"
->>>>>>> origin/main
     },
     "definitions": {
         "type": "definitions",
@@ -196,11 +189,7 @@
     "creationTS": "2023-06-30T14:41:11.425Z",
     "GUID": "06ea39d1-9b04-4867-9ef3-081c3fc93c6d",
     "isLineageEnabled": true,
-<<<<<<< HEAD
-    "lastModifTS": "2023-06-30T14:48:08.947Z",
-=======
-    "lastModifTS": "2023-06-30T14:46:37.184Z",
->>>>>>> origin/main
+    "lastModifTS": "2023-06-30T14:58:29.636Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -226,8 +215,8 @@
                     },
                     {
                         "GUID": "cf4cf7a2-4713-4e8f-bb7b-7d3924325a32",
-                        "x": 1424,
-                        "y": 1563,
+                        "x": 1464,
+                        "y": 1583,
                         "width": 187,
                         "height": 87,
                         "color": {}
