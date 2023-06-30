@@ -17,7 +17,7 @@ We are going to reverse engineer a MongoDB model file and store that in Clone1, 
 In a normal situation, different users will be working on different clones of the repo, and as they do, they can just commit their changes and it will not result in any conflict. If, however, users start to work on their local clones at the same time, and make changes to these clones at the same time, then the chance of conflicts between these changes arises. Hackolade has taken great care to structure the file format of the data model in such a way that many of these simultaneous edits can be automatically resolved. We will therefore demonstrate both the case where a parallel edit to a data model gets automatically, and manually resolved.
 
 
-# Part 2: Scenario 1 - Small, conflicting change to the data model that is auto-resolved
+# Part 2: Scenario 1 - Small, conflicting change to the data model that is cosmetic and is auto-resolved
 We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync with the Github remote. Then we proceed as follows:
 * in Clone1, we add a `Testcollection1` with 2 attributes: `id1` (oId) and `name1` (str). We commit and push that change. We also add a `Testcollection2` with 2 attributes: `id2` (oId) and `name2` (str). We commit and push that change to the remote.
 * in Clone2, we pull from the remote and ensure that we have the same data model in there.

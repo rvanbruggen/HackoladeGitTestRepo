@@ -2407,7 +2407,7 @@
     "creationTS": "2023-06-30T10:22:58.867Z",
     "GUID": "a627368b-f60d-4294-b5c5-3ca73b653cc4",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-30T10:30:35.432Z",
+    "lastModifTS": "2023-06-30T10:31:51.162Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2463,16 +2463,16 @@
                     },
                     {
                         "GUID": "a455c990-2575-4220-a37f-5ad5c3795c2e",
-                        "x": 1167.2947510094211,
-                        "y": 1723.243606998654,
+                        "x": 1123.7685060565282,
+                        "y": 1719.2866756393003,
                         "width": 206,
                         "height": 69,
                         "color": {}
                     },
                     {
                         "GUID": "3081d79f-c255-491b-a1f6-c825396a66a0",
-                        "x": 1171.6823687752355,
-                        "y": 1846.3391655450876,
+                        "x": 1771.157469717362,
+                        "y": 1715.7604306864082,
                         "width": 206,
                         "height": 69,
                         "color": {}
