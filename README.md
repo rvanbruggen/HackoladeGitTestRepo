@@ -55,3 +55,31 @@ We will add an *cars* entity to the data model, including a foreign key relation
 ## 8. We will delete the feature branches
 
 # Part 5: Conclusion and wrap-up
+
+
+
+
+Branching scenarios:
+* people collaborating in the same branch
+    No different from working in main - main is "just a branch"
+    Checkout a branch: different term
+        does not mean locking
+        means: this branch is active on my machine. it means "activating" it.
+            you can only have one branch checked out / active at the same time
+            checking out another branch, deactivates the first branch
+        if I make a change, it impacts that active machine
+
+You can have branches of branches
+You have to decide where to merge into
+
+
+* people collaborating in separate parallel branches
+    * then we will have to work with Pull requests
+    * Pull request = review request
+        * gitlab calls it a change request
+    * You then publish your changes so that other people can review it, but not yet affect the production version of the repo
+
+* Workflow does not exist in GIT client. It exists in the GIT platform.
+* Merge and Squash+Merge
+    * Merge: each commit separately merged
+    * Squash and Merge: puts everyt
