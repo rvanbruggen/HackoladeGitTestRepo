@@ -1361,14 +1361,6 @@
                             "lineageSourceContainerTechName": ""
                         }
                     ]
-                },
-                {
-                    "name": "Score1",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "string",
-                    "GUID": "15e9d671-927b-4141-bfc6-e868be29446e",
-                    "error": {}
                 }
             ],
             "definitions": {
@@ -2220,8 +2212,7 @@
         "f9828148-1143-404b-b315-a79d438a71d9": "email",
         "b3088b4d-2ef9-45be-8d3c-b9e064bfb7f9": "password",
         "0e2a1115-4b65-40a6-868e-e3d8c77f17c0": "users",
-        "6dfc898a-2687-4194-bf78-5ac66dd14e2c": "fk movies._id to comments.movie_id",
-        "15e9d671-927b-4141-bfc6-e868be29446e": "Score1"
+        "6dfc898a-2687-4194-bf78-5ac66dd14e2c": "fk movies._id to comments.movie_id"
     },
     "definitions": {
         "type": "definitions",
@@ -2254,7 +2245,7 @@
     "creationTS": "2023-06-30T06:47:37.852Z",
     "GUID": "3d8eb62b-d3f3-4883-ba7f-9646f38ea9d9",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-30T07:04:26.580Z",
+    "lastModifTS": "2023-06-30T07:05:21.484Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2281,7 +2272,7 @@
                         "x": 1400,
                         "y": 1350,
                         "width": 324,
-                        "height": 951,
+                        "height": 933,
                         "color": {}
                     },
                     {
