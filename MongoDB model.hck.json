@@ -1367,8 +1367,9 @@
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "numeric",
-                    "error": {},
-                    "GUID": "7bd5da11-5d99-48ae-874a-076ed3486196"
+                    "GUID": "7bd5da11-5d99-48ae-874a-076ed3486196",
+                    "description": "Adding a description - just one line",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -2260,7 +2261,7 @@
     "creationTS": "2023-06-30T10:22:58.867Z",
     "GUID": "a627368b-f60d-4294-b5c5-3ca73b653cc4",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-30T13:18:50.538Z",
+    "lastModifTS": "2023-06-30T13:21:48.664Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
