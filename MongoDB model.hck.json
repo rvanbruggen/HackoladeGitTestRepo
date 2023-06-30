@@ -2042,6 +2042,116 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             }
+        },
+        {
+            "collectionName": "Testcollection1",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "56c69b69-d497-457f-9f9b-6a37258046e9",
+                    "error": {}
+                },
+                {
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "3bc4424d-c531-4143-b9d9-0ad4051ee0de",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "f9a9aa2d-5636-4446-a9e2-1ec854a27916"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "347bea90-1527-4bd3-8856-1be8f8cb3217",
+            "bucketId": "cc2368d9-1b5d-488b-95f5-b76f3ca936e1"
+        },
+        {
+            "collectionName": "Testcollection2",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "d6d3a433-85a3-4f1e-8e6d-9596a6db98f9",
+                    "error": {},
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sources": [
+                        {
+                            "GUID": "6e32a5a1-59be-46eb-be74-3ddfeeac702b",
+                            "lineageSourceGUID": "f51a47a4-4a13-485f-a177-6319ed7f8c4d",
+                            "lineageSourceAttrBusName": "id",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Testcollection1",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "b8bfeead-f144-43d1-9c54-ae5dddc50a3d",
+                    "error": {},
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sources": [
+                        {
+                            "GUID": "cd8a1a87-5987-4644-9200-71579a115faa",
+                            "lineageSourceGUID": "f51a47a4-4a13-485f-a177-6319ed7f8c4d",
+                            "lineageSourceAttrBusName": "name",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Testcollection1",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "sample_mflix",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "f5fa004c-b2f1-4f54-93a8-24b6712ea3ff"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "93235e36-b723-4560-a2fc-b298db3f9991",
+            "bucketId": "cc2368d9-1b5d-488b-95f5-b76f3ca936e1"
         }
     ],
     "buckets": [
@@ -2084,7 +2194,9 @@
                 "c8841102-4380-436d-b3dc-2d0367a9d3e9",
                 "7b1b02fa-bc99-49f8-91db-594b9dcc2785",
                 "0e2a1115-4b65-40a6-868e-e3d8c77f17c0",
-                "f90e145d-5c8c-4f56-a6eb-f33bc8336fbf"
+                "f90e145d-5c8c-4f56-a6eb-f33bc8336fbf",
+                "347bea90-1527-4bd3-8856-1be8f8cb3217",
+                "93235e36-b723-4560-a2fc-b298db3f9991"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -2236,7 +2348,14 @@
         "6dfc898a-2687-4194-bf78-5ac66dd14e2c": "fk movies._id to comments.movie_id",
         "e9051edd-97c6-485c-b737-e15cf9497e41": "Score1",
         "168e86f5-7eea-4090-ad86-a037f1646693": "Score2",
-        "de103823-4261-4216-bc01-208828114e82": "Score2"
+        "de103823-4261-4216-bc01-208828114e82": "Score2",
+        "347bea90-1527-4bd3-8856-1be8f8cb3217": "Testcollection1",
+        "56c69b69-d497-457f-9f9b-6a37258046e9": "id",
+        "3bc4424d-c531-4143-b9d9-0ad4051ee0de": "name",
+        "f51a47a4-4a13-485f-a177-6319ed7f8c4d": "Copied from model",
+        "d6d3a433-85a3-4f1e-8e6d-9596a6db98f9": "id",
+        "b8bfeead-f144-43d1-9c54-ae5dddc50a3d": "name",
+        "93235e36-b723-4560-a2fc-b298db3f9991": "Testcollection2"
     },
     "definitions": {
         "type": "definitions",
@@ -2260,6 +2379,14 @@
             "lineageTimestamp": "2023-06-30 8:47:58 CEST",
             "lineageSourceFormat": "Instance",
             "lineageSourceConnectionName": "Atlas"
+        },
+        {
+            "GUID": "f51a47a4-4a13-485f-a177-6319ed7f8c4d",
+            "sourceName": "Copied from model",
+            "lineageTimestamp": "2023-06-30 10:50:20 CEST",
+            "lineageSourceType": "Copy/Paste/Duplicate",
+            "lineageSourceFormat": "Model",
+            "lineageFilePathName": "/Users/rvanbruggen/Documents/GitHub/GitHubTest/Clone1/MongoDB model.hck.json"
         }
     ],
     "decorativeSymbols": [],
@@ -2269,7 +2396,7 @@
     "creationTS": "2023-06-30T06:47:37.852Z",
     "GUID": "3d8eb62b-d3f3-4883-ba7f-9646f38ea9d9",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-30T08:48:20.103Z",
+    "lastModifTS": "2023-06-30T08:50:31.578Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2321,6 +2448,22 @@
                         "y": 1150,
                         "width": 210,
                         "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "347bea90-1527-4bd3-8856-1be8f8cb3217",
+                        "x": 1088.605659278154,
+                        "y": 1634.6020260349628,
+                        "width": 206,
+                        "height": 69,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "93235e36-b723-4560-a2fc-b298db3f9991",
+                        "x": 1087.9607684525856,
+                        "y": 1728.7952138023875,
+                        "width": 206,
+                        "height": 69,
                         "color": {}
                     }
                 ],
