@@ -728,22 +728,7 @@
                     "isActivated": true,
                     "type": "multiple",
                     "primaryKey": false,
-                    "multipleTypes": [
-                        {
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "type": "numeric",
-                            "GUID": "f6c97536-6ebb-4f21-8385-6efbfac2bff1",
-                            "primaryKey": false
-                        },
-                        {
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "type": "string",
-                            "GUID": "19914e75-7041-405a-aafe-c9eb2000de88",
-                            "primaryKey": false
-                        }
-                    ],
+                    "multipleTypes": [],
                     "GUID": "3545a4d2-2bca-406d-bab0-dc4fa96ef7e8",
                     "required": true,
                     "sample": 2004,
@@ -773,22 +758,7 @@
                             "isActivated": true,
                             "type": "multiple",
                             "primaryKey": false,
-                            "multipleTypes": [
-                                {
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "type": "numeric",
-                                    "GUID": "93d18c23-c7e9-4995-850a-3954e0b310df",
-                                    "primaryKey": false
-                                },
-                                {
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "type": "string",
-                                    "GUID": "73805dbe-472c-457e-bb6e-354f7113b16a",
-                                    "primaryKey": false
-                                }
-                            ],
+                            "multipleTypes": [],
                             "GUID": "df6befaa-1beb-4ff6-909b-f33615701394",
                             "required": true,
                             "sample": 6.9,
@@ -812,22 +782,7 @@
                             "isActivated": true,
                             "type": "multiple",
                             "primaryKey": false,
-                            "multipleTypes": [
-                                {
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "type": "numeric",
-                                    "GUID": "8387976d-582d-4fe0-a263-3ea8a5f13936",
-                                    "primaryKey": false
-                                },
-                                {
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "type": "string",
-                                    "GUID": "afa51620-f5f7-4396-bfe6-80907e1b592c",
-                                    "primaryKey": false
-                                }
-                            ],
+                            "multipleTypes": [],
                             "GUID": "dcd3fd3c-5ed9-4b03-8a5d-8d189476e748",
                             "required": true,
                             "sample": 1081144,
@@ -1414,6 +1369,14 @@
                     "type": "numeric",
                     "error": {},
                     "GUID": "4b393632-6965-4a07-ab45-79a0e4a9503f"
+                },
+                {
+                    "name": "score2",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "error": {},
+                    "GUID": "27308ebd-4289-4830-86fa-eea8a0e7d24a"
                 }
             ],
             "definitions": {
@@ -1756,22 +1719,7 @@
                                     "isActivated": true,
                                     "type": "multiple",
                                     "primaryKey": false,
-                                    "multipleTypes": [
-                                        {
-                                            "hackoladeMeta": {},
-                                            "isActivated": true,
-                                            "type": "string",
-                                            "GUID": "b8b1db6f-043f-484b-a171-061c2c7e51bd",
-                                            "primaryKey": false
-                                        },
-                                        {
-                                            "hackoladeMeta": {},
-                                            "isActivated": true,
-                                            "type": "null",
-                                            "GUID": "1c5e2320-a9d3-486d-8c0f-3f8adba69db8",
-                                            "primaryKey": false
-                                        }
-                                    ],
+                                    "multipleTypes": [],
                                     "GUID": "d91bf665-58a3-4169-a2ad-76c96c54d3fe",
                                     "required": false,
                                     "sample": "Ste 4",
@@ -2121,6 +2069,11 @@
                 "76e111d1-4994-4d51-8581-1f11b18bfc26",
                 "c8841102-4380-436d-b3dc-2d0367a9d3e9",
                 "7b1b02fa-bc99-49f8-91db-594b9dcc2785",
+                "0e2a1115-4b65-40a6-868e-e3d8c77f17c0",
+                "998b8a7e-fdc7-45f4-b145-80857ccddea0",
+                "76e111d1-4994-4d51-8581-1f11b18bfc26",
+                "c8841102-4380-436d-b3dc-2d0367a9d3e9",
+                "7b1b02fa-bc99-49f8-91db-594b9dcc2785",
                 "0e2a1115-4b65-40a6-868e-e3d8c77f17c0"
             ],
             "backgroundColor": {
@@ -2271,7 +2224,8 @@
         "b3088b4d-2ef9-45be-8d3c-b9e064bfb7f9": "password",
         "0e2a1115-4b65-40a6-868e-e3d8c77f17c0": "users",
         "6dfc898a-2687-4194-bf78-5ac66dd14e2c": "fk movies._id to comments.movie_id",
-        "4b393632-6965-4a07-ab45-79a0e4a9503f": "score1"
+        "4b393632-6965-4a07-ab45-79a0e4a9503f": "score1",
+        "27308ebd-4289-4830-86fa-eea8a0e7d24a": "score2"
     },
     "definitions": {
         "type": "definitions",
@@ -2304,7 +2258,7 @@
     "creationTS": "2023-06-30T06:47:37.852Z",
     "GUID": "3d8eb62b-d3f3-4883-ba7f-9646f38ea9d9",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-30T06:49:29.118Z",
+    "lastModifTS": "2023-06-30T06:51:47.830Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2359,12 +2313,6 @@
                         "color": {}
                     }
                 ],
-                "erdDefinitions": {
-                    "erd": [],
-                    "rootPath": [],
-                    "entities": [],
-                    "decorativeSymbols": []
-                },
                 "buckets": [
                     {
                         "x": 1010,
@@ -2372,28 +2320,14 @@
                         "GUID": "cc2368d9-1b5d-488b-95f5-b76f3ca936e1"
                     }
                 ],
-                "collapsedNodes": [],
-                "activeRelationship": "",
-                "activeRelationshipFields": {
-                    "childField": [],
-                    "parentField": []
-                },
-                "selectedCollections": [],
-                "displayColorPicker": false,
+                "diagramViews": [],
+                "decorativeSymbols": [],
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
                     "forceLayout": true,
                     "defaultLinkLength": 300
-                },
-                "diagramViews": [],
-                "decorativeSymbols": [],
-                "nestedCollectionsLayout": "horizontal",
-                "options": [],
-                "relationshipUpdateDisabled": false,
-                "displayOptions": {
-                    "dndHandles": false
                 }
             },
             "collectionLevel": {},
