@@ -2051,6 +2051,63 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             }
+        },
+        {
+            "collectionName": "cars",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "07a3df09-f360-42f8-a565-0412d84128ec",
+                    "error": {}
+                },
+                {
+                    "name": "make",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "a769f9ae-abe0-4f89-93fa-acdbf4cf9218",
+                    "error": {}
+                },
+                {
+                    "name": "model",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "18b65ead-05ab-4169-a4b1-afbd339c016b",
+                    "error": {}
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "4fddf810-85d9-4ba4-a151-d55ffced5a80",
+                    "name": "movie_id",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "73873bb9-0c1b-4e55-8e2d-39c1e7992a64"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "93461706-c4de-4691-be51-ca71e13598a6",
+            "bucketId": "0d789463-a545-4f14-af39-3d59d0138693"
         }
     ],
     "buckets": [
@@ -2069,7 +2126,8 @@
                 "4f0a25e9-c609-4896-b02a-bf95c1640bf3",
                 "a35d5094-8005-4a28-935f-4ee78b6ae94d",
                 "a455c990-2575-4220-a37f-5ad5c3795c2e",
-                "3081d79f-c255-491b-a1f6-c825396a66a0"
+                "3081d79f-c255-491b-a1f6-c825396a66a0",
+                "93461706-c4de-4691-be51-ca71e13598a6"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -2220,7 +2278,15 @@
         "a35d5094-8005-4a28-935f-4ee78b6ae94d": "users",
         "3caaa85f-01a6-4f3c-aa3b-f7ec9063a125": "fk movies._id to comments.movie_id",
         "4c1f18aa-e24a-4273-8fc4-48196f6b26b7": "Copied from model",
+<<<<<<< HEAD
+        "93461706-c4de-4691-be51-ca71e13598a6": "cars",
+        "07a3df09-f360-42f8-a565-0412d84128ec": "_id",
+        "a769f9ae-abe0-4f89-93fa-acdbf4cf9218": "make",
+        "18b65ead-05ab-4169-a4b1-afbd339c016b": "model",
+        "4fddf810-85d9-4ba4-a151-d55ffced5a80": "movie_id"
+=======
         "6f949ece-59ad-45b5-ac01-5595209a2481": "score"
+>>>>>>> origin/main
     },
     "definitions": {
         "type": "definitions",
@@ -2261,7 +2327,11 @@
     "creationTS": "2023-06-30T10:22:58.867Z",
     "GUID": "a627368b-f60d-4294-b5c5-3ca73b653cc4",
     "isLineageEnabled": true,
+<<<<<<< HEAD
+    "lastModifTS": "2023-06-30T13:52:02.782Z",
+=======
     "lastModifTS": "2023-06-30T14:00:55.349Z",
+>>>>>>> origin/main
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2313,6 +2383,14 @@
                         "y": 1150,
                         "width": 210,
                         "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "93461706-c4de-4691-be51-ca71e13598a6",
+                        "x": 1846.564719358534,
+                        "y": 2126.4284077892326,
+                        "width": 171,
+                        "height": 105,
                         "color": {}
                     }
                 ],
