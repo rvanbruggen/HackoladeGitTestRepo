@@ -1369,6 +1369,14 @@
                     "type": "numeric",
                     "GUID": "4b393632-6965-4a07-ab45-79a0e4a9503f",
                     "error": {}
+                },
+                {
+                    "name": "I want my own score attribute!",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "error": {},
+                    "GUID": "05dfea82-9c52-466f-bccf-2c85de6a6b65"
                 }
             ],
             "definitions": {
@@ -2113,24 +2121,28 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1872.5,
-                        "y": 1350
+                        "x": 1979,
+                        "y": 1419
                     },
                     {
-                        "x": 1872.5,
+                        "x": 2004,
+                        "y": 1419
+                    },
+                    {
+                        "x": 2004,
                         "y": 1325
                     },
                     {
-                        "x": 1561.5,
+                        "x": 1584.5,
                         "y": 1325
                     },
                     {
-                        "x": 1561.5,
+                        "x": 1584.5,
                         "y": 1350
                     }
                 ],
                 "sides": [
-                    "top",
+                    "right",
                     "top"
                 ]
             }
@@ -2216,7 +2228,8 @@
         "b3088b4d-2ef9-45be-8d3c-b9e064bfb7f9": "password",
         "0e2a1115-4b65-40a6-868e-e3d8c77f17c0": "users",
         "6dfc898a-2687-4194-bf78-5ac66dd14e2c": "fk movies._id to comments.movie_id",
-        "4b393632-6965-4a07-ab45-79a0e4a9503f": "score"
+        "4b393632-6965-4a07-ab45-79a0e4a9503f": "score",
+        "05dfea82-9c52-466f-bccf-2c85de6a6b65": "I want my own score attribute!"
     },
     "definitions": {
         "type": "definitions",
@@ -2249,7 +2262,7 @@
     "creationTS": "2023-06-30T06:47:37.852Z",
     "GUID": "3d8eb62b-d3f3-4883-ba7f-9646f38ea9d9",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-30T06:56:56.047Z",
+    "lastModifTS": "2023-06-30T06:58:31.321Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2275,8 +2288,8 @@
                         "GUID": "76e111d1-4994-4d51-8581-1f11b18bfc26",
                         "x": 1400,
                         "y": 1350,
-                        "width": 324,
-                        "height": 951,
+                        "width": 370,
+                        "height": 969,
                         "color": {}
                     },
                     {
