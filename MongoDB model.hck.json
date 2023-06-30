@@ -1361,22 +1361,6 @@
                             "lineageSourceContainerTechName": ""
                         }
                     ]
-                },
-                {
-                    "name": "I had the score attribute first",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "numeric",
-                    "GUID": "4b393632-6965-4a07-ab45-79a0e4a9503f",
-                    "error": {}
-                },
-                {
-                    "name": "I want my own score attribute!",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "numeric",
-                    "error": {},
-                    "GUID": "05dfea82-9c52-466f-bccf-2c85de6a6b65"
                 }
             ],
             "definitions": {
@@ -2134,11 +2118,11 @@
                         "y": 1325
                     },
                     {
-                        "x": 1580,
+                        "x": 1562,
                         "y": 1325
                     },
                     {
-                        "x": 1580,
+                        "x": 1562,
                         "y": 1350
                     }
                 ],
@@ -2228,9 +2212,7 @@
         "f9828148-1143-404b-b315-a79d438a71d9": "email",
         "b3088b4d-2ef9-45be-8d3c-b9e064bfb7f9": "password",
         "0e2a1115-4b65-40a6-868e-e3d8c77f17c0": "users",
-        "6dfc898a-2687-4194-bf78-5ac66dd14e2c": "fk movies._id to comments.movie_id",
-        "4b393632-6965-4a07-ab45-79a0e4a9503f": "I had the score attribute first",
-        "05dfea82-9c52-466f-bccf-2c85de6a6b65": "I want my own score attribute!"
+        "6dfc898a-2687-4194-bf78-5ac66dd14e2c": "fk movies._id to comments.movie_id"
     },
     "definitions": {
         "type": "definitions",
@@ -2263,7 +2245,7 @@
     "creationTS": "2023-06-30T06:47:37.852Z",
     "GUID": "3d8eb62b-d3f3-4883-ba7f-9646f38ea9d9",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-30T07:02:45.633Z",
+    "lastModifTS": "2023-06-30T07:03:22.882Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2289,8 +2271,8 @@
                         "GUID": "76e111d1-4994-4d51-8581-1f11b18bfc26",
                         "x": 1400,
                         "y": 1350,
-                        "width": 370,
-                        "height": 969,
+                        "width": 324,
+                        "height": 933,
                         "color": {}
                     },
                     {
@@ -2318,6 +2300,12 @@
                         "color": {}
                     }
                 ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
                 "buckets": [
                     {
                         "x": 1010,
@@ -2325,15 +2313,26 @@
                         "GUID": "cc2368d9-1b5d-488b-95f5-b76f3ca936e1"
                     }
                 ],
-                "diagramViews": [],
-                "decorativeSymbols": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
                     "forceLayout": true,
                     "defaultLinkLength": 300
-                }
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
             },
             "collectionLevel": {},
             "changed": false
