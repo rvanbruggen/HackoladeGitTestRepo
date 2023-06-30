@@ -1363,20 +1363,12 @@
                     ]
                 },
                 {
-                    "name": "score1",
+                    "name": "score",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "numeric",
-                    "error": {},
-                    "GUID": "4b393632-6965-4a07-ab45-79a0e4a9503f"
-                },
-                {
-                    "name": "score2",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "numeric",
-                    "error": {},
-                    "GUID": "27308ebd-4289-4830-86fa-eea8a0e7d24a"
+                    "GUID": "4b393632-6965-4a07-ab45-79a0e4a9503f",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -2224,8 +2216,7 @@
         "b3088b4d-2ef9-45be-8d3c-b9e064bfb7f9": "password",
         "0e2a1115-4b65-40a6-868e-e3d8c77f17c0": "users",
         "6dfc898a-2687-4194-bf78-5ac66dd14e2c": "fk movies._id to comments.movie_id",
-        "4b393632-6965-4a07-ab45-79a0e4a9503f": "score1",
-        "27308ebd-4289-4830-86fa-eea8a0e7d24a": "score2"
+        "4b393632-6965-4a07-ab45-79a0e4a9503f": "score"
     },
     "definitions": {
         "type": "definitions",
@@ -2258,7 +2249,7 @@
     "creationTS": "2023-06-30T06:47:37.852Z",
     "GUID": "3d8eb62b-d3f3-4883-ba7f-9646f38ea9d9",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-30T06:51:47.830Z",
+    "lastModifTS": "2023-06-30T06:56:56.047Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2313,6 +2304,12 @@
                         "color": {}
                     }
                 ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
                 "buckets": [
                     {
                         "x": 1010,
@@ -2320,15 +2317,26 @@
                         "GUID": "cc2368d9-1b5d-488b-95f5-b76f3ca936e1"
                     }
                 ],
-                "diagramViews": [],
-                "decorativeSymbols": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
                     "forceLayout": true,
                     "defaultLinkLength": 300
-                }
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
             },
             "collectionLevel": {},
             "changed": false
