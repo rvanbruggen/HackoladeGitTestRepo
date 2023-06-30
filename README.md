@@ -61,7 +61,7 @@ We will add an *cars* entity to the data model, including a foreign key relation
 
 # Temporary notes:
 
-* leverage the scenarios described (in our documentation)[https://hackolade.com/help/Modelversioning.html]
+* leverage the scenarios described [in our documentation](https://hackolade.com/help/Modelversioning.html)
 
 Branching scenarios:
 * people collaborating in the same branch
