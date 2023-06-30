@@ -130,6 +130,41 @@
             "additionalProperties": false,
             "GUID": "cf4cf7a2-4713-4e8f-bb7b-7d3924325a32",
             "bucketId": "a1040ed1-4918-4a16-88d7-29cdcee8d6b1"
+        },
+        {
+            "collectionName": "product",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "properties": [],
+                    "color": "#555555",
+                    "error": {},
+                    "GUID": "e7820fd4-f323-4c89-a1ba-a66fd83ab981"
+                },
+                {
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "properties": [],
+                    "color": "#555555",
+                    "GUID": "09044a71-7f6a-4db4-bbc1-fa72735a919e",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "666c8755-1d98-4de4-829f-666f85df8312"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "ef827613-7195-430d-9080-79adfdd1d0ce",
+            "bucketId": "a1040ed1-4918-4a16-88d7-29cdcee8d6b1"
         }
     ],
     "buckets": [
@@ -138,7 +173,8 @@
             "type": "bucket",
             "collectionIds": [
                 "65c62859-3bc0-4fca-b24f-fd0c083f0ed8",
-                "cf4cf7a2-4713-4e8f-bb7b-7d3924325a32"
+                "cf4cf7a2-4713-4e8f-bb7b-7d3924325a32",
+                "ef827613-7195-430d-9080-79adfdd1d0ce"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -164,7 +200,10 @@
         "91671f58-da5b-40ea-8674-94fb2e0be6b1": "city",
         "aa89326e-1b8f-4f7c-8615-27d702c7d6b3": "country",
         "329ca3ef-7072-470c-8d36-c6148bd380db": "continent",
-        "b2f81e1b-b304-4a32-8711-7c68982d040c": "id"
+        "b2f81e1b-b304-4a32-8711-7c68982d040c": "id",
+        "ef827613-7195-430d-9080-79adfdd1d0ce": "product",
+        "e7820fd4-f323-4c89-a1ba-a66fd83ab981": "id",
+        "09044a71-7f6a-4db4-bbc1-fa72735a919e": "name"
     },
     "definitions": {
         "type": "definitions",
@@ -189,7 +228,7 @@
     "creationTS": "2023-06-30T14:41:11.425Z",
     "GUID": "06ea39d1-9b04-4867-9ef3-081c3fc93c6d",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-06-30T14:58:29.636Z",
+    "lastModifTS": "2023-06-30T15:00:57.561Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -207,18 +246,26 @@
                 "erd": [
                     {
                         "GUID": "65c62859-3bc0-4fca-b24f-fd0c083f0ed8",
-                        "x": 1233,
-                        "y": 1412,
-                        "width": 210,
-                        "height": 159,
+                        "x": 1200,
+                        "y": 1200,
+                        "width": 189,
+                        "height": 155,
                         "color": {}
                     },
                     {
                         "GUID": "cf4cf7a2-4713-4e8f-bb7b-7d3924325a32",
-                        "x": 1464,
-                        "y": 1583,
-                        "width": 187,
-                        "height": 87,
+                        "x": 1050,
+                        "y": 1050,
+                        "width": 166,
+                        "height": 83,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "ef827613-7195-430d-9080-79adfdd1d0ce",
+                        "x": 1300,
+                        "y": 1050,
+                        "width": 167,
+                        "height": 65,
                         "color": {}
                     }
                 ],
@@ -230,8 +277,8 @@
                 },
                 "buckets": [
                     {
-                        "x": 1193,
-                        "y": 1372,
+                        "x": 1000,
+                        "y": 1000,
                         "GUID": "a1040ed1-4918-4a16-88d7-29cdcee8d6b1"
                     }
                 ],
