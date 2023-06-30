@@ -1362,6 +1362,15 @@
                             "lineageSourceContainerTechName": ""
                         }
                     ]
+                },
+                {
+                    "name": "addedscore",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "GUID": "7bd5da11-5d99-48ae-874a-076ed3486196",
+                    "description": "Adding a description - just one line",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -2173,11 +2182,11 @@
                         "y": 1325
                     },
                     {
-                        "x": 1562,
+                        "x": 1561.5,
                         "y": 1325
                     },
                     {
-                        "x": 1562,
+                        "x": 1561.5,
                         "y": 1350
                     }
                 ],
@@ -2321,11 +2330,15 @@
         "a35d5094-8005-4a28-935f-4ee78b6ae94d": "users",
         "3caaa85f-01a6-4f3c-aa3b-f7ec9063a125": "fk movies._id to comments.movie_id",
         "4c1f18aa-e24a-4273-8fc4-48196f6b26b7": "Copied from model",
+<<<<<<< HEAD
         "c4141c28-4952-4260-bfaf-d466f9e068ee": "animals",
         "391fb69a-d385-455e-895c-b0fd4058ee54": "_id",
         "c9223d40-9b32-49b7-bb6e-f445443bb631": "name",
         "20b64a3c-5f85-4bbd-8a15-8d8859cca656": "movie_id",
         "239d8b67-0485-4bee-bad4-263f16531393": "fk animals.movie_id to movies._id"
+=======
+        "7bd5da11-5d99-48ae-874a-076ed3486196": "addedscore"
+>>>>>>> origin/main
     },
     "definitions": {
         "type": "definitions",
@@ -2366,7 +2379,11 @@
     "creationTS": "2023-06-30T10:22:58.867Z",
     "GUID": "a627368b-f60d-4294-b5c5-3ca73b653cc4",
     "isLineageEnabled": true,
+<<<<<<< HEAD
     "lastModifTS": "2023-06-30T13:29:31.091Z",
+=======
+    "lastModifTS": "2023-06-30T13:21:48.664Z",
+>>>>>>> origin/main
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2393,7 +2410,7 @@
                         "x": 1400,
                         "y": 1350,
                         "width": 324,
-                        "height": 933,
+                        "height": 951,
                         "color": {}
                     },
                     {
