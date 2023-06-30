@@ -14,7 +14,7 @@ See [this page](https://docs.github.com/en/repositories/creating-and-managing-re
 ## 2. Add a new Hackolade model to one of the clones of the repo
 We are going to reverse engineer a MongoDB model file and store that in Clone1, the first clone of the repo. We do this in the `main` branch of the repo. When we then switch to the second clone, we will pull the latest changes and receive the new data model as part of the `main` branch as well.
 
-# Part 2: Scenario1 - Small, non-conflicting change to the data model
+# Part 2: Scenario 1 - Small, non-conflicting change to the data model
 We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync with the Github remote.
 Then, in Clone 1, we will add a new property `Score1` (Numeric) to the `Movies` collection. We will commit that change, but not push it yet.
 Switching to Clone 2, we will add a new property `Score2` (Numeric) to the `Movies` collection. We will commit that change, and immediately push it. Therefore, the later change will have been synced to the remote, and the earlier change to the datamodel is still committed to Clone1 - but not yet synced to the remote.
@@ -24,27 +24,25 @@ We will then find that we cannot immediately push: we have to pull first, to get
 Note that in this case, we chose to keep both Score1 and Score2 attributes in the data model. This would of course not always be true. In the conflict resolution screen, we can choose to keep only one of the `Score` attributes and allow only that one  to survive.
 
 
-# Part 3: Small, conflicting change to the data model
+# Part 3: Scenario 2 - Small, conflicting change to the data model
 
-## 3. In Clone1 - we add a new "Animals" feature
+# Part 4: Scenario 3 - Large, (feature) branch based change to the data model using pull request
+## 1. In Clone1 - we add a new "Animals" feature
 We will add an *animals* entity to the data model, including a foreign key relationship to the *movies* entity. We save that file in Clone1, in a separate "feature branch" - `feature-animals`. We push that branch to the remote.
 
-## 4. In Clone2 - we add a new "Cars" feature
+## 2. In Clone2 - we add a new "Cars" feature
 We will add an *cars* entity to the data model, including a foreign key relationship to the *movies* entity. We save that file in Clone2, in a separate "feature branch" - `feature-cars`. We push that branch to the remote.
 
-## 5. In Clone1 - we submit the "Animals" feature for review.
+## 3. In Clone1 - we submit the "Animals" feature for review.
 
-## 6. In Clone2 - we submit the "Cars" feature for review
+## 4. In Clone2 - we submit the "Cars" feature for review
 
-## 7. We will merge the "feature-animals" branch into "main" of Clone1
+## 5. We will merge the "feature-animals" branch into "main" of Clone1
 
-## 8. We will merge the "feature-cars" branch into "main" of Clone2
+## 6. We will merge the "feature-cars" branch into "main" of Clone2
 
-## 9. We will resolve the conflicts
+## 7. We will resolve the conflicts
 
-## 10. We will delete the feature branches
+## 8. We will delete the feature branches
 
-
-
-##
-
+# Part 5: Conclusion and wrap-up
