@@ -132,7 +132,11 @@
             "bucketId": "a1040ed1-4918-4a16-88d7-29cdcee8d6b1"
         },
         {
+<<<<<<< HEAD
             "collectionName": "product",
+=======
+            "collectionName": "order",
+>>>>>>> origin/main
             "type": "object",
             "properties": [
                 {
@@ -143,6 +147,7 @@
                     "properties": [],
                     "color": "#555555",
                     "error": {},
+<<<<<<< HEAD
                     "GUID": "e7820fd4-f323-4c89-a1ba-a66fd83ab981"
                 },
                 {
@@ -176,16 +181,62 @@
                     "color": "#555555",
                     "error": {},
                     "GUID": "dc0459b4-7a94-4f64-afd5-dcd20cae8cbc"
+=======
+                    "GUID": "03202be3-661f-408c-871c-3cfb5f4191ad"
+                },
+                {
+                    "name": "products",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "ids",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "array",
+                            "properties": [
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "properties": [],
+                                    "color": "#555555",
+                                    "error": {},
+                                    "GUID": "3264f760-2819-4323-8db7-8988a47dbace",
+                                    "arrayItem": true,
+                                    "displayName": "id"
+                                }
+                            ],
+                            "additionalItems": true,
+                            "color": "#555555",
+                            "GUID": "9c0330a6-1ef6-4fec-84aa-186218731a1f",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "color": "#555555",
+                    "error": {},
+                    "GUID": "83cdc641-4e8f-4881-9f3c-e667bdc3292e"
+>>>>>>> origin/main
                 }
             ],
             "definitions": {
                 "type": "definitions",
                 "properties": [],
+<<<<<<< HEAD
                 "GUID": "666c8755-1d98-4de4-829f-666f85df8312"
             },
             "isActivated": true,
             "additionalProperties": false,
             "GUID": "ef827613-7195-430d-9080-79adfdd1d0ce",
+=======
+                "GUID": "631ddaf0-3d11-4e37-9c9e-f8beabb87ea9"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "GUID": "50ead343-1cee-4e73-80c1-909edbd6f718",
+>>>>>>> origin/main
             "bucketId": "a1040ed1-4918-4a16-88d7-29cdcee8d6b1"
         }
     ],
@@ -196,7 +247,11 @@
             "collectionIds": [
                 "65c62859-3bc0-4fca-b24f-fd0c083f0ed8",
                 "cf4cf7a2-4713-4e8f-bb7b-7d3924325a32",
+<<<<<<< HEAD
                 "ef827613-7195-430d-9080-79adfdd1d0ce"
+=======
+                "50ead343-1cee-4e73-80c1-909edbd6f718"
+>>>>>>> origin/main
             ],
             "backgroundColor": {
                 "r": 216,
@@ -223,10 +278,17 @@
         "aa89326e-1b8f-4f7c-8615-27d702c7d6b3": "country",
         "329ca3ef-7072-470c-8d36-c6148bd380db": "continent",
         "b2f81e1b-b304-4a32-8711-7c68982d040c": "id",
+<<<<<<< HEAD
         "ef827613-7195-430d-9080-79adfdd1d0ce": "product",
         "e7820fd4-f323-4c89-a1ba-a66fd83ab981": "id",
         "09044a71-7f6a-4db4-bbc1-fa72735a919e": "name",
         "dc0459b4-7a94-4f64-afd5-dcd20cae8cbc": "category"
+=======
+        "50ead343-1cee-4e73-80c1-909edbd6f718": "order",
+        "03202be3-661f-408c-871c-3cfb5f4191ad": "id",
+        "83cdc641-4e8f-4881-9f3c-e667bdc3292e": "products",
+        "9c0330a6-1ef6-4fec-84aa-186218731a1f": "ids"
+>>>>>>> origin/main
     },
     "definitions": {
         "type": "definitions",
@@ -251,7 +313,11 @@
     "creationTS": "2023-06-30T14:41:11.425Z",
     "GUID": "06ea39d1-9b04-4867-9ef3-081c3fc93c6d",
     "isLineageEnabled": true,
+<<<<<<< HEAD
     "lastModifTS": "2023-06-30T15:04:43.345Z",
+=======
+    "lastModifTS": "2023-06-30T15:03:06.426Z",
+>>>>>>> origin/main
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -288,6 +354,14 @@
                         "x": 1300,
                         "y": 1050,
                         "width": 178,
+                        "height": 105,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "50ead343-1cee-4e73-80c1-909edbd6f718",
+                        "x": 1233,
+                        "y": 1633,
+                        "width": 198,
                         "height": 105,
                         "color": {}
                     }
