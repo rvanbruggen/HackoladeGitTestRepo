@@ -1368,6 +1368,7 @@
                     "isActivated": true,
                     "type": "numeric",
                     "GUID": "017806c8-cf27-4884-b0a6-e917540b19cc",
+                    "description": "Description from clone1.",
                     "error": {}
                 }
             ],
@@ -2260,7 +2261,7 @@
     "creationTS": "2023-07-03T09:47:44.311Z",
     "GUID": "fab5bd67-d509-4568-888d-821da31bc808",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-07-03T13:08:10.149Z",
+    "lastModifTS": "2023-07-03T13:18:30.166Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {

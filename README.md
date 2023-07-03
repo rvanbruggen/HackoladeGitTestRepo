@@ -42,7 +42,18 @@ Then, we proceed as follows:
 
 Note that in this case, we chose to keep both Score1 and Score2 attributes in the data model. This would of course not always be true. In the conflict resolution screen, we can choose to keep only one of the `Score` attributes and allow only that one  to survive.
 
-## Scenario 3 - Small, non-conflicting change to the data model with git-based resolution
+## Scenario 3 - Small, conflicting change to the data model with git-based resolution
+
+We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync with the Github remote.
+Then, we proceed as follows:
+* In Clone 1, we will add a new property `Score` (Numeric) to the `Movies` collection. We commit and push that change to the repo
+* In Clone 2, we will pull from the remote, ensuring that both clones now have the latest copy of the remote. 
+* In Clone 2, we will update the description of the `Score` property to say `This is the description of the score from Clone2.`. We will commit that change locally but NOT push that to the remote.
+* Switching to Clone 1, we will also update the description of the `Score` property to say `This is the description of the score from Clone1.`. We will commit that change locally and also push it to the remote.
+* Switching to Clone2, we will push the change that we had committed locally to the remote.
+
+
+
 Editing same property, eg. description
 
 ## Scenario 4 - Large, (feature) branch based change to the data model using pull request
