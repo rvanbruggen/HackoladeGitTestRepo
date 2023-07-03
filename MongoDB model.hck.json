@@ -2115,18 +2115,22 @@
             "childCollection": "4a5f44af-a1e6-4714-bb26-dc2ba9bdd7c4",
             "hackoladeStyles": {
                 "GUID": "3e10e9ed-f17f-4fd5-b120-e81168fd0574",
-                "autoPositioning": true,
+                "autoPositioning": false,
                 "type": "Orthogonal",
                 "thickness": 2,
                 "color": "#79c4ff",
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1872.5,
-                        "y": 1350
+                        "x": 1363.0320733104238,
+                        "y": 1608.7090492554382
                     },
                     {
-                        "x": 1872.5,
+                        "x": 1378.0320733104238,
+                        "y": 1608.7090492554382
+                    },
+                    {
+                        "x": 1378.0320733104238,
                         "y": 1325
                     },
                     {
@@ -2139,7 +2143,7 @@
                     }
                 ],
                 "sides": [
-                    "top",
+                    "right",
                     "top"
                 ]
             }
@@ -2266,7 +2270,7 @@
     "creationTS": "2023-07-03T09:47:44.311Z",
     "GUID": "fab5bd67-d509-4568-888d-821da31bc808",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-07-03T14:31:52.716Z",
+    "lastModifTS": "2023-07-03T14:38:47.499Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2282,8 +2286,8 @@
                 "erd": [
                     {
                         "GUID": "4a5f44af-a1e6-4714-bb26-dc2ba9bdd7c4",
-                        "x": 1766,
-                        "y": 1350,
+                        "x": 1150.0320733104238,
+                        "y": 1534.7903780068712,
                         "width": 213,
                         "height": 138,
                         "color": {}
