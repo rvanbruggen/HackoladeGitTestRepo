@@ -1361,15 +1361,6 @@
                             "lineageSourceContainerTechName": ""
                         }
                     ]
-                },
-                {
-                    "name": "Score",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "numeric",
-                    "GUID": "017806c8-cf27-4884-b0a6-e917540b19cc",
-                    "description": "Description from clone1.",
-                    "error": {}
                 }
             ],
             "definitions": {
@@ -2129,11 +2120,11 @@
                         "y": 1325
                     },
                     {
-                        "x": 1561.5,
+                        "x": 1562,
                         "y": 1325
                     },
                     {
-                        "x": 1561.5,
+                        "x": 1562,
                         "y": 1350
                     }
                 ],
@@ -2224,8 +2215,7 @@
         "47278890-02f3-486f-b95f-2ec5c188bafb": "password",
         "cb862aff-d41d-4c47-a6ee-a41e86f239d1": "users",
         "eb990c46-62d3-4ff8-b42f-e2a142498486": "fk movies._id to comments.movie_id",
-        "e73b7293-84ad-4421-a11c-9126292019a8": "Copied from model",
-        "017806c8-cf27-4884-b0a6-e917540b19cc": "Score"
+        "e73b7293-84ad-4421-a11c-9126292019a8": "Copied from model"
     },
     "definitions": {
         "type": "definitions",
@@ -2266,7 +2256,7 @@
     "creationTS": "2023-07-03T09:47:44.311Z",
     "GUID": "fab5bd67-d509-4568-888d-821da31bc808",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-07-03T13:20:20.783Z",
+    "lastModifTS": "2023-07-03T13:21:30.948Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2293,7 +2283,7 @@
                         "x": 1400,
                         "y": 1350,
                         "width": 324,
-                        "height": 951,
+                        "height": 933,
                         "color": {}
                     },
                     {
@@ -2321,6 +2311,12 @@
                         "color": {}
                     }
                 ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
                 "buckets": [
                     {
                         "x": 1010,
@@ -2328,15 +2324,26 @@
                         "GUID": "865e11cb-cb8f-481b-97e4-ee55d9abad96"
                     }
                 ],
-                "diagramViews": [],
-                "decorativeSymbols": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
                     "forceLayout": true,
                     "defaultLinkLength": 300
-                }
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
             },
             "collectionLevel": {},
             "changed": false
