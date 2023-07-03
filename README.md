@@ -2,7 +2,8 @@
 A small repo that would allow for quick demonstration of [the Hackolade Studio Workgroup Edition's](https://hackolade.com/editions.html) GIT integration and collaboration. We will explore different and realistic scenarios of data modeling collaboration on this page:
 * *Scenario 1:* the scenario where we make a small change to a data model, that does not create a conflict, and automatically gets merged
 * *Scenario 2:* the scenario where we make a small change to a data model, but that change DOES create a conflict that needs to be resolved
-* *Scenario 3:* the scenario where we make large changes to a data model, in separate (feature) branches, and we merge these changes back together using pull requests
+* *Scenario 3:*
+* *Scenario 4:* the scenario where we make large changes to a data model, in separate (feature) branches, and we merge these changes back together using pull requests
 
 To do so, we have to follow a process that will consist of a few parts.
 
