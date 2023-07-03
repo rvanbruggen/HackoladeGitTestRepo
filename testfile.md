@@ -1,5 +1,5 @@
 # This is a test
 
 Love this test.
-Conflict in clone2.
+Conflict in clone1
 Change on line 5 again
