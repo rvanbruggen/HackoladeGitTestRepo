@@ -1,5 +1,5 @@
 # HackoladeGitTestRepo
-A small repo that would allow for quick demonstration of Hackolade GIT integration and collaboration. We will explore different scenarios:
+A small repo that would allow for quick demonstration of [the Hackolade Studio Workgroup Edition's](https://hackolade.com/editions.html) GIT integration and collaboration. We will explore different and realistic scenarios of data modeling collaboration on this page:
 * *Scenario 1:* the scenario where we make a small change to a data model, that does not create a conflict, and automatically gets merged
 * *Scenario 2:* the scenario where we make a small change to a data model, but that change DOES create a conflict that needs to be resolved
 * *Scenario 3:* the scenario where we make large changes to a data model, in separate (feature) branches, and we merge these changes back together using pull requests
@@ -17,7 +17,9 @@ We are going to reverse engineer a MongoDB model file and store that in Clone1, 
 In a normal situation, different users will be working on different clones of the repo, and as they do, they can just commit their changes and it will not result in any conflict. If, however, users start to work on their local clones at the same time, and make changes to these clones at the same time, then the chance of conflicts between these changes arises. Hackolade has taken great care to structure the file format of the data model in such a way that many of these simultaneous edits can be automatically resolved. We will therefore demonstrate both the case where a parallel edit to a data model gets automatically, and manually resolved.
 
 
-# Part 2: Scenario 1 - Small, conflicting change to the data model that is cosmetic and is auto-resolved
+# Part 2: Different scenarios for conflict resolution
+
+## Scenario 1 - Small, conflicting change to the data model that is cosmetic and is auto-resolved
 We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync with the Github remote. Then we proceed as follows:
 * in Clone1, we add a `Testcollection1` with 2 attributes: `id1` (oId) and `name1` (str). We commit and push that change. We also add a `Testcollection2` with 2 attributes: `id2` (oId) and `name2` (str). We commit and push that change to the remote.
 * in Clone2, we pull from the remote and ensure that we have the same data model in there.
@@ -25,7 +27,8 @@ We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync w
 * in the ERD of Clone1, we move the `Testcollection1` entity and the `Testcollection2` entity to the right of the diagram. We commit this change, and push it to the remote.
 * in Clone 2, we have to pull first, and then try to push our earlier change to the remote. A conflict will occur, but it will be automatically resolved. _We *sometimes* have to commit the automatically resolved change with a commit message._
 
-# Part 3: Scenario 2 - Small, conflicting change to the data model with manual resolution
+
+## Scenario 2 - Small, conflicting change to the data model with manual resolution
 
 We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync with the Github remote.
 Then, we proceed as follows:
@@ -35,26 +38,27 @@ Then, we proceed as follows:
 
 Note that in this case, we chose to keep both Score1 and Score2 attributes in the data model. This would of course not always be true. In the conflict resolution screen, we can choose to keep only one of the `Score` attributes and allow only that one  to survive.
 
-# Part 4: Scenario 3 - Large, (feature) branch based change to the data model using pull request
-## 1. In Clone1 - we add a new "Animals" feature
+
+## Scenario 3 - Large, (feature) branch based change to the data model using pull request
+### 1. In Clone1 - we add a new "Animals" feature
 We will add an *animals* entity to the data model, including a foreign key relationship to the *movies* entity. We save that file in Clone1, in a separate "feature branch" - `feature-animals`. We push that branch to the remote.
 
-## 2. In Clone2 - we add a new "Cars" feature
+### 2. In Clone2 - we add a new "Cars" feature
 We will add an *cars* entity to the data model, including a foreign key relationship to the *movies* entity. We save that file in Clone2, in a separate "feature branch" - `feature-cars`. We push that branch to the remote.
 
-## 3. In Clone1 - we submit the "Animals" feature for review.
+### 3. In Clone1 - we submit the "Animals" feature for review.
 
-## 4. In Clone2 - we submit the "Cars" feature for review
+### 4. In Clone2 - we submit the "Cars" feature for review
 
-## 5. We will merge the "feature-animals" branch into "main" of Clone1
+### 5. We will merge the "feature-animals" branch into "main" of Clone1
 
-## 6. We will merge the "feature-cars" branch into "main" of Clone2
+### 6. We will merge the "feature-cars" branch into "main" of Clone2
 
-## 7. We will resolve the conflicts
+### 7. We will resolve the conflicts
 
-## 8. We will delete the feature branches
+### 8. We will delete the feature branches
 
-# Part 5: Conclusion and wrap-up
+# Part 3: Conclusion and wrap-up
 
 
 
