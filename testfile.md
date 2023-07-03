@@ -3,3 +3,6 @@
 Love this test.
 Conflict in clone1
 Change on line 5 again
+
+## Adding a new story
+This is the start of a new story.
