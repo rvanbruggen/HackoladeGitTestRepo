@@ -20,7 +20,7 @@ In a normal situation, different users will be working on different clones of th
 # Part 2: Different scenarios for conflict resolution
 
 ## Scenario 1 - Small, conflicting change to the data model that is cosmetic and is auto-resolved
-We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync with the Github remote. Then we proceed as follows:
+We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync with the GIT remote. Then we proceed as follows:
 * in Clone1, we add a `Testcollection1` with 2 attributes: `id1` (oId) and `name1` (str). We commit and push that change. We also add a `Testcollection2` with 2 attributes: `id2` (oId) and `name2` (str). We commit and push that change to the remote.
 * in Clone2, we pull from the remote and ensure that we have the same data model in there.
 * in the ERD of Clone2, we move the `Testcollection2` entity to the right, and keep the `Testcollection1` entity to the left of the diagram. We commit this change, but don't push it to the remote yet.
