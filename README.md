@@ -1,8 +1,8 @@
 # HackoladeGitTestRepo
 A small repo that would allow for quick demonstration of [the Hackolade Studio Workgroup Edition's](https://hackolade.com/editions.html) GIT integration and collaboration. We will explore different and realistic scenarios of data modeling collaboration on this page:
 * *Scenario 1:* the scenario where we make a small change to a data model, that does not create a conflict, and automatically gets merged
-* *Scenario 2:* the scenario where we make a small change to a data model, but that change DOES create a conflict that needs to be resolved
-* *Scenario 3:*
+* *Scenario 2:* the scenario where we make a small change to a data model, but that change DOES NOT require manual intervention to resolve the conflict outside of the normal GIT workflow
+* *Scenario 3:* the scenario where we make a small change to a data model that requires a manual intervention in the GIT workflow to resolve it
 * *Scenario 4:* the scenario where we make large changes to a data model, in separate (feature) branches, and we merge these changes back together using pull requests
 
 To do so, we have to follow a process that will consist of a few parts.
@@ -54,8 +54,6 @@ Then, we proceed as follows:
 * When we do that pull, we will see that there is a conflict that needs to be resolved first: both clone1 and clone2 have been editing the same property description, and therefore, the conflict resolution screen will help us decide which of the two versions will need to prevail.
 Once that's done, the correct version will be on the remote, and we will be able to pull that to every clone as appropriate.
 
-
-Editing same property, eg. description
 
 ## Scenario 4 - Large, (feature) branch based change to the data model using pull request
 ### 1. In Clone1 - we add a new "Animals" feature
