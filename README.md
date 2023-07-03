@@ -13,7 +13,12 @@ To do so, we have to follow a process that will consist of a few parts.
 See [this page](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository). We do this because then we can simulate how two different users would have different clones, work on branches of these clones, and then merge them all together as needed.
 
 ## 2. Add a new Hackolade model to one of the clones of the repo
-We are going to reverse engineer a MongoDB model file and store that in Clone1, the first clone of the repo. We do this in the `main` branch of the repo. When we then switch to the second clone, we will pull the latest changes and receive the new data model as part of the `main` branch as well.
+We are going to reverse engineer a MongoDB model file and store that in Clone1, the first clone of the repo. We do this in the `main` branch of the repo. When we then switch to the second clone, we will pull the latest changes and receive the new data model as part of the `main` branch as well. In the examples below, we will be using the MongoDB Atlas [Mflix Dataset](https://www.mongodb.com/docs/atlas/sample-data/sample-mflix/) that is loaded by default in an Atlas free instance. This data model contains 5 collections:
+* movies: Contains movie information, including release year, director, and reviews.
+* comments: Contains comments associated with specific movies.
+* theaters: Contains locations of movie theaters.
+* sessions: Metadata field. Contains users' _JSON Web Tokens_.
+* users: Contains user information.
 
 In a normal situation, different users will be working on different clones of the repo, and as they do, they can just commit their changes and it will not result in any conflict. If, however, users start to work on their local clones at the same time, and make changes to these clones at the same time, then the chance of conflicts between these changes arises. Hackolade has taken great care to structure the file format of the data model in such a way that many of these simultaneous edits can be automatically resolved. We will therefore demonstrate both the case where a parallel edit to a data model gets automatically, and manually resolved.
 
@@ -22,15 +27,14 @@ In a normal situation, different users will be working on different clones of th
 
 ## Scenario 1 - Small, conflicting change to the data model that is cosmetic and is auto-resolved
 We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync with the GIT remote. Then we proceed as follows:
-* in Clone1, we add a `Testcollection1` with 2 attributes: `id1` (oId) and `name1` (str). We commit and push that change. We also add a `Testcollection2` with 2 attributes: `id2` (oId) and `name2` (str). We commit and push that change to the remote.
-* in Clone2, we pull from the remote and ensure that we have the same data model in there.
-* in the ERD of Clone2, we move the `Testcollection2` entity to the right, and keep the `Testcollection1` entity to the left of the diagram. We commit this change, but don't push it to the remote yet.
-* in the ERD of Clone1, we move the `Testcollection1` entity and the `Testcollection2` entity to the right of the diagram. We commit this change, and push it to the remote.
-* in Clone 2, we have to pull first, and then try to push our earlier change to the remote. A conflict will occur, but it will be automatically resolved after a few seconds. In our Hackolade client, we will see a new local commit that we need to push to the remote. It will be marked with `Hackolade auto-resolve commit`. 
-* In Clone 1, we will then need to pull the two new commits (the auto resolved and the original change of the position of the Collection in the ERD) before proceeding.
+* in the ERD of Clone1, we move the `comments` entity to the right, and keep the `sessions` entity to the left of the diagram. We commit this change, but don't push it to the remote yet.
+* in the ERD of Clone2, we move the `comments` entity and the `sessions` entity to the right of the diagram. We commit this change, and push it to the remote.
+* in Clone1, we have to pull first, and then try to push our earlier change to the remote. A conflict will occur, but it will be automatically resolved after a few seconds. In our Hackolade client, we will see a new local commit that we need to push to the remote. It will be marked with `Hackolade auto-resolve commit`. 
+* In Clone 2, we will then need to pull the two new commits (the auto resolved and the original change of the position of the Collection in the ERD) before proceeding.
 
+You can try this a few times. Just moving the Entity boxes around in the ERD potentially leads to conflicts between clones, but these conflicts are purely cosmetic and are automatically resolved.
 
-## Scenario 2 - Small, non-conflicting change to the data model with git-based resolution
+## Scenario 2 - Small, non-conflicting / non-cosmetic change to the data model with git-based resolution
 
 We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync with the Github remote.
 Then, we proceed as follows:
