@@ -1368,7 +1368,7 @@
                     "isActivated": true,
                     "type": "numeric",
                     "GUID": "fc8c9aa4-0c84-4d89-86b4-0b422db021f2",
-                    "description": "Description in clone 2",
+                    "description": "Description in clone 1",
                     "error": {}
                 }
             ],
@@ -2074,6 +2074,11 @@
                 "ff8d3d0c-e31f-4885-9d7f-f232b1a1ceea",
                 "8cca92d3-8c9b-4ed8-91ab-2589155b9eb0",
                 "89ceed58-c063-4c31-b91d-2a543c411786",
+                "cb862aff-d41d-4c47-a6ee-a41e86f239d1",
+                "4a5f44af-a1e6-4714-bb26-dc2ba9bdd7c4",
+                "ff8d3d0c-e31f-4885-9d7f-f232b1a1ceea",
+                "8cca92d3-8c9b-4ed8-91ab-2589155b9eb0",
+                "89ceed58-c063-4c31-b91d-2a543c411786",
                 "cb862aff-d41d-4c47-a6ee-a41e86f239d1"
             ],
             "backgroundColor": {
@@ -2266,7 +2271,7 @@
     "creationTS": "2023-07-03T09:47:44.311Z",
     "GUID": "fab5bd67-d509-4568-888d-821da31bc808",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-07-03T13:23:47.377Z",
+    "lastModifTS": "2023-07-03T13:25:59.361Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2321,12 +2326,6 @@
                         "color": {}
                     }
                 ],
-                "erdDefinitions": {
-                    "erd": [],
-                    "rootPath": [],
-                    "entities": [],
-                    "decorativeSymbols": []
-                },
                 "buckets": [
                     {
                         "x": 1010,
@@ -2334,26 +2333,15 @@
                         "GUID": "865e11cb-cb8f-481b-97e4-ee55d9abad96"
                     }
                 ],
-                "collapsedNodes": [],
-                "activeRelationship": "",
-                "activeRelationshipFields": {
-                    "childField": [],
-                    "parentField": []
-                },
-                "selectedCollections": [],
-                "displayColorPicker": false,
+                "diagramViews": [],
+                "decorativeSymbols": [],
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
                     "forceLayout": true,
                     "defaultLinkLength": 300
-                },
-                "diagramViews": [],
-                "decorativeSymbols": [],
-                "nestedCollectionsLayout": "horizontal",
-                "options": [],
-                "relationshipUpdateDisabled": false
+                }
             },
             "collectionLevel": {},
             "changed": false
