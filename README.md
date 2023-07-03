@@ -29,7 +29,7 @@ We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync w
 * In Clone 1, we will then need to pull the two new commits (the auto resolved and the original change of the position of the Collection in the ERD) before proceeding.
 
 
-## Scenario 2 - Small, conflicting change to the data model with manual resolution
+## Scenario 2 - Small, non-conflicting change to the data model with git-based resolution
 
 We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync with the Github remote.
 Then, we proceed as follows:
@@ -41,8 +41,10 @@ Then, we proceed as follows:
 
 Note that in this case, we chose to keep both Score1 and Score2 attributes in the data model. This would of course not always be true. In the conflict resolution screen, we can choose to keep only one of the `Score` attributes and allow only that one  to survive.
 
+## Scenario 3 - Small, non-conflicting change to the data model with git-based resolution
+Editing same property, eg. description
 
-## Scenario 3 - Large, (feature) branch based change to the data model using pull request
+## Scenario 4 - Large, (feature) branch based change to the data model using pull request
 ### 1. In Clone1 - we add a new "Animals" feature
 We will add an *animals* entity to the data model, including a foreign key relationship to the *movies* entity. We save that file in Clone1, in a separate "feature branch" - `feature-animals`. We push that branch to the remote.
 
