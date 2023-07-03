@@ -1369,6 +1369,14 @@
                     "type": "string",
                     "GUID": "0396f3ab-2cb5-42d5-8932-792993fa3948",
                     "error": {}
+                },
+                {
+                    "name": "score2",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "111a6a8f-8bee-48a4-9294-01eb0f8eaa2d",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -2088,6 +2096,11 @@
                 "ff8d3d0c-e31f-4885-9d7f-f232b1a1ceea",
                 "8cca92d3-8c9b-4ed8-91ab-2589155b9eb0",
                 "89ceed58-c063-4c31-b91d-2a543c411786",
+                "cb862aff-d41d-4c47-a6ee-a41e86f239d1",
+                "4a5f44af-a1e6-4714-bb26-dc2ba9bdd7c4",
+                "ff8d3d0c-e31f-4885-9d7f-f232b1a1ceea",
+                "8cca92d3-8c9b-4ed8-91ab-2589155b9eb0",
+                "89ceed58-c063-4c31-b91d-2a543c411786",
                 "cb862aff-d41d-4c47-a6ee-a41e86f239d1"
             ],
             "backgroundColor": {
@@ -2239,7 +2252,8 @@
         "cb862aff-d41d-4c47-a6ee-a41e86f239d1": "users",
         "eb990c46-62d3-4ff8-b42f-e2a142498486": "fk movies._id to comments.movie_id",
         "e73b7293-84ad-4421-a11c-9126292019a8": "Copied from model",
-        "0396f3ab-2cb5-42d5-8932-792993fa3948": "score"
+        "0396f3ab-2cb5-42d5-8932-792993fa3948": "score",
+        "111a6a8f-8bee-48a4-9294-01eb0f8eaa2d": "score2"
     },
     "definitions": {
         "type": "definitions",
@@ -2280,7 +2294,7 @@
     "creationTS": "2023-07-03T09:47:44.311Z",
     "GUID": "fab5bd67-d509-4568-888d-821da31bc808",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-07-03T16:32:50.502Z",
+    "lastModifTS": "2023-07-03T16:34:30.543Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2335,12 +2349,6 @@
                         "color": {}
                     }
                 ],
-                "erdDefinitions": {
-                    "erd": [],
-                    "rootPath": [],
-                    "entities": [],
-                    "decorativeSymbols": []
-                },
                 "buckets": [
                     {
                         "x": 1010,
@@ -2348,26 +2356,15 @@
                         "GUID": "865e11cb-cb8f-481b-97e4-ee55d9abad96"
                     }
                 ],
-                "collapsedNodes": [],
-                "activeRelationship": "",
-                "activeRelationshipFields": {
-                    "childField": [],
-                    "parentField": []
-                },
-                "selectedCollections": [],
-                "displayColorPicker": false,
+                "diagramViews": [],
+                "decorativeSymbols": [],
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
                     "forceLayout": true,
                     "defaultLinkLength": 300
-                },
-                "diagramViews": [],
-                "decorativeSymbols": [],
-                "nestedCollectionsLayout": "horizontal",
-                "options": [],
-                "relationshipUpdateDisabled": false
+                }
             },
             "collectionLevel": {},
             "changed": false
