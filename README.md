@@ -50,8 +50,9 @@ Then, we proceed as follows:
 * In Clone 2, we will pull from the remote, ensuring that both clones now have the latest copy of the remote. 
 * In Clone 2, we will update the description of the `Score` property to say `This is the description of the score from Clone2.`. We will commit that change locally but NOT push that to the remote.
 * Switching to Clone 1, we will also update the description of the `Score` property to say `This is the description of the score from Clone1.`. We will commit that change locally and also push it to the remote.
-* Switching to Clone2, we will push the change that we had committed locally to the remote.
-
+* Switching to Clone2, we will push the change that we had committed locally to the remote. Howeverm before we can do that, we will first need to pull - as Clone2 is now _behind_ on the previous commit+push from clone1. 
+* When we do that pull, we will see that there is a conflict that needs to be resolved first: both clone1 and clone2 have been editing the same property description, and therefore, the conflict resolution screen will help us decide which of the two versions will need to prevail.
+Once that's done, the correct version will be on the remote, and we will be able to pull that to every clone as appropriate.
 
 
 Editing same property, eg. description
