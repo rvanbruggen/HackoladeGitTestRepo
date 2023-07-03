@@ -25,7 +25,8 @@ We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync w
 * in Clone2, we pull from the remote and ensure that we have the same data model in there.
 * in the ERD of Clone2, we move the `Testcollection2` entity to the right, and keep the `Testcollection1` entity to the left of the diagram. We commit this change, but don't push it to the remote yet.
 * in the ERD of Clone1, we move the `Testcollection1` entity and the `Testcollection2` entity to the right of the diagram. We commit this change, and push it to the remote.
-* in Clone 2, we have to pull first, and then try to push our earlier change to the remote. A conflict will occur, but it will be automatically resolved. _We *sometimes* have to commit the automatically resolved change with a commit message._
+* in Clone 2, we have to pull first, and then try to push our earlier change to the remote. A conflict will occur, but it will be automatically resolved after a few seconds. Now, the 
+* In Clone 2, we will then
 
 
 ## Scenario 2 - Small, conflicting change to the data model with manual resolution
