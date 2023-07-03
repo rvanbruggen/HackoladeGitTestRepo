@@ -6,3 +6,6 @@ Change on line 5 again
 
 ## Adding a new story
 This is the start of a new story.
+Continue to write a story. 
+Several lines long.
+It goes on and on.
