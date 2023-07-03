@@ -728,22 +728,7 @@
                     "isActivated": true,
                     "type": "multiple",
                     "primaryKey": false,
-                    "multipleTypes": [
-                        {
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "type": "numeric",
-                            "GUID": "b27dfb3c-5952-4a0f-ab55-30dfe018f9e3",
-                            "primaryKey": false
-                        },
-                        {
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "type": "string",
-                            "GUID": "370b82d8-e498-4017-b7cb-e8c9601e5d5a",
-                            "primaryKey": false
-                        }
-                    ],
+                    "multipleTypes": [],
                     "GUID": "a538020c-c90d-48c9-aafd-6da6ab2c87ce",
                     "required": true,
                     "sample": 2006,
@@ -773,22 +758,7 @@
                             "isActivated": true,
                             "type": "multiple",
                             "primaryKey": false,
-                            "multipleTypes": [
-                                {
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "type": "numeric",
-                                    "GUID": "857d47ce-53a1-48d5-8fd6-699580c361dd",
-                                    "primaryKey": false
-                                },
-                                {
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "type": "string",
-                                    "GUID": "85364c73-70fd-484c-9496-d26c0f8d2689",
-                                    "primaryKey": false
-                                }
-                            ],
+                            "multipleTypes": [],
                             "GUID": "384403e4-7f2c-4173-b226-c356b6d848a3",
                             "required": true,
                             "sample": 6.9,
@@ -812,22 +782,7 @@
                             "isActivated": true,
                             "type": "multiple",
                             "primaryKey": false,
-                            "multipleTypes": [
-                                {
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "type": "numeric",
-                                    "GUID": "0d0f2214-f5d7-4c52-b548-224f5603323d",
-                                    "primaryKey": false
-                                },
-                                {
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "type": "string",
-                                    "GUID": "79981e0f-02a0-4772-a76f-15cc3924e70b",
-                                    "primaryKey": false
-                                }
-                            ],
+                            "multipleTypes": [],
                             "GUID": "115363b0-1817-4b92-a8cc-b4cae793e139",
                             "required": true,
                             "sample": 741941,
@@ -1414,6 +1369,14 @@
                     "type": "numeric",
                     "error": {},
                     "GUID": "017806c8-cf27-4884-b0a6-e917540b19cc"
+                },
+                {
+                    "name": "Score2",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "error": {},
+                    "GUID": "a5335b95-cbf1-4520-98bd-328a53e61de5"
                 }
             ],
             "definitions": {
@@ -1756,22 +1719,7 @@
                                     "isActivated": true,
                                     "type": "multiple",
                                     "primaryKey": false,
-                                    "multipleTypes": [
-                                        {
-                                            "hackoladeMeta": {},
-                                            "isActivated": true,
-                                            "type": "string",
-                                            "GUID": "a8f60bfa-fbc0-4be6-9388-899225b734c1",
-                                            "primaryKey": false
-                                        },
-                                        {
-                                            "hackoladeMeta": {},
-                                            "isActivated": true,
-                                            "type": "null",
-                                            "GUID": "19ab29eb-a35b-45d0-9e36-1004a182cc1a",
-                                            "primaryKey": false
-                                        }
-                                    ],
+                                    "multipleTypes": [],
                                     "GUID": "f4764780-80b0-4ea1-b8d9-11e9b0f094ec",
                                     "required": false,
                                     "sample": null,
@@ -2233,6 +2181,13 @@
                 "89ceed58-c063-4c31-b91d-2a543c411786",
                 "cb862aff-d41d-4c47-a6ee-a41e86f239d1",
                 "a99c563e-d044-411d-974c-13cac12eefee",
+                "8fb4dd1c-369f-44b5-9df5-f8a049983175",
+                "4a5f44af-a1e6-4714-bb26-dc2ba9bdd7c4",
+                "ff8d3d0c-e31f-4885-9d7f-f232b1a1ceea",
+                "8cca92d3-8c9b-4ed8-91ab-2589155b9eb0",
+                "89ceed58-c063-4c31-b91d-2a543c411786",
+                "cb862aff-d41d-4c47-a6ee-a41e86f239d1",
+                "a99c563e-d044-411d-974c-13cac12eefee",
                 "8fb4dd1c-369f-44b5-9df5-f8a049983175"
             ],
             "backgroundColor": {
@@ -2390,7 +2345,8 @@
         "82267dce-2f13-4198-9d40-06f6c246624e": "id2",
         "05d65bdc-f8fb-4642-ae9e-f06fd92ded99": "name2",
         "8fb4dd1c-369f-44b5-9df5-f8a049983175": "Testcollection2",
-        "017806c8-cf27-4884-b0a6-e917540b19cc": "Score1"
+        "017806c8-cf27-4884-b0a6-e917540b19cc": "Score1",
+        "a5335b95-cbf1-4520-98bd-328a53e61de5": "Score2"
     },
     "definitions": {
         "type": "definitions",
@@ -2431,7 +2387,7 @@
     "creationTS": "2023-07-03T09:47:44.311Z",
     "GUID": "fab5bd67-d509-4568-888d-821da31bc808",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-07-03T10:06:54.689Z",
+    "lastModifTS": "2023-07-03T10:12:22.938Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2502,12 +2458,6 @@
                         "color": {}
                     }
                 ],
-                "erdDefinitions": {
-                    "erd": [],
-                    "rootPath": [],
-                    "entities": [],
-                    "decorativeSymbols": []
-                },
                 "buckets": [
                     {
                         "x": 1010,
@@ -2515,28 +2465,14 @@
                         "GUID": "865e11cb-cb8f-481b-97e4-ee55d9abad96"
                     }
                 ],
-                "collapsedNodes": [],
-                "activeRelationship": "",
-                "activeRelationshipFields": {
-                    "childField": [],
-                    "parentField": []
-                },
-                "selectedCollections": [],
-                "displayColorPicker": false,
+                "diagramViews": [],
+                "decorativeSymbols": [],
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
                     "forceLayout": true,
                     "defaultLinkLength": 300
-                },
-                "diagramViews": [],
-                "decorativeSymbols": [],
-                "nestedCollectionsLayout": "horizontal",
-                "options": [],
-                "relationshipUpdateDisabled": false,
-                "displayOptions": {
-                    "dndHandles": false
                 }
             },
             "collectionLevel": {},
