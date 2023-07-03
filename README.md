@@ -25,8 +25,8 @@ We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync w
 * in Clone2, we pull from the remote and ensure that we have the same data model in there.
 * in the ERD of Clone2, we move the `Testcollection2` entity to the right, and keep the `Testcollection1` entity to the left of the diagram. We commit this change, but don't push it to the remote yet.
 * in the ERD of Clone1, we move the `Testcollection1` entity and the `Testcollection2` entity to the right of the diagram. We commit this change, and push it to the remote.
-* in Clone 2, we have to pull first, and then try to push our earlier change to the remote. A conflict will occur, but it will be automatically resolved after a few seconds. Now, the 
-* In Clone 2, we will then
+* in Clone 2, we have to pull first, and then try to push our earlier change to the remote. A conflict will occur, but it will be automatically resolved after a few seconds. In our Hackolade client, we will see a new local commit that we need to push to the remote. It will be marked with `Hackolade auto-resolve commit`. 
+* In Clone 1, we will then need to pull the two new commits (the auto resolved and the original change of the position of the Collection in the ERD) before proceeding.
 
 
 ## Scenario 2 - Small, conflicting change to the data model with manual resolution
@@ -35,7 +35,9 @@ We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync w
 Then, we proceed as follows:
 * in Clone 1, we will add a new property `Score1` (Numeric) to the `Movies` collection. We will commit that change, but not push it yet.
 * Switching to Clone 2, we will add a new property `Score2` (Numeric) to the `Movies` collection. We will commit that change, and immediately push it. Therefore, the later change will have been synced to the remote, and the earlier change to the datamodel is still committed to Clone1 - but not yet synced to the remote.
-* We Switch to Clone 1, and push our commit to the remote. We will then find that we cannot immediately push: we have to pull first, to get the latest version of the model from the remote. After doing so, we can push the `Score2` change, and it will show us a conflict resolution screen. We can then solve the conflict. Once we resolve the conflict and push it into the remote, we will find that the model now has two additional `Score` attributes, 1 and 2.
+* We Switch to Clone 1, and push our commit to the remote. We will then find that we cannot immediately push: we have to pull first, to get the latest version of the model from the remote (which already includes the `Score2` property that we added to Clone2, and committed and pushed immediately in the previous step). 
+* After doing so, we can push the `Score2` change, and the application wil tell us that we need to resolve a conflict first.
+* Pushing the button will show us a conflict resolution screen. We can then solve the conflict. Once we resolve the conflict and push it into the remote, we will find that the model now has two additional `Score` attributes, `Score1` and `Score2`.
 
 Note that in this case, we chose to keep both Score1 and Score2 attributes in the data model. This would of course not always be true. In the conflict resolution screen, we can choose to keep only one of the `Score` attributes and allow only that one  to survive.
 
