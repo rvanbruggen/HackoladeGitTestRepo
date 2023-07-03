@@ -1361,6 +1361,14 @@
                             "lineageSourceContainerTechName": ""
                         }
                     ]
+                },
+                {
+                    "name": "Score",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "error": {},
+                    "GUID": "fc8c9aa4-0c84-4d89-86b4-0b422db021f2"
                 }
             ],
             "definitions": {
@@ -2120,11 +2128,11 @@
                         "y": 1325
                     },
                     {
-                        "x": 1562,
+                        "x": 1561.5,
                         "y": 1325
                     },
                     {
-                        "x": 1562,
+                        "x": 1561.5,
                         "y": 1350
                     }
                 ],
@@ -2215,7 +2223,8 @@
         "47278890-02f3-486f-b95f-2ec5c188bafb": "password",
         "cb862aff-d41d-4c47-a6ee-a41e86f239d1": "users",
         "eb990c46-62d3-4ff8-b42f-e2a142498486": "fk movies._id to comments.movie_id",
-        "e73b7293-84ad-4421-a11c-9126292019a8": "Copied from model"
+        "e73b7293-84ad-4421-a11c-9126292019a8": "Copied from model",
+        "fc8c9aa4-0c84-4d89-86b4-0b422db021f2": "Score"
     },
     "definitions": {
         "type": "definitions",
@@ -2256,7 +2265,7 @@
     "creationTS": "2023-07-03T09:47:44.311Z",
     "GUID": "fab5bd67-d509-4568-888d-821da31bc808",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-07-03T13:21:30.948Z",
+    "lastModifTS": "2023-07-03T13:22:45.430Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2283,7 +2292,7 @@
                         "x": 1400,
                         "y": 1350,
                         "width": 324,
-                        "height": 933,
+                        "height": 951,
                         "color": {}
                     },
                     {
