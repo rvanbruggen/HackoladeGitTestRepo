@@ -1560,7 +1560,7 @@
             }
         },
         {
-            "collectionName": "theaters",
+            "collectionName": "theaters_2",
             "type": "object",
             "properties": [
                 {
@@ -1913,9 +1913,7 @@
             "GUID": "89ceed58-c063-4c31-b91d-2a543c411786",
             "bucketId": "865e11cb-cb8f-481b-97e4-ee55d9abad96",
             "code": "",
-            "hackoladeMeta": {
-                "validationErrors": {}
-            }
+            "hackoladeMeta": {}
         },
         {
             "collectionName": "users",
@@ -2244,7 +2242,7 @@
         "1a793d7d-5e60-465b-883c-2bbb3c2587d3": "geo",
         "a2f3a59e-87a7-47ca-9fef-b644aff7379f": "type",
         "c97cb469-0866-4fb2-a421-724766bcca0e": "coordinates",
-        "89ceed58-c063-4c31-b91d-2a543c411786": "theaters",
+        "89ceed58-c063-4c31-b91d-2a543c411786": "theaters_2",
         "92f69f90-b2dc-42be-acb5-58b791795f4c": "_id",
         "ffd25b11-f0d9-48cc-a415-1b50ddd2f6b6": "name",
         "751f04b8-2559-42a6-9d28-2206d12433b2": "email",
@@ -2294,7 +2292,7 @@
     "creationTS": "2023-07-03T09:47:44.311Z",
     "GUID": "fab5bd67-d509-4568-888d-821da31bc808",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-07-03T16:36:01.054Z",
+    "lastModifTS": "2023-07-04T13:55:49.001Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2303,7 +2301,9 @@
     "applicationInformation": {
         "version": "6.10.10"
     },
-    "hackoladeMeta": {},
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
     "settings": {
         "centralPane": {
             "dbLevel": {
@@ -2336,7 +2336,7 @@
                         "GUID": "89ceed58-c063-4c31-b91d-2a543c411786",
                         "x": 1050,
                         "y": 1050,
-                        "width": 284,
+                        "width": 306,
                         "height": 264,
                         "color": {}
                     },
