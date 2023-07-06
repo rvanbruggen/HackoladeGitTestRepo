@@ -1361,22 +1361,6 @@
                             "lineageSourceContainerTechName": ""
                         }
                     ]
-                },
-                {
-                    "name": "score",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "string",
-                    "GUID": "0396f3ab-2cb5-42d5-8932-792993fa3948",
-                    "error": {}
-                },
-                {
-                    "name": "score2",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "string",
-                    "GUID": "111a6a8f-8bee-48a4-9294-01eb0f8eaa2d",
-                    "error": {}
                 }
             ],
             "definitions": {
@@ -2157,11 +2141,11 @@
                     },
                     {
                         "x": 1344.691867124857,
-                        "y": 1825.5
+                        "y": 1816.5
                     },
                     {
                         "x": 1400,
-                        "y": 1825.5
+                        "y": 1816.5
                     }
                 ],
                 "sides": [
@@ -2251,9 +2235,7 @@
         "47278890-02f3-486f-b95f-2ec5c188bafb": "password",
         "cb862aff-d41d-4c47-a6ee-a41e86f239d1": "users",
         "eb990c46-62d3-4ff8-b42f-e2a142498486": "fk movies._id to comments.movie_id",
-        "e73b7293-84ad-4421-a11c-9126292019a8": "Copied from model",
-        "0396f3ab-2cb5-42d5-8932-792993fa3948": "score",
-        "111a6a8f-8bee-48a4-9294-01eb0f8eaa2d": "score2"
+        "e73b7293-84ad-4421-a11c-9126292019a8": "Copied from model"
     },
     "definitions": {
         "type": "definitions",
@@ -2294,7 +2276,7 @@
     "creationTS": "2023-07-03T09:47:44.311Z",
     "GUID": "fab5bd67-d509-4568-888d-821da31bc808",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-07-03T16:36:01.054Z",
+    "lastModifTS": "2023-07-06T10:10:54.495Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2321,7 +2303,7 @@
                         "x": 1400,
                         "y": 1350,
                         "width": 324,
-                        "height": 951,
+                        "height": 933,
                         "color": {}
                     },
                     {
