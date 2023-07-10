@@ -60,6 +60,14 @@ Once that's done, the correct version will be on the remote, and we will be able
 
 
 ## Scenario 4 - Large, (feature) branch based change to the data model using pull request
+
+This - slightly more complex - scenario is based on the figure below:
+![](https://hackolade.com/img/Versioning%20-%20model%20lifecycle.png)
+
+This scenario is also described [in our documentation](https://hackolade.com/help/Modelversioning.html). The idea is that we will have 
+* two clones of the same repo, Clone1 and Clone2
+* in both Clones, work on the repo will be done in parallel. This will be done in separate branches, which will then be merged into the main branch after specific changes have been performed. In the documentation, we talk about a "minor fixes" and a "new features" branch. In the scenario below, we will talk about two parallel features being added to the data model - one related to "Animals" (in movies), and one related to "Cars" (in movies).
+
 ### 1. In Clone1 - we add a new "Animals" feature
 We will add an *animals* entity to the data model (including an `_id` (OId), a `name` (str), and `movie_id` (OId) properties), including a foreign key relationship to the *movies* entity. We save that file in Clone1, in a separate "feature branch" - `feature-animals`. We push that branch to the remote.
 
@@ -67,48 +75,29 @@ We will add an *animals* entity to the data model (including an `_id` (OId), a `
 We will add an *cars* entity to the data model (including an `_id` (OId), a `make` (str), a `model` (str),and `movie_id` (OId) properties), including a foreign key relationship to the *movies* entity. We save that file in Clone2, in a separate "feature branch" - `feature-cars`. We push that branch to the remote.
 
 ### 3. In Clone1 - we submit the "Animals" feature for review.
+In the "Submit for review" part of the Hackolade Studio's GIT collaboration environment, we create a new request to merge the `feature-animals` branch into the `main` branch of the Clone1 repo. We do that by opening a *pull request*. We can optionally assign the review of the request to another user if desired.
 
+Once we have created the request, we switch to the Clone2 environment.
 ### 4. In Clone2 - we submit the "Cars" feature for review
+In the "Submit for review" part of the Hackolade Studio's GIT collaboration environment, we create a new request to merge the `feature-cars` branch into the `main` branch of the Clone2 repo. We do that by opening a *pull request*. We can optionally assign the review of the request to another user if desired.
 
 ### 5. We will merge the "feature-animals" branch into "main" of Clone1
-
+From the `Check pull requests` part of the Hackolade Studio's GIT collaboration environment, we open the first, Clone1-based pull request to add the Animals-feature. We can review the changes, and see that a new collection (the `animals` collection) was added, and then we can *Merge* this into the `main` branch.
 ### 6. We will merge the "feature-cars" branch into "main" of Clone2
+From the `Check pull requests` part of the Hackolade Studio's GIT collaboration environment, we open the second, Clone2-based pull request to add the Cars-feature. However, given the fact that the Animals-feature was just merged into the `main` branch, the client will say that we need to update the branch first as the `feature-cars` branch is out-of-date with the branch main. 
 
+When we update the branch, the Hackolade Studio user interface will request that we *Solve the conflicts* in the file first.
 ### 7. We will resolve the conflicts
+In the `Solve Conflicts` screen, the Hackolade Studio will show us
+* the recently merged model that already has the Animals feature in it,
+* the proposed merger of the Cars feature into the model
+* the proposed merged model where both the Animals and the Cars features, both the collections and the relationships, have been added to the model.
+By clicking the `Solve` button, the conflict is resolved and ready to be merged. We do so by clicking the `Merge` button.
 
+Now, we can switch to the `Main` branch, pull all the changes and see the merged model with both the Cars and the Animals features in it.
 ### 8. We will delete the feature branches
-
+Now that both features have been added to the `Main` branch, we can delete the `feature-cars` and `feature-animals` branches, as they are not needed anymore. To do so, we will need to confirm by typing the name of the branch, and chosing to delete the remote branch as well.
 # Part 3: Conclusion and wrap-up
+In this 
 
 
-
-
-# Temporary notes:
-
-* leverage the scenarios described [in our documentation](https://hackolade.com/help/Modelversioning.html)
-![](https://hackolade.com/img/Versioning%20-%20model%20lifecycle.png)
-
-Branching scenarios:
-* people collaborating in the same branch
-    No different from working in main - main is "just a branch"
-    Checkout a branch: different term
-        does not mean locking
-        means: this branch is active on my machine. it means "activating" it.
-            you can only have one branch checked out / active at the same time
-            checking out another branch, deactivates the first branch
-        if I make a change, it impacts that active machine
-
-You can have branches of branches
-You have to decide where to merge into
-
-
-* people collaborating in separate parallel branches
-    * then we will have to work with Pull requests
-    * Pull request = review request
-        * gitlab calls it a change request
-    * You then publish your changes so that other people can review it, but not yet affect the production version of the repo
-
-* Workflow does not exist in GIT client. It exists in the GIT platform.
-* Merge and Squash+Merge
-    * Merge: each commit separately merged
-    * Squash and Merge: puts everyt
