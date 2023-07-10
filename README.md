@@ -7,6 +7,9 @@ A small repo that would allow for quick demonstration of [the Hackolade Studio W
 
 To do so, we have to follow a process that will consist of a few parts.
 
+# Introduction
+The concept of GIT: distributed version management, and how it is so much better than the _shotgun_ checkout/checkin approach of the old days.
+
 # Part 1: prepare
 
 ## 1. We will create two separate CLONES of the repo on the local machine
@@ -61,12 +64,9 @@ Once that's done, the correct version will be on the remote, and we will be able
 
 ## Scenario 4 - Large, (feature) branch based change to the data model using pull request
 
-This - slightly more complex - scenario is based on the figure below:
-![](https://hackolade.com/img/Versioning%20-%20model%20lifecycle.png)
-
-This scenario is also described [in our documentation](https://hackolade.com/help/Modelversioning.html). The idea is that we will have 
+The idea is that we will have 
 * two clones of the same repo, Clone1 and Clone2
-* in both Clones, work on the repo will be done in parallel. This will be done in separate branches, which will then be merged into the main branch after specific changes have been performed. In the documentation, we talk about a "minor fixes" and a "new features" branch. In the scenario below, we will talk about two parallel features being added to the data model - one related to "Animals" (in movies), and one related to "Cars" (in movies).
+* in both Clones, work on the repo will be done in parallel. This will be done in separate branches, which will then be merged into the main branch after specific changes have been performed.  In the scenario below, we will talk about two parallel features being added to the data model - one related to "Animals" (in movies), and one related to "Cars" (in movies).
 
 ### 1. In Clone1 - we add a new "Animals" feature
 We will add an *animals* entity to the data model (including an `_id` (OId), a `name` (str), and `movie_id` (OId) properties), including a foreign key relationship to the *movies* entity. We save that file in Clone1, in a separate "feature branch" - `feature-animals`. We push that branch to the remote.
@@ -104,7 +104,7 @@ Based on this
 ![](https://hackolade.com/img/Versioning%20-%20model%20lifecycle.png)
 This scenario is also described [in our documentation](https://hackolade.com/help/Modelversioning.html). 
 
-In this scenario, we have two branches as well.
+In this scenario, we have two branches as well. Like in the documentation, we talk about a "minor fixes" and a "new features" branch.
 1. The first branch covers minor fixes to the main branch, and is frequently merged into minor releases to the model.
 2. the second branch covers major feature additions to the main branch, and is reqularly, but less frequently merged into major releases to the model.
 
