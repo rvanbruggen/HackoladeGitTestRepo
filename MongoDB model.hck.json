@@ -2098,7 +2098,8 @@
                 "collation": "null"
             },
             "GUID": "89f80ea4-9236-4f12-9f2d-f43b98a2c9bb",
-            "bucketId": "865e11cb-cb8f-481b-97e4-ee55d9abad96"
+            "bucketId": "865e11cb-cb8f-481b-97e4-ee55d9abad96",
+            "description": "#Description\nThis is a description of the _animals_ feature."
         }
     ],
     "buckets": [
@@ -2397,7 +2398,7 @@
     "creationTS": "2023-07-03T09:47:44.311Z",
     "GUID": "fab5bd67-d509-4568-888d-821da31bc808",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-07-10T15:02:32.888Z",
+    "lastModifTS": "2023-07-10T15:05:31.765Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
