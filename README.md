@@ -98,6 +98,6 @@ Now, we can switch to the `Main` branch, pull all the changes and see the merged
 ### 8. We will delete the feature branches
 Now that both features have been added to the `Main` branch, we can delete the `feature-cars` and `feature-animals` branches, as they are not needed anymore. To do so, we will need to confirm by typing the name of the branch, and chosing to delete the remote branch as well.
 # Part 3: Conclusion and wrap-up
-In this 
+In this repo, we have tried to illustrate the different scenarios under which we can see the power of *metadata-as-code* at work. Please try this yourself, using the model that you can find in this repo - it is there to be forked.
 
 
