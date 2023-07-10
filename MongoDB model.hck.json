@@ -2106,7 +2106,8 @@
                 "collation": "null"
             },
             "GUID": "bab3ab06-8602-48ab-8da4-21426d007f6e",
-            "bucketId": "865e11cb-cb8f-481b-97e4-ee55d9abad96"
+            "bucketId": "865e11cb-cb8f-481b-97e4-ee55d9abad96",
+            "description": "# Description\nThis is a description of the Cars collection."
         }
     ],
     "buckets": [
@@ -2400,7 +2401,7 @@
     "creationTS": "2023-07-03T09:47:44.311Z",
     "GUID": "fab5bd67-d509-4568-888d-821da31bc808",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-07-10T14:33:26.750Z",
+    "lastModifTS": "2023-07-10T14:35:48.684Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
