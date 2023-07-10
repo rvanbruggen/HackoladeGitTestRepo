@@ -120,7 +120,7 @@ Commit and push this to branch `minor-fixes`.
 In Clone2, add a `name` (str) property to the `animals` collection.
 Commit and pushthis change to the `new-features` branch.
 
-### 5. Merge the minor fixes into the main branch
+### 5. Merge the minor fixes into the main branch - version 1.1
 In Clone1, open a pull request.
 Merge the pull request into main.
 
@@ -133,6 +133,10 @@ Commit and push this to the `new-features` branch.
 ### 7. Adding another small change to minor fixes
 In Clone1, add a third line to the description of the `Movies` collection.
 Commit and push this to branch `minor-fixes`.
+
+### 8. Merge the minor fixes into the main branch - version 1.2
+In Clone1, open a pull request.
+Merge the pull request into main.
 
 
 
