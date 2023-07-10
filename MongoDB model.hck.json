@@ -2062,6 +2062,14 @@
                     "type": "string",
                     "GUID": "dee3c5fa-a487-4656-ba48-e5cb0c951447",
                     "error": {}
+                },
+                {
+                    "name": "movie_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "error": {},
+                    "GUID": "f49500a1-f6f4-4644-9767-2b3bd41e9b47"
                 }
             ],
             "definitions": {
@@ -2292,7 +2300,8 @@
         "e73b7293-84ad-4421-a11c-9126292019a8": "Copied from model",
         "f004b23f-fbf3-487f-bb7a-38e35e559d75": "animals",
         "7afa46fc-e025-4e5c-9f83-bf488cbef810": "_id",
-        "dee3c5fa-a487-4656-ba48-e5cb0c951447": "name"
+        "dee3c5fa-a487-4656-ba48-e5cb0c951447": "name",
+        "f49500a1-f6f4-4644-9767-2b3bd41e9b47": "movie_id"
     },
     "definitions": {
         "type": "definitions",
@@ -2333,7 +2342,7 @@
     "creationTS": "2023-07-03T09:47:44.311Z",
     "GUID": "fab5bd67-d509-4568-888d-821da31bc808",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-07-10T16:44:06.397Z",
+    "lastModifTS": "2023-07-10T16:54:07.579Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2391,8 +2400,8 @@
                         "GUID": "f004b23f-fbf3-487f-bb7a-38e35e559d75",
                         "x": 1876.926940788643,
                         "y": 2013.253670599491,
-                        "width": 166,
-                        "height": 69,
+                        "width": 171,
+                        "height": 87,
                         "color": {}
                     }
                 ],
