@@ -105,15 +105,36 @@ Based on this
 This scenario is also described [in our documentation](https://hackolade.com/help/Modelversioning.html). 
 
 ### 1. Minor fixes branch
-Add change to Clone1: Add description of Movies Collection.
+Add change to Clone1: Add description of `Movies` Collection.
 Commit and push this to branch `minor-fixes`.
 
-### 2. New features branch
-In Clone2: dd a new `animals` collection. Add only the `_id` (OId) attribute.
+### 2. New "Animals" features branch
+In Clone2: a new `animals` collection. Add only the `_id` (OId) attribute.
 Commit and push this to a `new-features` branch.
 
 ### 3. Adding small changes to minor fixes
-In Clone1Add a second line to 
+In Clone1, add a second line to the description of the `Movies` collection.
+Commit and push this to branch `minor-fixes`.
+
+### 4. Develop the "Animals" feature
+In Clone2, add a `name` (str) property to the `animals` collection.
+Commit and pushthis change to the `new-features` branch.
+
+### 5. Merge the minor fixes into the main branch
+In Clone1, open a pull request.
+Merge the pull request into main.
+
+### 6. Enhance the "Animals" feature
+In Clone2, add a `movie_id` (OId) property to the `Animals` collection.
+Commit and push this to the `new-features` branch.
+In Clone2, add a FK relationship from `animals.movie_id` to `movies._id`. The parent cardinality is `1`. The child cardinality is `0..n`.
+Commit and push this to the `new-features` branch.
+
+### 7. Adding another small change to minor fixes
+In Clone1, add a third line to the description of the `Movies` collection.
+Commit and push this to branch `minor-fixes`.
+
+
 
 # Part 3: Conclusion and wrap-up
 In this repo, we have tried to illustrate the different scenarios under which we can see the power of *metadata-as-code* at work. Please try this yourself, using the model that you can find in this repo - it is there to be forked.
