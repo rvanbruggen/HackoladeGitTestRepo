@@ -2106,7 +2106,8 @@
                 "collation": "null"
             },
             "GUID": "ab3298d3-bd85-4f3b-ae58-46c371a95cf1",
-            "bucketId": "865e11cb-cb8f-481b-97e4-ee55d9abad96"
+            "bucketId": "865e11cb-cb8f-481b-97e4-ee55d9abad96",
+            "description": "# Description\nThis is a description for the *cars* feature."
         }
     ],
     "buckets": [
@@ -2406,7 +2407,7 @@
     "creationTS": "2023-07-03T09:47:44.311Z",
     "GUID": "fab5bd67-d509-4568-888d-821da31bc808",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-07-10T15:04:02.291Z",
+    "lastModifTS": "2023-07-10T15:06:50.671Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
