@@ -1423,7 +1423,7 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             },
-            "description": "# Description\n\nAdding a description to the Movies Collection.\nAdding a *second line* to the description."
+            "description": "# Description\n\nAdding a description to the Movies Collection.\nAdding a *second line* to the description.\nAdding a *third line* to the description."
         },
         {
             "collectionName": "sessions",
@@ -2289,7 +2289,7 @@
     "creationTS": "2023-07-03T09:47:44.311Z",
     "GUID": "fab5bd67-d509-4568-888d-821da31bc808",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-07-10T15:59:46.846Z",
+    "lastModifTS": "2023-07-10T16:58:57.850Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {

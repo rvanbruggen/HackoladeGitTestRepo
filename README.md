@@ -117,12 +117,23 @@ In Clone1, add a second line to the description of the `Movies` collection.
 Commit and push this to branch `minor-fixes`.
 
 ### 4. Develop the "Animals" feature
-In Clone2, add a `name` property to the `animals` collection.
+In Clone2, add a `name` (str) property to the `animals` collection.
 Commit and pushthis change to the `new-features` branch.
 
 ### 5. Merge the minor fixes into the main branch
 In Clone1, open a pull request.
 Merge the pull request into main.
+
+### 6. Enhance the "Animals" feature
+In Clone2, add a `movie_id` (OId) property to the `Animals` collection.
+Commit and push this to the `new-features` branch.
+In Clone2, add a FK relationship from `animals.movie_id` to `movies._id`. The parent cardinality is `1`. The child cardinality is `0..n`.
+Commit and push this to the `new-features` branch.
+
+### 7. Adding another small change to minor fixes
+In Clone1, add a third line to the description of the `Movies` collection.
+Commit and push this to branch `minor-fixes`.
+
 
 
 # Part 3: Conclusion and wrap-up
