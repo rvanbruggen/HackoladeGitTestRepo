@@ -2042,6 +2042,39 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             }
+        },
+        {
+            "collectionName": "animals",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "7afa46fc-e025-4e5c-9f83-bf488cbef810",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "02c43bed-1008-4e59-bf55-c4b8bfad616a"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "f004b23f-fbf3-487f-bb7a-38e35e559d75",
+            "bucketId": "865e11cb-cb8f-481b-97e4-ee55d9abad96"
         }
     ],
     "buckets": [
@@ -2097,7 +2130,8 @@
                 "8cca92d3-8c9b-4ed8-91ab-2589155b9eb0",
                 "89ceed58-c063-4c31-b91d-2a543c411786",
                 "cb862aff-d41d-4c47-a6ee-a41e86f239d1",
-                "89f80ea4-9236-4f12-9f2d-f43b98a2c9bb"
+                "89f80ea4-9236-4f12-9f2d-f43b98a2c9bb",
+                "f004b23f-fbf3-487f-bb7a-38e35e559d75"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -2247,7 +2281,9 @@
         "47278890-02f3-486f-b95f-2ec5c188bafb": "password",
         "cb862aff-d41d-4c47-a6ee-a41e86f239d1": "users",
         "eb990c46-62d3-4ff8-b42f-e2a142498486": "fk movies._id to comments.movie_id",
-        "e73b7293-84ad-4421-a11c-9126292019a8": "Copied from model"
+        "e73b7293-84ad-4421-a11c-9126292019a8": "Copied from model",
+        "f004b23f-fbf3-487f-bb7a-38e35e559d75": "animals",
+        "7afa46fc-e025-4e5c-9f83-bf488cbef810": "_id"
     },
     "definitions": {
         "type": "definitions",
@@ -2288,7 +2324,7 @@
     "creationTS": "2023-07-03T09:47:44.311Z",
     "GUID": "fab5bd67-d509-4568-888d-821da31bc808",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-07-10T15:51:07.403Z",
+    "lastModifTS": "2023-07-10T15:54:09.087Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2340,6 +2376,14 @@
                         "y": 1150,
                         "width": 210,
                         "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "f004b23f-fbf3-487f-bb7a-38e35e559d75",
+                        "x": 1876.926940788643,
+                        "y": 2013.253670599491,
+                        "width": 166,
+                        "height": 51,
                         "color": {}
                     }
                 ],
