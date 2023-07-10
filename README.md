@@ -99,48 +99,56 @@ Now, we can switch to the `Main` branch, pull all the changes and see the merged
 Now that both features have been added to the `Main` branch, we can delete the `feature-cars` and `feature-animals` branches, as they are not needed anymore. To do so, we will need to confirm by typing the name of the branch, and chosing to delete the remote branch as well.
 
 
-## ALTERNATIVE Scenario 4 - Large, (feature) branch based change to the data model using pull request
+##  Scenario 4bis - Large, (feature) branch based change to the data model using pull request
 Based on this
 ![](https://hackolade.com/img/Versioning%20-%20model%20lifecycle.png)
 This scenario is also described [in our documentation](https://hackolade.com/help/Modelversioning.html). 
 
+In this scenario, we have two branches as well.
+1. The first branch covers minor fixes to the main branch, and is frequently merged into minor releases to the model.
+2. the second branch covers major feature additions to the main branch, and is reqularly, but less frequently merged into major releases to the model.
+
 ### 1. Minor fixes branch
-Add change to Clone1: Add description of `Movies` Collection.
-Commit and push this to branch `minor-fixes`.
+We first add a change to Clone1: Add description of `Movies` Collection.
+We commit and push this to branch `minor-fixes`.
 
 ### 2. New "Animals" features branch
-In Clone2: a new `animals` collection. Add only the `_id` (OId) attribute.
-Commit and push this to a `new-features` branch.
+Then we make a change to Clone2: a new `animals` collection.
+This is a new feature that could become quite a big change to the model. For now, we add only the `_id` (OId) attribute to the collection.
+We commit and push this to a `new-features` branch.
 
 ### 3. Adding small changes to minor fixes
-In Clone1, add a second line to the description of the `Movies` collection.
-Commit and push this to branch `minor-fixes`.
+In Clone1, we add a second line to the description of the `Movies` collection.
+We commit and push this to branch `minor-fixes`.
 
 ### 4. Develop the "Animals" feature
-In Clone2, add a `name` (str) property to the `animals` collection.
-Commit and pushthis change to the `new-features` branch.
+In Clone2, we add a `name` (str) property to the `animals` collection.
+We commit and push this change to the `new-features` branch.
 
 ### 5. Merge the minor fixes into the main branch - version 1.1
 In Clone1, open a pull request.
 Merge the pull request into main.
+Main now has version 1.1.
 
 ### 6. Enhance the "Animals" feature
 In Clone2, add a `movie_id` (OId) property to the `Animals` collection.
-Commit and push this to the `new-features` branch.
-In Clone2, add a FK relationship from `animals.movie_id` to `movies._id`. The parent cardinality is `1`. The child cardinality is `0..n`.
-Commit and push this to the `new-features` branch.
+We commit and push this to the `new-features` branch.
+In Clone2, we make another change and add a FK relationship from `animals.movie_id` to `movies._id`. The parent cardinality is `1`. The child cardinality is `0..n`.
+W commit and push this to the `new-features` branch.
 
 ### 7. Adding another small change to minor fixes
-In Clone1, add a third line to the description of the `Movies` collection.
-Commit and push this to branch `minor-fixes`.
+In Clone1, we add a third line to the description of the `Movies` collection.
+We commit and push this to branch `minor-fixes`.
 
 ### 8. Merge the minor fixes into the main branch - version 1.2
-In Clone1, open a pull request.
-Merge the pull request into main.
+In Clone1, we open a pull request to merge `minor-fixes` into the `main` branch.
+We merge the pull request into the `main` branch.
 
-### 9.
-
-
+### 9. Merge the `animals` new feature into the mail branch - version 2.0
+In Clone2, we open a pull request to add the `new-features` developed into the `main` branch, creating version 2.0
+We update Clone2 to make sure that it has the latest version of the `main` branch.
+We know that `main` has evolved in the mean while, and is at version 1.2 - no longer at 1.0 where `new-features` was branched from. We therefore need to solve the conflicts. Once we do, we can merge the pull request into the `main` as well, creating version 2.0 in that branch.
+Then we pull the latest version from `main`, and this allows us to see the merger of all of the changes, both the minor ones and the major new feature development. It will all be one big new version of the model, in the `main` branch.
 
 # Part 3: Conclusion and wrap-up
 In this repo, we have tried to illustrate the different scenarios under which we can see the power of *metadata-as-code* at work. Please try this yourself, using the model that you can find in this repo - it is there to be forked.
