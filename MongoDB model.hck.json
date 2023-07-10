@@ -2098,7 +2098,8 @@
                 "collation": "null"
             },
             "GUID": "d732bdb2-5181-41c9-b547-db434ecae296",
-            "bucketId": "865e11cb-cb8f-481b-97e4-ee55d9abad96"
+            "bucketId": "865e11cb-cb8f-481b-97e4-ee55d9abad96",
+            "description": "This is a description for the collection."
         }
     ],
     "buckets": [
@@ -2391,7 +2392,7 @@
     "creationTS": "2023-07-03T09:47:44.311Z",
     "GUID": "fab5bd67-d509-4568-888d-821da31bc808",
     "isLineageEnabled": true,
-    "lastModifTS": "2023-07-10T14:27:58.104Z",
+    "lastModifTS": "2023-07-10T14:34:49.883Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -2468,7 +2469,7 @@
                     }
                 ],
                 "collapsedNodes": [],
-                "activeRelationship": "c86dee00-4fe0-4d06-b242-950277ba96af",
+                "activeRelationship": "",
                 "activeRelationshipFields": {
                     "childField": [],
                     "parentField": []
