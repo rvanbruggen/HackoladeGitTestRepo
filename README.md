@@ -61,10 +61,10 @@ Once that's done, the correct version will be on the remote, and we will be able
 
 ## Scenario 4 - Large, (feature) branch based change to the data model using pull request
 ### 1. In Clone1 - we add a new "Animals" feature
-We will add an *animals* entity to the data model, including a foreign key relationship to the *movies* entity. We save that file in Clone1, in a separate "feature branch" - `feature-animals`. We push that branch to the remote.
+We will add an *animals* entity to the data model (including an `_id` (OId), a `name` (str), and `movie_id` (OId) properties), including a foreign key relationship to the *movies* entity. We save that file in Clone1, in a separate "feature branch" - `feature-animals`. We push that branch to the remote.
 
 ### 2. In Clone2 - we add a new "Cars" feature
-We will add an *cars* entity to the data model, including a foreign key relationship to the *movies* entity. We save that file in Clone2, in a separate "feature branch" - `feature-cars`. We push that branch to the remote.
+We will add an *cars* entity to the data model (including an `_id` (OId), a `make` (str), a `model` (str),and `movie_id` (OId) properties), including a foreign key relationship to the *movies* entity. We save that file in Clone2, in a separate "feature branch" - `feature-cars`. We push that branch to the remote.
 
 ### 3. In Clone1 - we submit the "Animals" feature for review.
 
