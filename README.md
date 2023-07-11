@@ -43,7 +43,9 @@ So let's get started, and start our preparation.
 ## Part 1: prepare
 
 ### 1. We will create two separate CLONES of the repo on the local machine
-See [this page](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository). We do this because then we can simulate how two different users would have different clones, work on branches of these clones, and then merge them all together as needed.
+See the concepts in [this page](https://hackolade.com/help/Concepts1.html), and then the specifics of cloning a repository[over here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository). We do this because then we can simulate how two different users would have different clones, work on branches of these clones, and then merge them all together as needed.
+
+![](https://hackolade.com/img/Workgroup%20Git%20local%20remote%20repos.png)
 
 ### 2. Add a new Hackolade model to one of the clones of the repo
 We are going to reverse engineer a MongoDB model file and store that in Clone1, the first clone of the repo. We do this in the `main` branch of the repo. When we then switch to the second clone, we will pull the latest changes and receive the new data model as part of the `main` branch as well. In the examples below, we will be using the MongoDB Atlas [Mflix Dataset](https://www.mongodb.com/docs/atlas/sample-data/sample-mflix/) that is loaded by default in an Atlas free instance. This data model contains 5 collections:
@@ -87,7 +89,7 @@ Then, we proceed as follows:
 * In Clone 2, we will pull from the remote, ensuring that both clones now have the latest copy of the remote. 
 * In Clone 2, we will update the description of the `Score` property to say `This is the description of the score from Clone2.`. We will commit that change locally but NOT push that to the remote.
 * Switching to Clone 1, we will also update the description of the `Score` property to say `This is the description of the score from Clone1.`. We will commit that change locally and also push it to the remote.
-* Switching to Clone2, we will push the change that we had committed locally to the remote. Howeverm before we can do that, we will first need to pull - as Clone2 is now _behind_ on the previous commit+push from clone1. 
+* Switching to Clone2, we will push the change that we had committed locally to the remote. However before we can do that, we will first need to pull - as Clone2 is now _behind_ on the previous commit+push from clone1. 
 * When we do that pull, we will see that there is a conflict that needs to be resolved first: both clone1 and clone2 have been editing the same property description, and therefore, the conflict resolution screen will help us decide which of the two versions will need to prevail.
 Once that's done, the correct version will be on the remote, and we will be able to pull that to every clone as appropriate.
 
