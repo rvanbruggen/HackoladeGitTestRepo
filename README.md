@@ -66,8 +66,7 @@ We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync w
 * in the ERD of Clone2, we move the `comments` entity and the `sessions` entity to the right of the diagram. We commit this change, and push it to the remote.
 * in Clone1, we have to pull first, and then try to push our earlier change to the remote. A conflict will occur, but it will be automatically resolved after a few seconds. In our Hackolade client, we will see a new local commit that we need to push to the remote. It will be marked with `Hackolade auto-resolve commit`. 
 * In Clone 2, we will then need to pull the two new commits (the auto resolved and the original change of the position of the Collection in the ERD) before proceeding.
-
-![](Illustration-Scenario-1.png)
+![Illustration-Scenario1](https://github.com/rvanbruggen/HackoladeGitTestRepo/assets/2995654/f59f0400-0eb5-48ca-989b-61365013d42d)
 
 You can try this a few times. Just moving the Entity boxes around in the ERD potentially leads to conflicts between clones, but these conflicts are purely cosmetic and are automatically resolved.
 
@@ -81,7 +80,8 @@ Then, we proceed as follows:
 * After doing so, we can push the `Score2` change, and the application wil tell us that we need to resolve a conflict first.
 * Pushing the button will show us a conflict resolution screen. We can then solve the conflict. Once we resolve the conflict and push it into the remote, we will find that the model now has two additional `Score` attributes, `Score1` and `Score2`.
 
-![](Illustration-Scenario-2.png)
+![Illustration-Scenario2](https://github.com/rvanbruggen/HackoladeGitTestRepo/assets/2995654/db986627-bcad-4e81-8fb3-269bf05c00ba)
+
 
 Note that in this case, we chose to keep both Score1 and Score2 attributes in the data model. This would of course not always be true. In the conflict resolution screen, we can choose to keep only one of the `Score` attributes and allow only that one  to survive.
 
@@ -96,7 +96,8 @@ Then, we proceed as follows:
 * Switching to Clone2, we will push the change that we had committed locally to the remote. However before we can do that, we will first need to pull - as Clone2 is now _behind_ on the previous commit+push from clone1. 
 * When we do that pull, we will see that there is a conflict that needs to be resolved first: both clone1 and clone2 have been editing the same property description, and therefore, the conflict resolution screen will help us decide which of the two versions will need to prevail.
 
-![](Illustration-Scenario-3.png)
+![Illustration-Scenario3](https://github.com/rvanbruggen/HackoladeGitTestRepo/assets/2995654/62d8bf78-3f5f-4fca-bfc5-de1662094487)
+
 Once that's done, the correct version will be on the remote, and we will be able to pull that to every clone as appropriate.
 
 ### Scenario 4
@@ -105,8 +106,7 @@ This will be the largest, and more complex set of scenarios that will be trying 
 2. In **Scenario 4b**, we will be illustrating how you can have two feature branches (`feature-cars` and `feature-animals`) that are added to the model, and that are merged together into the `main` branch. 
 ####  Scenario 4a - Large, branch based changes (`minor-fixes` and `new-features`) to the data model using pull requests
 This scenario is also described [in our documentation](https://hackolade.com/help/Modelversioning.html). 
-![](Illustration-Scenario-4a.png)
-
+![Illustration-Scenario4a](https://github.com/rvanbruggen/HackoladeGitTestRepo/assets/2995654/716bd242-d773-4ebb-a4ed-eb0e6dce1c13)
 
 In this scenario, we have two branches as well. Like in the documentation, we talk about a "minor fixes" and a "new features" branch.
 1. The first branch covers minor fixes to the main branch, and is frequently merged into minor releases to the model.
@@ -158,7 +158,8 @@ Then we pull the latest version from `main`, and this allows us to see the merge
 The idea is that we will have 
 * two clones of the same repo, Clone1 and Clone2
 * in both Clones, work on the repo will be done in parallel. This will be done in separate branches, which will then be merged into the main branch after specific changes have been performed.  In the scenario below, we will talk about two parallel features being added to the data model - one related to "Animals" (in movies), and one related to "Cars" (in movies).
-![](Illustration-Scenario-4b.png)
+![Illustration-Scenario4b](https://github.com/rvanbruggen/HackoladeGitTestRepo/assets/2995654/29ed8f71-fc4a-4207-ab3c-9fc82c7e0fac)
+
 ##### 1. In Clone1 - we add a new "Animals" feature
 We will add an *animals* entity to the data model (including an `_id` (OId), a `name` (str), and `movie_id` (OId) properties), including a foreign key relationship to the *movies* entity. We save that file in Clone1, in a separate "feature branch" - `feature-animals`. We push that branch to the remote.
 
