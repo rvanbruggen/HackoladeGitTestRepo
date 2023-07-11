@@ -2,7 +2,7 @@
 This is a repo that would allow for quick demonstration of [the Hackolade Studio Workgroup Edition's](https://hackolade.com/editions.html) GIT integration and collaboration. 
 
 ## Introduction
-In Hackolade, we leverage the concept of [Metadata-as-code](https://hackolade.com/metadata-as-code.html) the ensure that the data models that we create are always up to date, and in sync with the frequent releases of our agile development methdologies. In the Workgroup Edition of the Hackolade Studio, we therefore have implemented a very tight integration with GIT: distributed version congrol system that is extremely popular with agile development teams.
+In Hackolade, we leverage the concept of [Metadata-as-code](https://hackolade.com/metadata-as-code.html) the ensure that the data models that we create are always up to date, and in sync with the frequent releases of our agile development methdologies. In the Workgroup Edition of the Hackolade Studio, we therefore have implemented a very tight integration with GIT: distributed version control system that is extremely popular with agile development teams.
 
 It is worth considering the specific nature of GIT for a moment. As you can read on the [main Git Website](https://git-scm.com/), it is 
 
