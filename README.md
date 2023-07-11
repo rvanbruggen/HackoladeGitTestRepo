@@ -1,29 +1,31 @@
 # HackoladeGitTestRepo
 This is a a small repo that would allow for quick demonstration of [the Hackolade Studio Workgroup Edition's](https://hackolade.com/editions.html) GIT integration and collaboration. 
 
-## Introduction
-In Hackolade, we leverage the concept of [Metadata-as-code](https://hackolade.com/metadata-as-code.html) the ensure that the data models that we create are always up to date, and in sync with the frequent releases of our agile development methdologies. In the Workgroup Edition of the Hackolade Studio, we therefore have implemented a very tight integration with GIT: distributed version congrol system that is extremely popular with agile development teams. This is one of the wonderful byproducts of Hackolade's JSON-based storage architecture: JSON, as a text based data storage format, is perfectly suited for GIT-based versioning and collaboration!
+## Table of contents
 
-It is worth considering the specific nature of GIT for a moment. It is used by 150+ million developers today, has become a default standard in most IT shops, and has some very specific characteristics. You can read this on the [main Git Website](https://git-scm.com/), it is 
+[TOC]
+
+## Introduction
+In Hackolade, we leverage the concept of [Metadata-as-code](https://hackolade.com/metadata-as-code.html) the ensure that the data models that we create are always up to date, and in sync with the frequent releases of our agile development methdologies. In the Workgroup Edition of the Hackolade Studio, we therefore have implemented a very tight integration with GIT: distributed version congrol system that is extremely popular with agile development teams.
+
+It is worth considering the specific nature of GIT for a moment. As you can read on the [main Git Website](https://git-scm.com/), it is 
 
     ...a free and open source *distributed* version control system designed to handle 
     everything from small to very large projects with speed and efficiency.
-
+    
     Git is easy to learn and has a tiny footprint with lightning fast performance. 
     It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with 
     features like cheap local branching, convenient staging areas, and multiple workflows.
-    
+
 That all sounds really interesting, but the key parts here to us are that
 * it is distributed
 * it is fast
 * it is powerful
 * it accomodates agile workflows
 
-That all makes it a much better fit for Hackolade's NOSQL and Agile data modeling requirements than centralised version control systems, which take a much more crude, all-or-nothing, shotgun-like approach to version management challenges. 
+That all makes it a much better fit for Hackolade's NOSQL and Agile data modeling requirements than centralised version control systems, which take a much more crude, all-or-nothing, shotgun-like approach to version management challenges.
 
-For data modelers, however, the approach, vocabulary and command-line interfaces, can be a bit daunting - which is why Hackolade has spent a lot of time and effort creating a carefully crafted, simple but powerful user interface to interact with GIT. The only downside that we see to GIT may be the steeper learning curve, but the *huge* advantage is that with _metadata-as-code_ we can **truly** ensure that business and IT are using the same tools, the same _source of truth_ - and therefore they hopefully can be reconciled more easily.
-
-We are therefore happy to provide a few reading materials for you to review:
+The only downside that we see to GIT, is that the learning curve can be a bit steeper, and like with all distributed systems, they can become quite complex. We are therefore happy to provide a few reading materials for you to review:
 * Our own [Hackolade documentation](https://hackolade.com/help/Concepts1.html) has a great page on the topic of GIT.
     * it also refers to [this great article that explains GIT branches using Lego](https://opensource.com/article/22/4/git-branches) :) 
 * [What is version control: centralized vs. DVCS](https://www.atlassian.com/blog/software-teams/version-control-centralized-dvcs)
@@ -130,7 +132,7 @@ We commit and push this to branch `minor-fixes`.
 In Clone2, we add a `name` (str) property to the `animals` collection.
 We commit and push this change to the `new-features` branch.
 
-#### 5. Merge the minor fixes into the main branch - version 1.1
+##### 5. Merge the minor fixes into the main branch - version 1.1
 In Clone1, open a pull request.
 Merge the pull request into main.
 Main now has version 1.1.
@@ -193,5 +195,4 @@ Now that both features have been added to the `Main` branch, we can delete the `
 
 ## Part 3: Conclusion and wrap-up
 In this repo, we have tried to illustrate the different scenarios under which we can see the power of *metadata-as-code* at work. Please try this yourself, using the model that you can find in this repo - it is there to be forked.
-
 
