@@ -18,6 +18,7 @@ That all sounds really interesting, but the key parts here to us are that
 * it is fast
 * it is powerful
 * it accomodates agile workflows
+
 That all makes it a much better fit for Hackolade's NOSQL and Agile data modeling requirements than centralised version control systems, which take a much more crude, all-or-nothing, shotgun-like approach to version management challenges.
 
 The only downside that we see to GIT, is that the learning curve can be a bit steeper, and like with all distributed systems, they can become quite complex. We are therefore happy to provide a few reading materials for you to review:
