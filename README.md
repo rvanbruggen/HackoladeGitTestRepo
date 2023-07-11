@@ -1,5 +1,5 @@
 # HackoladeGitTestRepo
-This is a a small repo that would allow for quick demonstration of [the Hackolade Studio Workgroup Edition's](https://hackolade.com/editions.html) GIT integration and collaboration. 
+This is a repo that would allow for quick demonstration of [the Hackolade Studio Workgroup Edition's](https://hackolade.com/editions.html) GIT integration and collaboration. 
 
 ## Table of contents
 
