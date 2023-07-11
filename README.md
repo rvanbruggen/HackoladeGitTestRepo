@@ -2,9 +2,9 @@
 This is a a small repo that would allow for quick demonstration of [the Hackolade Studio Workgroup Edition's](https://hackolade.com/editions.html) GIT integration and collaboration. 
 
 ## Introduction
-In Hackolade, we leverage the concept of [Metadata-as-code](https://hackolade.com/metadata-as-code.html) the ensure that the data models that we create are always up to date, and in sync with the frequent releases of our agile development methdologies. In the Workgroup Edition of the Hackolade Studio, we therefore have implemented a very tight integration with GIT: distributed version congrol system that is extremely popular with agile development teams.
+In Hackolade, we leverage the concept of [Metadata-as-code](https://hackolade.com/metadata-as-code.html) the ensure that the data models that we create are always up to date, and in sync with the frequent releases of our agile development methdologies. In the Workgroup Edition of the Hackolade Studio, we therefore have implemented a very tight integration with GIT: distributed version congrol system that is extremely popular with agile development teams. This is one of the wonderful byproducts of Hackolade's JSON-based storage architecture: JSON, as a text based data storage format, is perfectly suited for GIT-based versioning and collaboration!
 
-It is worth considering the specific nature of GIT for a moment. As you can read on the [main Git Website](https://git-scm.com/), it is 
+It is worth considering the specific nature of GIT for a moment. It is used by 150+ million developers today, has become a default standard in most IT shops, and has some very specific characteristics. You can read this on the [main Git Website](https://git-scm.com/), it is 
 
     ...a free and open source *distributed* version control system designed to handle 
     everything from small to very large projects with speed and efficiency.
@@ -19,9 +19,11 @@ That all sounds really interesting, but the key parts here to us are that
 * it is powerful
 * it accomodates agile workflows
 
-That all makes it a much better fit for Hackolade's NOSQL and Agile data modeling requirements than centralised version control systems, which take a much more crude, all-or-nothing, shotgun-like approach to version management challenges.
+That all makes it a much better fit for Hackolade's NOSQL and Agile data modeling requirements than centralised version control systems, which take a much more crude, all-or-nothing, shotgun-like approach to version management challenges. 
 
-The only downside that we see to GIT, is that the learning curve can be a bit steeper, and like with all distributed systems, they can become quite complex. We are therefore happy to provide a few reading materials for you to review:
+For data modelers, however, the approach, vocabulary and command-line interfaces, can be a bit daunting - which is why Hackolade has spent a lot of time and effort creating a carefully crafted, simple but powerful user interface to interact with GIT. The only downside that we see to GIT may be the steeper learning curve, but the *huge* advantage is that with _metadata-as-code_ we can **truly** ensure that business and IT are using the same tools, the same _source of truth_ - and therefore they hopefully can be reconciled more easily.
+
+We are therefore happy to provide a few reading materials for you to review:
 * Our own [Hackolade documentation](https://hackolade.com/help/Concepts1.html) has a great page on the topic of GIT.
     * it also refers to [this great article that explains GIT branches using Lego](https://opensource.com/article/22/4/git-branches) :) 
 * [What is version control: centralized vs. DVCS](https://www.atlassian.com/blog/software-teams/version-control-centralized-dvcs)
