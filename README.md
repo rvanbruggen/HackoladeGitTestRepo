@@ -66,7 +66,7 @@ We will make sure that both Clone1 and Clone2 are fully up-to-date and in sync w
 * in the ERD of Clone2, we move the `comments` entity and the `sessions` entity to the right of the diagram. We commit this change, and push it to the remote.
 * in Clone1, we have to pull first, and then try to push our earlier change to the remote. A conflict will occur, but it will be automatically resolved after a few seconds. In our Hackolade client, we will see a new local commit that we need to push to the remote. It will be marked with `Hackolade auto-resolve commit`. 
 * In Clone 2, we will then need to pull the two new commits (the auto resolved and the original change of the position of the Collection in the ERD) before proceeding.
-![Illustration-Scenario1](https://github.com/rvanbruggen/HackoladeGitTestRepo/assets/2995654/f59f0400-0eb5-48ca-989b-61365013d42d)
+![Illustration-Scenario1](illustrations/Illustration-Scenario-1.png)
 
 You can try this a few times. Just moving the Entity boxes around in the ERD potentially leads to conflicts between clones, but these conflicts are purely cosmetic and are automatically resolved.
 
