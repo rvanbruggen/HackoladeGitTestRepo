@@ -6,9 +6,12 @@ In Hackolade, we leverage the concept of [Metadata-as-code](https://hackolade.co
 
 It is worth considering the specific nature of GIT for a moment. As you can read on the [main Git Website](https://git-scm.com/), it is 
 
-    ...a free and open source *distributed* version control system designed to handle everything from small to very large projects with speed and efficiency.
+    ...a free and open source *distributed* version control system designed to handle 
+    everything from small to very large projects with speed and efficiency.
 
-    Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.
+    Git is easy to learn and has a tiny footprint with lightning fast performance. 
+    It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with 
+    features like cheap local branching, convenient staging areas, and multiple workflows.
     
 That all sounds really interesting, but the key parts here to us are that
 * it is distributed
