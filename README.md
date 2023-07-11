@@ -91,67 +91,33 @@ Then, we proceed as follows:
 * When we do that pull, we will see that there is a conflict that needs to be resolved first: both clone1 and clone2 have been editing the same property description, and therefore, the conflict resolution screen will help us decide which of the two versions will need to prevail.
 Once that's done, the correct version will be on the remote, and we will be able to pull that to every clone as appropriate.
 
-
-### Scenario 4 - Large, (feature) branch based change to the data model using pull request
-
-The idea is that we will have 
-* two clones of the same repo, Clone1 and Clone2
-* in both Clones, work on the repo will be done in parallel. This will be done in separate branches, which will then be merged into the main branch after specific changes have been performed.  In the scenario below, we will talk about two parallel features being added to the data model - one related to "Animals" (in movies), and one related to "Cars" (in movies).
-
-#### 1. In Clone1 - we add a new "Animals" feature
-We will add an *animals* entity to the data model (including an `_id` (OId), a `name` (str), and `movie_id` (OId) properties), including a foreign key relationship to the *movies* entity. We save that file in Clone1, in a separate "feature branch" - `feature-animals`. We push that branch to the remote.
-
-#### 2. In Clone2 - we add a new "Cars" feature
-We will add an *cars* entity to the data model (including an `_id` (OId), a `make` (str), a `model` (str),and `movie_id` (OId) properties), including a foreign key relationship to the *movies* entity. We save that file in Clone2, in a separate "feature branch" - `feature-cars`. We push that branch to the remote.
-
-#### 3. In Clone1 - we submit the "Animals" feature for review.
-In the "Submit for review" part of the Hackolade Studio's GIT collaboration environment, we create a new request to merge the `feature-animals` branch into the `main` branch of the Clone1 repo. We do that by opening a *pull request*. We can optionally assign the review of the request to another user if desired.
-
-Once we have created the request, we switch to the Clone2 environment.
-#### 4. In Clone2 - we submit the "Cars" feature for review
-In the "Submit for review" part of the Hackolade Studio's GIT collaboration environment, we create a new request to merge the `feature-cars` branch into the `main` branch of the Clone2 repo. We do that by opening a *pull request*. We can optionally assign the review of the request to another user if desired.
-
-#### 5. We will merge the "feature-animals" branch into "main" of Clone1
-From the `Check pull requests` part of the Hackolade Studio's GIT collaboration environment, we open the first, Clone1-based pull request to add the Animals-feature. We can review the changes, and see that a new collection (the `animals` collection) was added, and then we can *Merge* this into the `main` branch.
-#### 6. We will merge the "feature-cars" branch into "main" of Clone2
-From the `Check pull requests` part of the Hackolade Studio's GIT collaboration environment, we open the second, Clone2-based pull request to add the Cars-feature. However, given the fact that the Animals-feature was just merged into the `main` branch, the client will say that we need to update the branch first as the `feature-cars` branch is out-of-date with the branch main. 
-
-When we update the branch, the Hackolade Studio user interface will request that we *Solve the conflicts* in the file first.
-#### 7. We will resolve the conflicts
-In the `Solve Conflicts` screen, the Hackolade Studio will show us
-* the recently merged model that already has the Animals feature in it,
-* the proposed merger of the Cars feature into the model
-* the proposed merged model where both the Animals and the Cars features, both the collections and the relationships, have been added to the model.
-By clicking the `Solve` button, the conflict is resolved and ready to be merged. We do so by clicking the `Merge` button.
-
-Now, we can switch to the `Main` branch, pull all the changes and see the merged model with both the Cars and the Animals features in it.
-#### 8. We will delete the feature branches
-Now that both features have been added to the `Main` branch, we can delete the `feature-cars` and `feature-animals` branches, as they are not needed anymore. To do so, we will need to confirm by typing the name of the branch, and chosing to delete the remote branch as well.
-
-
-###  Scenario 4bis - Large, (feature) branch based change to the data model using pull request
-Based on this
-![](https://hackolade.com/img/Versioning%20-%20model%20lifecycle.png)
+### Scenario 4
+This will be the largest, and more complex set of scenarios that will be trying to illustrate some real world scenarios. Because of their importance and relevance to your real-world experience, we will provide 2 elaborate sub-scenarios for you to review.
+1. In **Scenario 4a**, we will be illustrating how you can have a `main` branch evolve over time, as `minor-fixes` are applied to a separate branch and merged into the model, and eventually also the `new-features` are applied to its branch and merged into the model as well.
+2. In **Scenario 4b**, we will be illustrating how you can have two feature branches (`feature-cars` and `feature-animals`) that are added to the model, and that are merged together into the `main` branch. 
+####  Scenario 4a - Large, branch based changes (`minor-fixes` and `new-features`) to the data model using pull requests
 This scenario is also described [in our documentation](https://hackolade.com/help/Modelversioning.html). 
+![](https://hackolade.com/img/Versioning%20-%20model%20lifecycle.png)
+
 
 In this scenario, we have two branches as well. Like in the documentation, we talk about a "minor fixes" and a "new features" branch.
 1. The first branch covers minor fixes to the main branch, and is frequently merged into minor releases to the model.
 2. the second branch covers major feature additions to the main branch, and is reqularly, but less frequently merged into major releases to the model.
 
-#### 1. Minor fixes branch
+##### 1. Minor fixes branch
 We first add a change to Clone1: Add description of `Movies` Collection.
 We commit and push this to branch `minor-fixes`.
 
-#### 2. New "Animals" features branch
+##### 2. New "Animals" features branch
 Then we make a change to Clone2: a new `animals` collection.
 This is a new feature that could become quite a big change to the model. For now, we add only the `_id` (OId) attribute to the collection.
 We commit and push this to a `new-features` branch.
 
-#### 3. Adding small changes to minor fixes
+##### 3. Adding small changes to minor fixes
 In Clone1, we add a second line to the description of the `Movies` collection.
 We commit and push this to branch `minor-fixes`.
 
-#### 4. Develop the "Animals" feature
+##### 4. Develop the "Animals" feature
 In Clone2, we add a `name` (str) property to the `animals` collection.
 We commit and push this change to the `new-features` branch.
 
@@ -160,25 +126,60 @@ In Clone1, open a pull request.
 Merge the pull request into main.
 Main now has version 1.1.
 
-#### 6. Enhance the "Animals" feature
+##### 6. Enhance the "Animals" feature
 In Clone2, add a `movie_id` (OId) property to the `Animals` collection.
 We commit and push this to the `new-features` branch.
 In Clone2, we make another change and add a FK relationship from `animals.movie_id` to `movies._id`. The parent cardinality is `1`. The child cardinality is `0..n`.
 W commit and push this to the `new-features` branch.
 
-#### 7. Adding another small change to minor fixes
+##### 7. Adding another small change to minor fixes
 In Clone1, we add a third line to the description of the `Movies` collection.
 We commit and push this to branch `minor-fixes`.
 
-#### 8. Merge the minor fixes into the main branch - version 1.2
+##### 8. Merge the minor fixes into the main branch - version 1.2
 In Clone1, we open a pull request to merge `minor-fixes` into the `main` branch.
 We merge the pull request into the `main` branch.
 
-#### 9. Merge the `animals` new feature into the mail branch - version 2.0
+##### 9. Merge the `animals` new feature into the mail branch - version 2.0
 In Clone2, we open a pull request to add the `new-features` developed into the `main` branch, creating version 2.0
 We update Clone2 to make sure that it has the latest version of the `main` branch.
 We know that `main` has evolved in the mean while, and is at version 1.2 - no longer at 1.0 where `new-features` was branched from. We therefore need to solve the conflicts. Once we do, we can merge the pull request into the `main` as well, creating version 2.0 in that branch.
 Then we pull the latest version from `main`, and this allows us to see the merger of all of the changes, both the minor ones and the major new feature development. It will all be one big new version of the model, in the `main` branch.
+#### Scenario 4b - Large, (feature) branch based change to the data model using pull request
+
+The idea is that we will have 
+* two clones of the same repo, Clone1 and Clone2
+* in both Clones, work on the repo will be done in parallel. This will be done in separate branches, which will then be merged into the main branch after specific changes have been performed.  In the scenario below, we will talk about two parallel features being added to the data model - one related to "Animals" (in movies), and one related to "Cars" (in movies).
+
+##### 1. In Clone1 - we add a new "Animals" feature
+We will add an *animals* entity to the data model (including an `_id` (OId), a `name` (str), and `movie_id` (OId) properties), including a foreign key relationship to the *movies* entity. We save that file in Clone1, in a separate "feature branch" - `feature-animals`. We push that branch to the remote.
+
+##### 2. In Clone2 - we add a new "Cars" feature
+We will add an *cars* entity to the data model (including an `_id` (OId), a `make` (str), a `model` (str),and `movie_id` (OId) properties), including a foreign key relationship to the *movies* entity. We save that file in Clone2, in a separate "feature branch" - `feature-cars`. We push that branch to the remote.
+
+##### 3. In Clone1 - we submit the "Animals" feature for review.
+In the "Submit for review" part of the Hackolade Studio's GIT collaboration environment, we create a new request to merge the `feature-animals` branch into the `main` branch of the Clone1 repo. We do that by opening a *pull request*. We can optionally assign the review of the request to another user if desired.
+
+Once we have created the request, we switch to the Clone2 environment.
+##### 4. In Clone2 - we submit the "Cars" feature for review
+In the "Submit for review" part of the Hackolade Studio's GIT collaboration environment, we create a new request to merge the `feature-cars` branch into the `main` branch of the Clone2 repo. We do that by opening a *pull request*. We can optionally assign the review of the request to another user if desired.
+
+##### 5. We will merge the "feature-animals" branch into "main" of Clone1
+From the `Check pull requests` part of the Hackolade Studio's GIT collaboration environment, we open the first, Clone1-based pull request to add the Animals-feature. We can review the changes, and see that a new collection (the `animals` collection) was added, and then we can *Merge* this into the `main` branch.
+##### 6. We will merge the "feature-cars" branch into "main" of Clone2
+From the `Check pull requests` part of the Hackolade Studio's GIT collaboration environment, we open the second, Clone2-based pull request to add the Cars-feature. However, given the fact that the Animals-feature was just merged into the `main` branch, the client will say that we need to update the branch first as the `feature-cars` branch is out-of-date with the branch main. 
+
+When we update the branch, the Hackolade Studio user interface will request that we *Solve the conflicts* in the file first.
+##### 7. We will resolve the conflicts
+In the `Solve Conflicts` screen, the Hackolade Studio will show us
+* the recently merged model that already has the Animals feature in it,
+* the proposed merger of the Cars feature into the model
+* the proposed merged model where both the Animals and the Cars features, both the collections and the relationships, have been added to the model.
+By clicking the `Solve` button, the conflict is resolved and ready to be merged. We do so by clicking the `Merge` button.
+
+Now, we can switch to the `Main` branch, pull all the changes and see the merged model with both the Cars and the Animals features in it.
+##### 8. We will delete the feature branches
+Now that both features have been added to the `Main` branch, we can delete the `feature-cars` and `feature-animals` branches, as they are not needed anymore. To do so, we will need to confirm by typing the name of the branch, and chosing to delete the remote branch as well.
 
 ## Part 3: Conclusion and wrap-up
 In this repo, we have tried to illustrate the different scenarios under which we can see the power of *metadata-as-code* at work. Please try this yourself, using the model that you can find in this repo - it is there to be forked.
