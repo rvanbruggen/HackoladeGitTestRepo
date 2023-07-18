@@ -3471,7 +3471,7 @@
     "creationTS": "2023-07-18T15:03:33.327Z",
     "GUID": "a979b2b1-4f0e-4170-8fc7-1df5d0fa6880",
     "projectID": "bigquery-public-data",
-    "lastModifTS": "2023-07-18T15:13:07.468Z",
+    "lastModifTS": "2023-07-18T16:22:20.465Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -3483,6 +3483,7 @@
         "version": "6.10.12"
     },
     "hackoladeMeta": {},
+    "syncId": "a979b2b1-4f0e-4170-8fc7-1df5d0fa6880",
     "settings": {
         "centralPane": {
             "dbLevel": {
