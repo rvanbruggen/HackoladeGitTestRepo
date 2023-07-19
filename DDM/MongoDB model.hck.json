@@ -704,14 +704,6 @@
                     "required": false,
                     "sample": "R",
                     "error": {}
-                },
-                {
-                    "name": "ddm property",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "string",
-                    "GUID": "9bfd488c-350d-40be-9496-eb304b6fa3cf",
-                    "error": {}
                 }
             ],
             "definitions": {
@@ -1234,11 +1226,11 @@
                         "y": 1325
                     },
                     {
-                        "x": 1561.5,
+                        "x": 1562,
                         "y": 1325
                     },
                     {
-                        "x": 1561.5,
+                        "x": 1562,
                         "y": 1350
                     }
                 ],
@@ -1327,8 +1319,7 @@
         "e9683cba-ef4b-4692-b1ba-eda6299aa602": "email",
         "30683140-f5e9-4902-9468-80c0cc05e3b9": "password",
         "de78cbc4-a429-40cd-b1bf-2cdd02d360a2": "users",
-        "8bb36117-e87f-4f04-839b-301985a215ea": "fk movies._id to comments.movie_id",
-        "9bfd488c-350d-40be-9496-eb304b6fa3cf": "ddm property"
+        "8bb36117-e87f-4f04-839b-301985a215ea": "fk movies._id to comments.movie_id"
     },
     "definitions": {
         "type": "definitions",
@@ -1353,7 +1344,7 @@
     "creationTS": "2023-07-19T20:27:27.853Z",
     "GUID": "31909bd4-1cf4-49f6-bfec-55510b8f9da1",
     "isLineageEnabled": false,
-    "lastModifTS": "2023-07-19T20:39:40.868Z",
+    "lastModifTS": "2023-07-19T20:42:10.270Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1362,6 +1353,7 @@
     "applicationInformation": {
         "version": "6.10.12"
     },
+    "hackoladeMeta": {},
     "settings": {
         "centralPane": {
             "dbLevel": {
@@ -1379,7 +1371,7 @@
                         "x": 1400,
                         "y": 1350,
                         "width": 324,
-                        "height": 951,
+                        "height": 933,
                         "color": {}
                     },
                     {
