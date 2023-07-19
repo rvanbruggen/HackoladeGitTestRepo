@@ -1168,6 +1168,55 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             }
+        },
+        {
+            "collectionName": "test",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "82a0293f-6145-4962-bf99-e4dfe2218d45",
+                    "error": {}
+                },
+                {
+                    "name": "firstname",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "8bf26417-d041-4a8c-85f8-523b9c290d76",
+                    "error": {}
+                },
+                {
+                    "name": "lastname",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "51eb9b8b-0673-4266-97e0-f0442df35787",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "17f6e3e8-d0ab-4b26-b9f2-8acf90bc96d1"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "c1bac7e0-a020-418f-9a9b-f76af3dc3d64",
+            "bucketId": "5c120fbe-ecfb-4b3d-a5f5-c4546abe771c"
         }
     ],
     "buckets": [
@@ -1179,7 +1228,8 @@
                 "ad83d9c1-16ef-4fab-a69e-da74ecd9151b",
                 "286f9ff1-85b4-48e1-8fc4-83afdc2b3517",
                 "14c0b89d-561d-4b7c-b2f3-16a7182b99a9",
-                "de78cbc4-a429-40cd-b1bf-2cdd02d360a2"
+                "de78cbc4-a429-40cd-b1bf-2cdd02d360a2",
+                "c1bac7e0-a020-418f-9a9b-f76af3dc3d64"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -1328,7 +1378,11 @@
         "30683140-f5e9-4902-9468-80c0cc05e3b9": "password",
         "de78cbc4-a429-40cd-b1bf-2cdd02d360a2": "users",
         "8bb36117-e87f-4f04-839b-301985a215ea": "fk movies._id to comments.movie_id",
-        "9bfd488c-350d-40be-9496-eb304b6fa3cf": "ddm property"
+        "9bfd488c-350d-40be-9496-eb304b6fa3cf": "ddm property",
+        "c1bac7e0-a020-418f-9a9b-f76af3dc3d64": "test",
+        "82a0293f-6145-4962-bf99-e4dfe2218d45": "_id",
+        "8bf26417-d041-4a8c-85f8-523b9c290d76": "firstname",
+        "51eb9b8b-0673-4266-97e0-f0442df35787": "lastname"
     },
     "definitions": {
         "type": "definitions",
@@ -1353,7 +1407,7 @@
     "creationTS": "2023-07-19T20:27:27.853Z",
     "GUID": "31909bd4-1cf4-49f6-bfec-55510b8f9da1",
     "isLineageEnabled": false,
-    "lastModifTS": "2023-07-19T20:39:40.868Z",
+    "lastModifTS": "2023-07-19T20:44:04.644Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1362,6 +1416,7 @@
     "applicationInformation": {
         "version": "6.10.12"
     },
+    "hackoladeMeta": {},
     "settings": {
         "centralPane": {
             "dbLevel": {
@@ -1404,6 +1459,14 @@
                         "y": 1150,
                         "width": 210,
                         "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "c1bac7e0-a020-418f-9a9b-f76af3dc3d64",
+                        "x": 1810.0699865410497,
+                        "y": 1998.7025572005384,
+                        "width": 175,
+                        "height": 87,
                         "color": {}
                     }
                 ],
