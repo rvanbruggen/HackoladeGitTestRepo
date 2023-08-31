@@ -885,6 +885,20 @@
                     "GUID": "b788e4cf-bc5f-48c5-a2d9-120573d3d6fc",
                     "required": false,
                     "error": {}
+                },
+                {
+                    "name": "Score2",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "type": "numeric",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "code": "score2",
+                    "GUID": "898a7712-1fe2-4223-832c-6333d7eb314d"
                 }
             ],
             "definitions": {
@@ -1466,16 +1480,16 @@
                         "y": 1630.6958277254403
                     },
                     {
-                        "x": 1746.9138627187067,
+                        "x": 1750.9138627187067,
                         "y": 1630.6958277254403
                     },
                     {
-                        "x": 1746.9138627187067,
-                        "y": 1815
+                        "x": 1750.9138627187067,
+                        "y": 1825.5
                     },
                     {
-                        "x": 1714,
-                        "y": 1815
+                        "x": 1722,
+                        "y": 1825.5
                     }
                 ],
                 "sides": [
@@ -1563,7 +1577,8 @@
         "a0e69002-e56b-4dc0-adf8-981a80a72199": "Email",
         "a973ed45-d9f2-4986-8161-61f8165dd453": "Password",
         "5fbe732c-3acd-4526-9bed-a4dd0450cbb2": "Users",
-        "c9116636-f541-4dc9-8097-ab4eeb25ac6c": "fk movies._id to comments.movie_id"
+        "c9116636-f541-4dc9-8097-ab4eeb25ac6c": "fk movies._id to comments.movie_id",
+        "898a7712-1fe2-4223-832c-6333d7eb314d": "Score2"
     },
     "definitions": {
         "type": "definitions",
@@ -1592,7 +1607,7 @@
     },
     "isLineageEnabled": false,
     "code": "new_model",
-    "lastModifTS": "2023-08-31T12:29:31.873Z",
+    "lastModifTS": "2023-08-31T12:34:44.548Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1617,8 +1632,8 @@
                         "GUID": "7b46b933-f8c5-46e8-8cd7-8b5018acc036",
                         "x": 1400,
                         "y": 1350,
-                        "width": 314,
-                        "height": 930,
+                        "width": 322,
+                        "height": 951,
                         "color": {}
                     },
                     {
