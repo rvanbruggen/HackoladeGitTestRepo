@@ -1592,7 +1592,7 @@
     },
     "isLineageEnabled": false,
     "code": "new_model",
-    "lastModifTS": "2023-08-31T12:28:06.015Z",
+    "lastModifTS": "2023-08-31T12:29:31.873Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1623,8 +1623,8 @@
                     },
                     {
                         "GUID": "1804119e-351b-4427-8833-87d6ef82e55a",
-                        "x": 1110.4306864064595,
-                        "y": 1518.7079407806198,
+                        "x": 1108.4522207267826,
+                        "y": 1593.889636608345,
                         "width": 196,
                         "height": 84,
                         "color": {}
