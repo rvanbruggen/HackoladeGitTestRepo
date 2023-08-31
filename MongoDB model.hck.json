@@ -850,10 +850,8 @@
                     "type": "string",
                     "GUID": "046c592a-3f64-4b85-98da-52ae8a8a99d0",
                     "code": "score",
-                    "error": {
-                        "name": false,
-                        "code": false
-                    }
+                    "description": "Added score description from clone2",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -1552,7 +1550,7 @@
     },
     "isLineageEnabled": false,
     "code": "new_model",
-    "lastModifTS": "2023-08-31T12:41:23.385Z",
+    "lastModifTS": "2023-08-31T12:42:56.254Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
