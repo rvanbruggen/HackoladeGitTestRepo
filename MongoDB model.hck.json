@@ -1342,6 +1342,49 @@
                 "namingConvention": "collectionName",
                 "validationErrors": {}
             }
+        },
+        {
+            "collectionName": "animals",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "69f469ec-63f5-4f01-a6af-88776507d004",
+                    "code": "_id",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "b19620c8-b0ea-445d-90de-3c8269aa8b69"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "a0cb5b38-6d3b-4761-bbe1-6dfa56cc6e5a",
+            "bucketId": "cf1aa024-b571-4d41-a91f-f024992fb780",
+            "hackoladeMeta": {
+                "namingConvention": "code"
+            },
+            "code": "animals"
         }
     ],
     "buckets": [
@@ -1373,7 +1416,8 @@
                 "7b46b933-f8c5-46e8-8cd7-8b5018acc036",
                 "1804119e-351b-4427-8833-87d6ef82e55a",
                 "c805b5fa-064b-42f0-a387-faf911998eb3",
-                "5fbe732c-3acd-4526-9bed-a4dd0450cbb2"
+                "5fbe732c-3acd-4526-9bed-a4dd0450cbb2",
+                "a0cb5b38-6d3b-4761-bbe1-6dfa56cc6e5a"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -1523,7 +1567,9 @@
         "a0e69002-e56b-4dc0-adf8-981a80a72199": "Email",
         "a973ed45-d9f2-4986-8161-61f8165dd453": "Password",
         "5fbe732c-3acd-4526-9bed-a4dd0450cbb2": "Users",
-        "c9116636-f541-4dc9-8097-ab4eeb25ac6c": "fk movies._id to comments.movie_id"
+        "c9116636-f541-4dc9-8097-ab4eeb25ac6c": "fk movies._id to comments.movie_id",
+        "a0cb5b38-6d3b-4761-bbe1-6dfa56cc6e5a": "animals",
+        "69f469ec-63f5-4f01-a6af-88776507d004": "_id"
     },
     "definitions": {
         "type": "definitions",
@@ -1552,7 +1598,7 @@
     },
     "isLineageEnabled": false,
     "code": "new_model",
-    "lastModifTS": "2023-08-31T13:19:56.927Z",
+    "lastModifTS": "2023-08-31T13:35:08.886Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1603,6 +1649,14 @@
                         "y": 1150,
                         "width": 210,
                         "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "a0cb5b38-6d3b-4761-bbe1-6dfa56cc6e5a",
+                        "x": 1798.1305518169581,
+                        "y": 1932.9407806191123,
+                        "width": 165,
+                        "height": 51,
                         "color": {}
                     }
                 ],
