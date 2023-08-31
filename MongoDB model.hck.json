@@ -146,7 +146,8 @@
                     "GUID": "ab03a998-3050-44a4-b314-0688b099f2c9",
                     "required": true,
                     "childRelationships": [
-                        "c9116636-f541-4dc9-8097-ab4eeb25ac6c"
+                        "c9116636-f541-4dc9-8097-ab4eeb25ac6c",
+                        "f5f10c3d-ab11-4aba-a583-36e1e2e294c8"
                     ],
                     "error": {}
                 },
@@ -1387,7 +1388,14 @@
                     "error": {
                         "name": false,
                         "code": false
-                    }
+                    },
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "7b46b933-f8c5-46e8-8cd7-8b5018acc036",
+                    "foreignField": [
+                        "7b46b933-f8c5-46e8-8cd7-8b5018acc036",
+                        "ab03a998-3050-44a4-b314-0688b099f2c9"
+                    ],
+                    "parentRelationship": "f5f10c3d-ab11-4aba-a583-36e1e2e294c8"
                 }
             ],
             "definitions": {
@@ -1520,6 +1528,58 @@
                     "right"
                 ]
             }
+        },
+        {
+            "name": "fk animals.movie_id to movies._id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7b46b933-f8c5-46e8-8cd7-8b5018acc036",
+                    "ab03a998-3050-44a4-b314-0688b099f2c9"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "1ed90f28-17ea-4f86-8c9f-fc26b8e4e030",
+                    "fc804133-2fbd-4bfa-8427-21f449a87987"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "7b46b933-f8c5-46e8-8cd7-8b5018acc036",
+            "childCollection": "1ed90f28-17ea-4f86-8c9f-fc26b8e4e030",
+            "GUID": "f5f10c3d-ab11-4aba-a583-36e1e2e294c8",
+            "hackoladeStyles": {
+                "GUID": "c162cc35-179e-45aa-8298-b07b07b7df8f",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1796.1480484522206,
+                        "y": 1942.7382234185734
+                    },
+                    {
+                        "x": 1759.0740242261104,
+                        "y": 1942.7382234185734
+                    },
+                    {
+                        "x": 1759.0740242261104,
+                        "y": 1972
+                    },
+                    {
+                        "x": 1722,
+                        "y": 1972
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
         }
     ],
     "users": [],
@@ -1604,7 +1664,8 @@
         "1ed90f28-17ea-4f86-8c9f-fc26b8e4e030": "animals",
         "47edf8f3-f83c-417f-9dd1-a498028ae803": "_id",
         "2ae96f1e-3ea8-4b6d-a786-fad8a23fe54b": "name",
-        "fc804133-2fbd-4bfa-8427-21f449a87987": "movie_id"
+        "fc804133-2fbd-4bfa-8427-21f449a87987": "movie_id",
+        "f5f10c3d-ab11-4aba-a583-36e1e2e294c8": "fk animals.movie_id to movies._id"
     },
     "definitions": {
         "type": "definitions",
@@ -1633,7 +1694,7 @@
     },
     "isLineageEnabled": false,
     "code": "new_model",
-    "lastModifTS": "2023-08-31T13:56:20.703Z",
+    "lastModifTS": "2023-08-31T13:59:18.620Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
