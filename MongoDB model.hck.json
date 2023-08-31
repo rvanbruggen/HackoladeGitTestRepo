@@ -146,7 +146,8 @@
                     "GUID": "ab03a998-3050-44a4-b314-0688b099f2c9",
                     "required": true,
                     "childRelationships": [
-                        "c9116636-f541-4dc9-8097-ab4eeb25ac6c"
+                        "c9116636-f541-4dc9-8097-ab4eeb25ac6c",
+                        "7ebe9c94-d717-45a7-9346-921ef5f036fd"
                     ],
                     "error": {}
                 },
@@ -1387,7 +1388,14 @@
                         "code": false
                     },
                     "code": "movie_id",
-                    "GUID": "af79ec2f-58e0-4faa-90e4-152f88cffbba"
+                    "GUID": "af79ec2f-58e0-4faa-90e4-152f88cffbba",
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "7b46b933-f8c5-46e8-8cd7-8b5018acc036",
+                    "foreignField": [
+                        "7b46b933-f8c5-46e8-8cd7-8b5018acc036",
+                        "ab03a998-3050-44a4-b314-0688b099f2c9"
+                    ],
+                    "parentRelationship": "7ebe9c94-d717-45a7-9346-921ef5f036fd"
                 }
             ],
             "definitions": {
@@ -1498,11 +1506,63 @@
                     },
                     {
                         "x": 1750.9138627187067,
-                        "y": 1816.5
+                        "y": 1661
                     },
                     {
                         "x": 1722,
-                        "y": 1816.5
+                        "y": 1661
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "fk animals.movie_id to movies._id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7b46b933-f8c5-46e8-8cd7-8b5018acc036",
+                    "ab03a998-3050-44a4-b314-0688b099f2c9"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "675c1f1e-7db7-4f1e-bc97-382fce436e21",
+                    "af79ec2f-58e0-4faa-90e4-152f88cffbba"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "7b46b933-f8c5-46e8-8cd7-8b5018acc036",
+            "childCollection": "675c1f1e-7db7-4f1e-bc97-382fce436e21",
+            "GUID": "7ebe9c94-d717-45a7-9346-921ef5f036fd",
+            "hackoladeStyles": {
+                "GUID": "e03b8cfa-3062-4321-bb2e-2de10b5c5efb",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1829.8506056527588,
+                        "y": 1893.175639300135
+                    },
+                    {
+                        "x": 1775.9253028263793,
+                        "y": 1893.175639300135
+                    },
+                    {
+                        "x": 1775.9253028263793,
+                        "y": 1972
+                    },
+                    {
+                        "x": 1722,
+                        "y": 1972
                     }
                 ],
                 "sides": [
@@ -1594,7 +1654,8 @@
         "675c1f1e-7db7-4f1e-bc97-382fce436e21": "animals",
         "ce4a853d-fcfe-4364-80b5-277c836da273": "_id",
         "414ec6e1-915f-46eb-bd8e-4be9d2cfe8a9": "name",
-        "af79ec2f-58e0-4faa-90e4-152f88cffbba": "movie_id"
+        "af79ec2f-58e0-4faa-90e4-152f88cffbba": "movie_id",
+        "7ebe9c94-d717-45a7-9346-921ef5f036fd": "fk animals.movie_id to movies._id"
     },
     "definitions": {
         "type": "definitions",
@@ -1623,7 +1684,7 @@
     },
     "isLineageEnabled": false,
     "code": "new_model",
-    "lastModifTS": "2023-08-31T13:10:09.684Z",
+    "lastModifTS": "2023-08-31T13:13:29.780Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
