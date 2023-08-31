@@ -146,8 +146,7 @@
                     "GUID": "ab03a998-3050-44a4-b314-0688b099f2c9",
                     "required": true,
                     "childRelationships": [
-                        "c9116636-f541-4dc9-8097-ab4eeb25ac6c",
-                        "7ebe9c94-d717-45a7-9346-921ef5f036fd"
+                        "c9116636-f541-4dc9-8097-ab4eeb25ac6c"
                     ],
                     "error": {}
                 },
@@ -1448,6 +1447,11 @@
                 "1804119e-351b-4427-8833-87d6ef82e55a",
                 "c805b5fa-064b-42f0-a387-faf911998eb3",
                 "5fbe732c-3acd-4526-9bed-a4dd0450cbb2",
+                "e4ddc0b3-60e9-4c5c-b16b-0033d2681975",
+                "7b46b933-f8c5-46e8-8cd7-8b5018acc036",
+                "1804119e-351b-4427-8833-87d6ef82e55a",
+                "c805b5fa-064b-42f0-a387-faf911998eb3",
+                "5fbe732c-3acd-4526-9bed-a4dd0450cbb2",
                 "675c1f1e-7db7-4f1e-bc97-382fce436e21"
             ],
             "backgroundColor": {
@@ -1506,11 +1510,11 @@
                     },
                     {
                         "x": 1750.9138627187067,
-                        "y": 1661
+                        "y": 1816.5
                     },
                     {
                         "x": 1722,
-                        "y": 1661
+                        "y": 1816.5
                     }
                 ],
                 "sides": [
@@ -1684,7 +1688,7 @@
     },
     "isLineageEnabled": false,
     "code": "new_model",
-    "lastModifTS": "2023-08-31T13:13:29.780Z",
+    "lastModifTS": "2023-08-31T13:17:55.506Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1746,12 +1750,6 @@
                         "color": {}
                     }
                 ],
-                "erdDefinitions": {
-                    "erd": [],
-                    "rootPath": [],
-                    "entities": [],
-                    "decorativeSymbols": []
-                },
                 "buckets": [
                     {
                         "x": 1010,
@@ -1759,26 +1757,15 @@
                         "GUID": "cf1aa024-b571-4d41-a91f-f024992fb780"
                     }
                 ],
-                "collapsedNodes": [],
-                "activeRelationship": "",
-                "activeRelationshipFields": {
-                    "childField": [],
-                    "parentField": []
-                },
-                "selectedCollections": [],
-                "displayColorPicker": false,
+                "diagramViews": [],
+                "decorativeSymbols": [],
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
                     "forceLayout": true,
                     "defaultLinkLength": 300
-                },
-                "diagramViews": [],
-                "decorativeSymbols": [],
-                "nestedCollectionsLayout": "horizontal",
-                "options": [],
-                "relationshipUpdateDisabled": false
+                }
             },
             "collectionLevel": {},
             "changed": false
