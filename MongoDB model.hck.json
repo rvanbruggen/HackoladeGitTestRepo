@@ -1360,6 +1360,20 @@
                         "name": false,
                         "code": false
                     }
+                },
+                {
+                    "name": "name",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "acdd69bb-b051-4ba9-95f4-b7e54ce3555d",
+                    "code": "name",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
                 }
             ],
             "definitions": {
@@ -1569,7 +1583,8 @@
         "5fbe732c-3acd-4526-9bed-a4dd0450cbb2": "Users",
         "c9116636-f541-4dc9-8097-ab4eeb25ac6c": "fk movies._id to comments.movie_id",
         "a0cb5b38-6d3b-4761-bbe1-6dfa56cc6e5a": "animals",
-        "69f469ec-63f5-4f01-a6af-88776507d004": "_id"
+        "69f469ec-63f5-4f01-a6af-88776507d004": "_id",
+        "acdd69bb-b051-4ba9-95f4-b7e54ce3555d": "name"
     },
     "definitions": {
         "type": "definitions",
@@ -1598,7 +1613,7 @@
     },
     "isLineageEnabled": false,
     "code": "new_model",
-    "lastModifTS": "2023-08-31T13:35:08.886Z",
+    "lastModifTS": "2023-08-31T13:37:56.364Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1656,7 +1671,7 @@
                         "x": 1798.1305518169581,
                         "y": 1932.9407806191123,
                         "width": 165,
-                        "height": 51,
+                        "height": 69,
                         "color": {}
                     }
                 ],
