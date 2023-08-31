@@ -840,6 +840,20 @@
                     "GUID": "b788e4cf-bc5f-48c5-a2d9-120573d3d6fc",
                     "required": false,
                     "error": {}
+                },
+                {
+                    "name": "Score",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "046c592a-3f64-4b85-98da-52ae8a8a99d0",
+                    "code": "score",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
                 }
             ],
             "definitions": {
@@ -1416,11 +1430,11 @@
                     },
                     {
                         "x": 1750.9138627187067,
-                        "y": 1816.5
+                        "y": 1825.5
                     },
                     {
                         "x": 1722,
-                        "y": 1816.5
+                        "y": 1825.5
                     }
                 ],
                 "sides": [
@@ -1508,7 +1522,8 @@
         "a0e69002-e56b-4dc0-adf8-981a80a72199": "Email",
         "a973ed45-d9f2-4986-8161-61f8165dd453": "Password",
         "5fbe732c-3acd-4526-9bed-a4dd0450cbb2": "Users",
-        "c9116636-f541-4dc9-8097-ab4eeb25ac6c": "fk movies._id to comments.movie_id"
+        "c9116636-f541-4dc9-8097-ab4eeb25ac6c": "fk movies._id to comments.movie_id",
+        "046c592a-3f64-4b85-98da-52ae8a8a99d0": "Score"
     },
     "definitions": {
         "type": "definitions",
@@ -1537,7 +1552,7 @@
     },
     "isLineageEnabled": false,
     "code": "new_model",
-    "lastModifTS": "2023-08-31T12:39:20.309Z",
+    "lastModifTS": "2023-08-31T12:41:23.385Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1563,7 +1578,7 @@
                         "x": 1400,
                         "y": 1350,
                         "width": 322,
-                        "height": 933,
+                        "height": 951,
                         "color": {}
                     },
                     {
