@@ -903,7 +903,7 @@
                 "namingConvention": "collectionName",
                 "validationErrors": {}
             },
-            "description": "This is a description of the Movies collection"
+            "description": "This is a description of the Movies collection\nThis is a second line of the description of the Movies collection"
         },
         {
             "collectionName": "Sessions",
@@ -1553,7 +1553,7 @@
     },
     "isLineageEnabled": false,
     "code": "new_model",
-    "lastModifTS": "2023-08-31T13:33:32.070Z",
+    "lastModifTS": "2023-08-31T13:36:32.660Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
