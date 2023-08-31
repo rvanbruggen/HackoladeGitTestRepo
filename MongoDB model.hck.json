@@ -147,7 +147,7 @@
                     "required": true,
                     "childRelationships": [
                         "c9116636-f541-4dc9-8097-ab4eeb25ac6c",
-                        "f5f10c3d-ab11-4aba-a583-36e1e2e294c8"
+                        "0b87c886-ed8a-44e8-8ff7-512b92bcb2fc"
                     ],
                     "error": {}
                 },
@@ -1421,6 +1421,98 @@
                 "namingConvention": "code"
             },
             "code": "animals"
+        },
+        {
+            "collectionName": "cars",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "d7c0ed69-1d56-4691-a476-400a7829cdf1",
+                    "code": "_id",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "name": "make",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "f7a778a4-89fb-4fb3-931f-e1b9914d0724",
+                    "code": "make",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "name": "model",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "8704d6bc-b3d1-4a37-864c-2d229e33df38",
+                    "code": "model",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "name": "movie_id",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "9daa1157-d7d7-4401-b55b-0fda030dd7bd",
+                    "code": "movie_id",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "7b46b933-f8c5-46e8-8cd7-8b5018acc036",
+                    "foreignField": [
+                        "7b46b933-f8c5-46e8-8cd7-8b5018acc036",
+                        "ab03a998-3050-44a4-b314-0688b099f2c9"
+                    ],
+                    "parentRelationship": "0b87c886-ed8a-44e8-8ff7-512b92bcb2fc"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "43a46e0f-10aa-4c50-bd79-78efbb68f7c6"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "728c4096-da8c-4666-953f-0afee4b6666d",
+            "bucketId": "cf1aa024-b571-4d41-a91f-f024992fb780",
+            "hackoladeMeta": {
+                "namingConvention": "code"
+            },
+            "code": "cars"
         }
     ],
     "buckets": [
@@ -1458,7 +1550,14 @@
                 "1804119e-351b-4427-8833-87d6ef82e55a",
                 "c805b5fa-064b-42f0-a387-faf911998eb3",
                 "5fbe732c-3acd-4526-9bed-a4dd0450cbb2",
-                "1ed90f28-17ea-4f86-8c9f-fc26b8e4e030"
+                "728c4096-da8c-4666-953f-0afee4b6666d",
+                "e4ddc0b3-60e9-4c5c-b16b-0033d2681975",
+                "7b46b933-f8c5-46e8-8cd7-8b5018acc036",
+                "1804119e-351b-4427-8833-87d6ef82e55a",
+                "c805b5fa-064b-42f0-a387-faf911998eb3",
+                "5fbe732c-3acd-4526-9bed-a4dd0450cbb2",
+                "1ed90f28-17ea-4f86-8c9f-fc26b8e4e030",
+                "728c4096-da8c-4666-953f-0afee4b6666d"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -1580,6 +1679,58 @@
                     "right"
                 ]
             }
+        },
+        {
+            "name": "fk cars.movie_id to movies._id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7b46b933-f8c5-46e8-8cd7-8b5018acc036",
+                    "ab03a998-3050-44a4-b314-0688b099f2c9"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "728c4096-da8c-4666-953f-0afee4b6666d",
+                    "9daa1157-d7d7-4401-b55b-0fda030dd7bd"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "7b46b933-f8c5-46e8-8cd7-8b5018acc036",
+            "childCollection": "728c4096-da8c-4666-953f-0afee4b6666d",
+            "GUID": "0b87c886-ed8a-44e8-8ff7-512b92bcb2fc",
+            "hackoladeStyles": {
+                "GUID": "4b666b90-ddd1-4d7f-965f-fd65ce3e2674",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1790.2005383580079,
+                        "y": 1896.2281292059226
+                    },
+                    {
+                        "x": 1756.100269179004,
+                        "y": 1896.2281292059226
+                    },
+                    {
+                        "x": 1756.100269179004,
+                        "y": 1972
+                    },
+                    {
+                        "x": 1722,
+                        "y": 1972
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
         }
     ],
     "users": [],
@@ -1665,7 +1816,13 @@
         "47edf8f3-f83c-417f-9dd1-a498028ae803": "_id",
         "2ae96f1e-3ea8-4b6d-a786-fad8a23fe54b": "name",
         "fc804133-2fbd-4bfa-8427-21f449a87987": "movie_id",
-        "f5f10c3d-ab11-4aba-a583-36e1e2e294c8": "fk animals.movie_id to movies._id"
+        "f5f10c3d-ab11-4aba-a583-36e1e2e294c8": "fk animals.movie_id to movies._id",
+        "728c4096-da8c-4666-953f-0afee4b6666d": "cars",
+        "d7c0ed69-1d56-4691-a476-400a7829cdf1": "_id",
+        "f7a778a4-89fb-4fb3-931f-e1b9914d0724": "make",
+        "8704d6bc-b3d1-4a37-864c-2d229e33df38": "model",
+        "9daa1157-d7d7-4401-b55b-0fda030dd7bd": "movie_id",
+        "0b87c886-ed8a-44e8-8ff7-512b92bcb2fc": "fk cars.movie_id to movies._id"
     },
     "definitions": {
         "type": "definitions",
@@ -1694,7 +1851,7 @@
     },
     "isLineageEnabled": false,
     "code": "new_model",
-    "lastModifTS": "2023-08-31T13:59:18.620Z",
+    "lastModifTS": "2023-08-31T14:04:17.389Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1754,14 +1911,16 @@
                         "width": 170,
                         "height": 87,
                         "color": {}
+                    },
+                    {
+                        "GUID": "728c4096-da8c-4666-953f-0afee4b6666d",
+                        "x": 1790.2005383580079,
+                        "y": 1843.7281292059226,
+                        "width": 170,
+                        "height": 105,
+                        "color": {}
                     }
                 ],
-                "erdDefinitions": {
-                    "erd": [],
-                    "rootPath": [],
-                    "entities": [],
-                    "decorativeSymbols": []
-                },
                 "buckets": [
                     {
                         "x": 1010,
@@ -1769,26 +1928,15 @@
                         "GUID": "cf1aa024-b571-4d41-a91f-f024992fb780"
                     }
                 ],
-                "collapsedNodes": [],
-                "activeRelationship": "",
-                "activeRelationshipFields": {
-                    "childField": [],
-                    "parentField": []
-                },
-                "selectedCollections": [],
-                "displayColorPicker": false,
+                "diagramViews": [],
+                "decorativeSymbols": [],
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
                     "forceLayout": true,
                     "defaultLinkLength": 300
-                },
-                "diagramViews": [],
-                "decorativeSymbols": [],
-                "nestedCollectionsLayout": "horizontal",
-                "options": [],
-                "relationshipUpdateDisabled": false
+                }
             },
             "collectionLevel": {},
             "changed": false
