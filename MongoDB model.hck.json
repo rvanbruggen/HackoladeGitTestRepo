@@ -1516,11 +1516,11 @@
                     },
                     {
                         "x": 1750.9138627187067,
-                        "y": 1816.5
+                        "y": 1661
                     },
                     {
                         "x": 1722,
-                        "y": 1816.5
+                        "y": 1661
                     }
                 ],
                 "sides": [
@@ -1559,15 +1559,15 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1798.1305518169581,
-                        "y": 1976.4407806191123
+                        "x": 1835.7981157469717,
+                        "y": 1865.4205921938099
                     },
                     {
-                        "x": 1760.0652759084792,
-                        "y": 1976.4407806191123
+                        "x": 1778.8990578734858,
+                        "y": 1865.4205921938099
                     },
                     {
-                        "x": 1760.0652759084792,
+                        "x": 1778.8990578734858,
                         "y": 1972
                     },
                     {
@@ -1694,7 +1694,7 @@
     },
     "isLineageEnabled": false,
     "code": "new_model",
-    "lastModifTS": "2023-08-31T13:48:09.068Z",
+    "lastModifTS": "2023-08-31T13:49:31.623Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1749,13 +1749,19 @@
                     },
                     {
                         "GUID": "a0cb5b38-6d3b-4761-bbe1-6dfa56cc6e5a",
-                        "x": 1798.1305518169581,
-                        "y": 1932.9407806191123,
+                        "x": 1835.7981157469717,
+                        "y": 1821.9205921938099,
                         "width": 170,
                         "height": 87,
                         "color": {}
                     }
                 ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
                 "buckets": [
                     {
                         "x": 1010,
@@ -1763,15 +1769,26 @@
                         "GUID": "cf1aa024-b571-4d41-a91f-f024992fb780"
                     }
                 ],
-                "diagramViews": [],
-                "decorativeSymbols": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
                     "forceLayout": true,
                     "defaultLinkLength": 300
-                }
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
             },
             "collectionLevel": {},
             "changed": false
