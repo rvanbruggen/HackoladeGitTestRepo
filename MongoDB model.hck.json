@@ -848,12 +848,10 @@
                     },
                     "isActivated": true,
                     "type": "numeric",
-                    "error": {
-                        "name": false,
-                        "code": false
-                    },
                     "code": "score",
-                    "GUID": "9c759e8d-45b1-4516-b4c0-406cd07ab424"
+                    "GUID": "9c759e8d-45b1-4516-b4c0-406cd07ab424",
+                    "description": "This is a description added to Clone2",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -1557,7 +1555,7 @@
     },
     "isLineageEnabled": false,
     "code": "new_model",
-    "lastModifTS": "2023-08-31T12:54:17.711Z",
+    "lastModifTS": "2023-08-31T12:55:15.793Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
