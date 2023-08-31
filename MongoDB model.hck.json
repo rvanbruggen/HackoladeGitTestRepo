@@ -1342,6 +1342,91 @@
                 "namingConvention": "collectionName",
                 "validationErrors": {}
             }
+        },
+        {
+            "collectionName": "cars",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "d7c0ed69-1d56-4691-a476-400a7829cdf1",
+                    "code": "_id",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "name": "make",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "f7a778a4-89fb-4fb3-931f-e1b9914d0724",
+                    "code": "make",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "name": "model",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "8704d6bc-b3d1-4a37-864c-2d229e33df38",
+                    "code": "model",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "name": "movie_id",
+                    "hackoladeMeta": {
+                        "namingConvention": "code"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "9daa1157-d7d7-4401-b55b-0fda030dd7bd",
+                    "code": "movie_id",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "43a46e0f-10aa-4c50-bd79-78efbb68f7c6"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "728c4096-da8c-4666-953f-0afee4b6666d",
+            "bucketId": "cf1aa024-b571-4d41-a91f-f024992fb780",
+            "hackoladeMeta": {
+                "namingConvention": "code"
+            },
+            "code": "cars"
         }
     ],
     "buckets": [
@@ -1378,7 +1463,8 @@
                 "7b46b933-f8c5-46e8-8cd7-8b5018acc036",
                 "1804119e-351b-4427-8833-87d6ef82e55a",
                 "c805b5fa-064b-42f0-a387-faf911998eb3",
-                "5fbe732c-3acd-4526-9bed-a4dd0450cbb2"
+                "5fbe732c-3acd-4526-9bed-a4dd0450cbb2",
+                "728c4096-da8c-4666-953f-0afee4b6666d"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -1528,7 +1614,12 @@
         "a0e69002-e56b-4dc0-adf8-981a80a72199": "Email",
         "a973ed45-d9f2-4986-8161-61f8165dd453": "Password",
         "5fbe732c-3acd-4526-9bed-a4dd0450cbb2": "Users",
-        "c9116636-f541-4dc9-8097-ab4eeb25ac6c": "fk movies._id to comments.movie_id"
+        "c9116636-f541-4dc9-8097-ab4eeb25ac6c": "fk movies._id to comments.movie_id",
+        "728c4096-da8c-4666-953f-0afee4b6666d": "cars",
+        "d7c0ed69-1d56-4691-a476-400a7829cdf1": "_id",
+        "f7a778a4-89fb-4fb3-931f-e1b9914d0724": "make",
+        "8704d6bc-b3d1-4a37-864c-2d229e33df38": "model",
+        "9daa1157-d7d7-4401-b55b-0fda030dd7bd": "movie_id"
     },
     "definitions": {
         "type": "definitions",
@@ -1557,7 +1648,7 @@
     },
     "isLineageEnabled": false,
     "code": "new_model",
-    "lastModifTS": "2023-08-31T13:53:32.516Z",
+    "lastModifTS": "2023-08-31T13:57:53.219Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1608,6 +1699,14 @@
                         "y": 1150,
                         "width": 210,
                         "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "728c4096-da8c-4666-953f-0afee4b6666d",
+                        "x": 1790.2005383580079,
+                        "y": 1843.7281292059226,
+                        "width": 170,
+                        "height": 105,
                         "color": {}
                     }
                 ],
