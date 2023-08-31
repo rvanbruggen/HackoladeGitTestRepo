@@ -903,7 +903,7 @@
                 "namingConvention": "collectionName",
                 "validationErrors": {}
             },
-            "description": "This is a *description* to the Movies collection"
+            "description": "This is a *description* to the Movies collection\nAdding a line to the description."
         },
         {
             "collectionName": "Sessions",
@@ -1548,7 +1548,7 @@
     },
     "isLineageEnabled": false,
     "code": "new_model",
-    "lastModifTS": "2023-08-31T13:07:54.744Z",
+    "lastModifTS": "2023-08-31T13:14:41.119Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
